@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-838rg1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#031A1D",
+        "foreground": "#ccd3db",
+        "cursor": "#ccd3db"
+    },
+    "colors": {
+        "color0": "#031A1D",
+        "color1": "#574551",
+        "color2": "#BC454E",
+        "color3": "#126698",
+        "color4": "#4C7397",
+        "color5": "#BB7E80",
+        "color6": "#509ABD",
+        "color7": "#ccd3db",
+        "color8": "#8e9399",
+        "color9": "#574551",
+        "color10": "#BC454E",
+        "color11": "#126698",
+        "color12": "#4C7397",
+        "color13": "#BB7E80",
+        "color14": "#509ABD",
+        "color15": "#ccd3db"
+    }
+}

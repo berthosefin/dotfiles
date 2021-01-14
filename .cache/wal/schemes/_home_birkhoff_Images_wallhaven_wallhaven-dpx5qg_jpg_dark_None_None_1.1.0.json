@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-dpx5qg.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#180c09",
+        "foreground": "#92cfd9",
+        "cursor": "#92cfd9"
+    },
+    "colors": {
+        "color0": "#180c09",
+        "color1": "#AF8D4C",
+        "color2": "#ED9259",
+        "color3": "#016590",
+        "color4": "#016C96",
+        "color5": "#637385",
+        "color6": "#0592B0",
+        "color7": "#92cfd9",
+        "color8": "#669097",
+        "color9": "#AF8D4C",
+        "color10": "#ED9259",
+        "color11": "#016590",
+        "color12": "#016C96",
+        "color13": "#637385",
+        "color14": "#0592B0",
+        "color15": "#92cfd9"
+    }
+}

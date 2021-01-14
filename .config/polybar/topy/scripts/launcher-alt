@@ -1,0 +1,13 @@
+#!/bin/bash
+
+## By Birkhoff
+
+rofi -modi run,drun \
+	-display-drun "Applications :" -drun-display-format "{name}" \
+	-show drun \
+	-line-padding 4 \
+	-columns 1 \
+	-width 50 \
+	-padding 30 \
+	-hide-scrollbar \
+	-show-icons \

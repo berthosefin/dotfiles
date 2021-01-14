@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-83jleo.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#114943",
+        "foreground": "#e2e1e4",
+        "cursor": "#e2e1e4"
+    },
+    "colors": {
+        "color0": "#114943",
+        "color1": "#5EB098",
+        "color2": "#73C2AE",
+        "color3": "#9EB49F",
+        "color4": "#D1B39A",
+        "color5": "#E3B986",
+        "color6": "#B0C5BD",
+        "color7": "#e2e1e4",
+        "color8": "#9e9d9f",
+        "color9": "#5EB098",
+        "color10": "#73C2AE",
+        "color11": "#9EB49F",
+        "color12": "#D1B39A",
+        "color13": "#E3B986",
+        "color14": "#B0C5BD",
+        "color15": "#e2e1e4"
+    }
+}

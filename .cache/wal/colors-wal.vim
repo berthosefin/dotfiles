@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/birkhoff/Images/wallhaven/wallhaven-x16kdd.jpg"
+let background = "#111f25"
+let foreground = "#c8d5e3"
+let cursor     = "#c8d5e3"
+
+" Colors
+let color0  = "#111f25"
+let color1  = "#124AB2"
+let color2  = "#104FBD"
+let color3  = "#396BA7"
+let color4  = "#4573B1"
+let color5  = "#4187D7"
+let color6  = "#5391D9"
+let color7  = "#c8d5e3"
+let color8  = "#8c959e"
+let color9  = "#124AB2"
+let color10 = "#104FBD"
+let color11 = "#396BA7"
+let color12 = "#4573B1"
+let color13 = "#4187D7"
+let color14 = "#5391D9"
+let color15 = "#c8d5e3"

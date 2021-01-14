@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/skovati-_FWXwplU1BE-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#030403",
+        "foreground": "#d4b8a6",
+        "cursor": "#d4b8a6"
+    },
+    "colors": {
+        "color0": "#030403",
+        "color1": "#4E5452",
+        "color2": "#6B5D56",
+        "color3": "#71645B",
+        "color4": "#9F533E",
+        "color5": "#9B6750",
+        "color6": "#CC754A",
+        "color7": "#d4b8a6",
+        "color8": "#948074",
+        "color9": "#4E5452",
+        "color10": "#6B5D56",
+        "color11": "#71645B",
+        "color12": "#9F533E",
+        "color13": "#9B6750",
+        "color14": "#CC754A",
+        "color15": "#d4b8a6"
+    }
+}

@@ -1,0 +1,21 @@
+set $wallpaper /home/birkhoff/Images/wallhaven/wallhaven-x16kdd.jpg
+
+set $background #111f25
+set $foreground #c8d5e3
+
+set $color0 #111f25
+set $color1 #124AB2
+set $color2 #104FBD
+set $color3 #396BA7
+set $color4 #4573B1
+set $color5 #4187D7
+set $color6 #5391D9
+set $color7 #c8d5e3
+set $color8 #8c959e
+set $color9 #124AB2
+set $color10 #104FBD
+set $color11 #396BA7
+set $color12 #4573B1
+set $color13 #4187D7
+set $color14 #5391D9
+set $color15 #c8d5e3

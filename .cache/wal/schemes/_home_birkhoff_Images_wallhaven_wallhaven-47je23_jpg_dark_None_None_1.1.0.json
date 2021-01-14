@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-47je23.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0E1731",
+        "foreground": "#dbc4a5",
+        "cursor": "#dbc4a5"
+    },
+    "colors": {
+        "color0": "#0E1731",
+        "color1": "#2D2742",
+        "color2": "#5D3444",
+        "color3": "#6C494A",
+        "color4": "#8F4F48",
+        "color5": "#944042",
+        "color6": "#A8684F",
+        "color7": "#dbc4a5",
+        "color8": "#998973",
+        "color9": "#2D2742",
+        "color10": "#5D3444",
+        "color11": "#6C494A",
+        "color12": "#8F4F48",
+        "color13": "#944042",
+        "color14": "#A8684F",
+        "color15": "#dbc4a5"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-p2m5lm.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#01082B",
+        "foreground": "#96cac0",
+        "cursor": "#96cac0"
+    },
+    "colors": {
+        "color0": "#01082B",
+        "color1": "#16565B",
+        "color2": "#566358",
+        "color3": "#C93234",
+        "color4": "#4D8D68",
+        "color5": "#B2A467",
+        "color6": "#257983",
+        "color7": "#96cac0",
+        "color8": "#698d86",
+        "color9": "#16565B",
+        "color10": "#566358",
+        "color11": "#C93234",
+        "color12": "#4D8D68",
+        "color13": "#B2A467",
+        "color14": "#257983",
+        "color15": "#96cac0"
+    }
+}

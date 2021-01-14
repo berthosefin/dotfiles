@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-q2dr87.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0D181E",
+        "foreground": "#7dbdd1",
+        "cursor": "#7dbdd1"
+    },
+    "colors": {
+        "color0": "#0D181E",
+        "color1": "#0F3356",
+        "color2": "#0F376B",
+        "color3": "#134B68",
+        "color4": "#148079",
+        "color5": "#0F428B",
+        "color6": "#0E5595",
+        "color7": "#7dbdd1",
+        "color8": "#578492",
+        "color9": "#0F3356",
+        "color10": "#0F376B",
+        "color11": "#134B68",
+        "color12": "#148079",
+        "color13": "#0F428B",
+        "color14": "#0E5595",
+        "color15": "#7dbdd1"
+    }
+}

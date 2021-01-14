@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=683;y=16"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="30"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="1"/>
+        <value type="int" value="2"/>
+        <value type="int" value="4"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="15"/>
+        <value type="int" value="6"/>
+        <value type="int" value="5"/>
+      </property>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.054902"/>
+        <value type="double" value="0.050980"/>
+        <value type="double" value="0.176471"/>
+        <value type="double" value="1.000000"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-6" type="string" value="systray">
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="teamviewer"/>
+        <value type="string" value="notes"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="zoiper"/>
+        <value type="string" value="ibus-ui-gtk3"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="veracrypt"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="dnfdragora-updater"/>
+        <value type="string" value="lecture de musique pragha"/>
+        <value type="string" value="seapplet"/>
+        <value type="string" value="megasync"/>
+        <value type="string" value="stacer"/>
+        <value type="string" value="toolbox"/>
+        <value type="string" value="zeal"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="gestionnaire de tâches"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="applet networkmanager"/>
+      </property>
+      <property name="size-max" type="uint" value="16"/>
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="gestionnaire de tâches"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="applet networkmanager"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
+      </property>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-format" type="string" value="%a %d %b, %R"/>
+      <property name="mode" type="uint" value="2"/>
+    </property>
+    <property name="plugin-4" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="power-manager-plugin"/>
+    <property name="plugin-11" type="string" value="jgmenu-applet"/>
+    <property name="plugin-13" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="clementine;firefox.instance10536;firefox.instance132814;firefox.instance13932;firefox.instance1668;firefox.instance191901;firefox.instance1922;firefox.instance208375;firefox.instance21230;firefox.instance21695;firefox.instance24178;firefox.instance256863;firefox.instance27437;firefox.instance28178;firefox.instance35017;firefox.instance38983;firefox.instance40221;firefox.instance4363;firefox.instance59975;firefox.instance62897;firefox.instance6484;firefox.instance7861;firefox.instance97735;firefox.instance98706;firefox.instance99659;smplayer;vlc"/>
+      <property name="enable-wnck" type="bool" value="false"/>
+      <property name="enable-multimedia-keys" type="bool" value="true"/>
+      <property name="enable-mpris" type="bool" value="true"/>
+    </property>
+    <property name="plugin-15" type="string" value="notification-plugin"/>
+    <property name="plugin-2" type="string" value="taskbar"/>
+    <property name="plugin-1" type="string" value="whiskermenu"/>
+  </property>
+</channel>

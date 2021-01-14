@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/photoholgic-rVYzP63lSP4-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#f9f9fa",
+        "foreground": "#29513B",
+        "cursor": "#29513B"
+    },
+    "colors": {
+        "color0": "#f9f9fa",
+        "color1": "#DEA471",
+        "color2": "#708A8B",
+        "color3": "#A5A2A1",
+        "color4": "#EEB788",
+        "color5": "#CBB0A3",
+        "color6": "#F8CBA3",
+        "color7": "#29513B",
+        "color8": "#848487",
+        "color9": "#DEA471",
+        "color10": "#708A8B",
+        "color11": "#A5A2A1",
+        "color12": "#EEB788",
+        "color13": "#CBB0A3",
+        "color14": "#F8CBA3",
+        "color15": "#29513B"
+    }
+}

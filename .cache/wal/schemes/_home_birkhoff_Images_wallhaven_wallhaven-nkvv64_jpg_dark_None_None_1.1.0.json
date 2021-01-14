@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-nkvv64.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#252024",
+        "foreground": "#d8d3cf",
+        "cursor": "#d8d3cf"
+    },
+    "colors": {
+        "color0": "#252024",
+        "color1": "#2D5C97",
+        "color2": "#537099",
+        "color3": "#3A7EC0",
+        "color4": "#827D86",
+        "color5": "#618AB5",
+        "color6": "#669ACC",
+        "color7": "#d8d3cf",
+        "color8": "#979390",
+        "color9": "#2D5C97",
+        "color10": "#537099",
+        "color11": "#3A7EC0",
+        "color12": "#827D86",
+        "color13": "#618AB5",
+        "color14": "#669ACC",
+        "color15": "#d8d3cf"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/amaury-gutierrez-rzmQOng8h8I-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#021A24",
+        "foreground": "#acbeca",
+        "cursor": "#acbeca"
+    },
+    "colors": {
+        "color0": "#021A24",
+        "color1": "#39617B",
+        "color2": "#5A4E4D",
+        "color3": "#98786B",
+        "color4": "#3D6782",
+        "color5": "#4C738B",
+        "color6": "#606395",
+        "color7": "#acbeca",
+        "color8": "#78858d",
+        "color9": "#39617B",
+        "color10": "#5A4E4D",
+        "color11": "#98786B",
+        "color12": "#3D6782",
+        "color13": "#4C738B",
+        "color14": "#606395",
+        "color15": "#acbeca"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallpaperflare/wallpaperflare.com_wallpaper(11).jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a040c",
+        "foreground": "#a4d7e4",
+        "cursor": "#a4d7e4"
+    },
+    "colors": {
+        "color0": "#0a040c",
+        "color1": "#1F649B",
+        "color2": "#3F5EA5",
+        "color3": "#AC5994",
+        "color4": "#2A8DB5",
+        "color5": "#2FA2CD",
+        "color6": "#52ACCF",
+        "color7": "#a4d7e4",
+        "color8": "#72969f",
+        "color9": "#1F649B",
+        "color10": "#3F5EA5",
+        "color11": "#AC5994",
+        "color12": "#2A8DB5",
+        "color13": "#2FA2CD",
+        "color14": "#52ACCF",
+        "color15": "#a4d7e4"
+    }
+}

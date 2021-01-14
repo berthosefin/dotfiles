@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/paulius-dragunas-uw_NWjC1mBE-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#1b2b2d",
+        "foreground": "#e5d1dc",
+        "cursor": "#e5d1dc"
+    },
+    "colors": {
+        "color0": "#1b2b2d",
+        "color1": "#64A0AB",
+        "color2": "#4BB9C4",
+        "color3": "#1BCBD1",
+        "color4": "#62D2D8",
+        "color5": "#A09CAA",
+        "color6": "#D69DAC",
+        "color7": "#e5d1dc",
+        "color8": "#a0929a",
+        "color9": "#64A0AB",
+        "color10": "#4BB9C4",
+        "color11": "#1BCBD1",
+        "color12": "#62D2D8",
+        "color13": "#A09CAA",
+        "color14": "#D69DAC",
+        "color15": "#e5d1dc"
+    }
+}

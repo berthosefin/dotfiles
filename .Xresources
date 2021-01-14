@@ -1,0 +1,9 @@
+!! ------------------------------------------------------------------------------
+!! Import other Configuration from ~/.Xresources.d
+!! ------------------------------------------------------------------------------
+#include "/home/birkhoff/.Xresources.d/xcolors"
+#include "/home/birkhoff/.Xresources.d/xcursor"
+#include "/home/birkhoff/.Xresources.d/xfont"
+#include "/home/birkhoff/.Xresources.d/xterm"
+#include "/home/birkhoff/.Xresources.d/urxvt"
+!! -----------------------------------------------------------------------------

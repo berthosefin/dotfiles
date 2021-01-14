@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/chris-lawton-5IHz5WhosQE-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#faf9f6",
+        "foreground": "#665048",
+        "cursor": "#665048"
+    },
+    "colors": {
+        "color0": "#faf9f6",
+        "color1": "#BAA99A",
+        "color2": "#C3AF9C",
+        "color3": "#C8B8A7",
+        "color4": "#D3C9B8",
+        "color5": "#E2C9A7",
+        "color6": "#B3BBC1",
+        "color7": "#665048",
+        "color8": "#878176",
+        "color9": "#BAA99A",
+        "color10": "#C3AF9C",
+        "color11": "#C8B8A7",
+        "color12": "#D3C9B8",
+        "color13": "#E2C9A7",
+        "color14": "#B3BBC1",
+        "color15": "#665048"
+    }
+}

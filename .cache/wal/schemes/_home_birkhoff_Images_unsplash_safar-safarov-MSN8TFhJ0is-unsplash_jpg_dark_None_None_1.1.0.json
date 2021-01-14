@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/safar-safarov-MSN8TFhJ0is-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#141512",
+        "foreground": "#d3dae0",
+        "cursor": "#d3dae0"
+    },
+    "colors": {
+        "color0": "#141512",
+        "color1": "#778C8C",
+        "color2": "#64BEA4",
+        "color3": "#95A1A9",
+        "color4": "#A0CFAA",
+        "color5": "#ACB9C5",
+        "color6": "#9DD7D0",
+        "color7": "#d3dae0",
+        "color8": "#93989c",
+        "color9": "#778C8C",
+        "color10": "#64BEA4",
+        "color11": "#95A1A9",
+        "color12": "#A0CFAA",
+        "color13": "#ACB9C5",
+        "color14": "#9DD7D0",
+        "color15": "#d3dae0"
+    }
+}

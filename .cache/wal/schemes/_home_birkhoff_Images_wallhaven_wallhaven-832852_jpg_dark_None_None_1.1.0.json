@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-832852.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#222e2f",
+        "foreground": "#c2d3c9",
+        "cursor": "#c2d3c9"
+    },
+    "colors": {
+        "color0": "#222e2f",
+        "color1": "#539C96",
+        "color2": "#57A29C",
+        "color3": "#68A69B",
+        "color4": "#5CA8A3",
+        "color5": "#6DB3A8",
+        "color6": "#7DC2B3",
+        "color7": "#c2d3c9",
+        "color8": "#87938c",
+        "color9": "#539C96",
+        "color10": "#57A29C",
+        "color11": "#68A69B",
+        "color12": "#5CA8A3",
+        "color13": "#6DB3A8",
+        "color14": "#7DC2B3",
+        "color15": "#c2d3c9"
+    }
+}

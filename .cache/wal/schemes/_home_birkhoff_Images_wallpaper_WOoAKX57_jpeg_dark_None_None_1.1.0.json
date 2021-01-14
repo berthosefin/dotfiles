@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallpaper/WOoAKX57.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#050C03",
+        "foreground": "#d8d4a1",
+        "cursor": "#d8d4a1"
+    },
+    "colors": {
+        "color0": "#050C03",
+        "color1": "#5D822F",
+        "color2": "#718A30",
+        "color3": "#7B9545",
+        "color4": "#908E2E",
+        "color5": "#AB952F",
+        "color6": "#A0AA4E",
+        "color7": "#d8d4a1",
+        "color8": "#979470",
+        "color9": "#5D822F",
+        "color10": "#718A30",
+        "color11": "#7B9545",
+        "color12": "#908E2E",
+        "color13": "#AB952F",
+        "color14": "#A0AA4E",
+        "color15": "#d8d4a1"
+    }
+}

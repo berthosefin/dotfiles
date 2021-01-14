@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallpaper/Abstract Archlinux Wallpaper 10042020-07(2).png",
+    "alpha": "100",
+    "special": {
+        "background": "#fdfefe",
+        "foreground": "#285798",
+        "cursor": "#285798"
+    },
+    "colors": {
+        "color0": "#fdfefe",
+        "color1": "#3294C9",
+        "color2": "#19B1DA",
+        "color3": "#2BAFCD",
+        "color4": "#458ACD",
+        "color5": "#1ACDD6",
+        "color6": "#24C8D0",
+        "color7": "#285798",
+        "color8": "#949696",
+        "color9": "#3294C9",
+        "color10": "#19B1DA",
+        "color11": "#2BAFCD",
+        "color12": "#458ACD",
+        "color13": "#1ACDD6",
+        "color14": "#24C8D0",
+        "color15": "#285798"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/jose-luis-sanchez-pereyra-14KbjlzBdY4-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#211412",
+        "foreground": "#bfc4a2",
+        "cursor": "#bfc4a2"
+    },
+    "colors": {
+        "color0": "#211412",
+        "color1": "#5D4743",
+        "color2": "#664F4D",
+        "color3": "#716957",
+        "color4": "#79862E",
+        "color5": "#7A864B",
+        "color6": "#8D9B1F",
+        "color7": "#bfc4a2",
+        "color8": "#858971",
+        "color9": "#5D4743",
+        "color10": "#664F4D",
+        "color11": "#716957",
+        "color12": "#79862E",
+        "color13": "#7A864B",
+        "color14": "#8D9B1F",
+        "color15": "#bfc4a2"
+    }
+}

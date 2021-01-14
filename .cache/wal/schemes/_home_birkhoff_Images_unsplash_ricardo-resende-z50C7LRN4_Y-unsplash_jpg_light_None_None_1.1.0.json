@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/ricardo-resende-z50C7LRN4_Y-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#f1f7f6",
+        "foreground": "#522533",
+        "cursor": "#522533"
+    },
+    "colors": {
+        "color0": "#f1f7f6",
+        "color1": "#F5CD60",
+        "color2": "#104390",
+        "color3": "#046B95",
+        "color4": "#EA4B95",
+        "color5": "#13899F",
+        "color6": "#55A0AA",
+        "color7": "#522533",
+        "color8": "#647976",
+        "color9": "#F5CD60",
+        "color10": "#104390",
+        "color11": "#046B95",
+        "color12": "#EA4B95",
+        "color13": "#13899F",
+        "color14": "#55A0AA",
+        "color15": "#522533"
+    }
+}

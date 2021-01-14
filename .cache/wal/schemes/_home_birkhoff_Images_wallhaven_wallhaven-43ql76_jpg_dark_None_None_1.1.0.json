@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallhaven/wallhaven-43ql76.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0E182F",
+        "foreground": "#d0dae9",
+        "cursor": "#d0dae9"
+    },
+    "colors": {
+        "color0": "#0E182F",
+        "color1": "#7688A6",
+        "color2": "#889AB7",
+        "color3": "#98ABC9",
+        "color4": "#A9BBD9",
+        "color5": "#ACBFE0",
+        "color6": "#AFC1DE",
+        "color7": "#d0dae9",
+        "color8": "#9198a3",
+        "color9": "#7688A6",
+        "color10": "#889AB7",
+        "color11": "#98ABC9",
+        "color12": "#A9BBD9",
+        "color13": "#ACBFE0",
+        "color14": "#AFC1DE",
+        "color15": "#d0dae9"
+    }
+}

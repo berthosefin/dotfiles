@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/omid-armin-pnxMDGBj6Jw-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#041115",
+        "foreground": "#d1dcdf",
+        "cursor": "#d1dcdf"
+    },
+    "colors": {
+        "color0": "#041115",
+        "color1": "#605C5B",
+        "color2": "#717873",
+        "color3": "#4EA4AE",
+        "color4": "#9FA9AB",
+        "color5": "#C4BEB5",
+        "color6": "#A0BAC4",
+        "color7": "#d1dcdf",
+        "color8": "#929a9c",
+        "color9": "#605C5B",
+        "color10": "#717873",
+        "color11": "#4EA4AE",
+        "color12": "#9FA9AB",
+        "color13": "#C4BEB5",
+        "color14": "#A0BAC4",
+        "color15": "#d1dcdf"
+    }
+}

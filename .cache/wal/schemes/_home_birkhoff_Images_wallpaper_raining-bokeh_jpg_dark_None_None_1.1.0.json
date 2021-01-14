@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallpaper/raining-bokeh.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#222434",
+        "foreground": "#d9c8de",
+        "cursor": "#d9c8de"
+    },
+    "colors": {
+        "color0": "#222434",
+        "color1": "#5D519B",
+        "color2": "#3B56D5",
+        "color3": "#615CD5",
+        "color4": "#995BA3",
+        "color5": "#C25FC6",
+        "color6": "#5BA1C0",
+        "color7": "#d9c8de",
+        "color8": "#978c9b",
+        "color9": "#5D519B",
+        "color10": "#3B56D5",
+        "color11": "#615CD5",
+        "color12": "#995BA3",
+        "color13": "#C25FC6",
+        "color14": "#5BA1C0",
+        "color15": "#d9c8de"
+    }
+}

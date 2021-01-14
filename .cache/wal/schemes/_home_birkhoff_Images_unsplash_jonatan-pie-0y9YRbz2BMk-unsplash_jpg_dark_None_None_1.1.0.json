@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/unsplash/jonatan-pie-0y9YRbz2BMk-unsplash.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0d1115",
+        "foreground": "#c8c4e0",
+        "cursor": "#c8c4e0"
+    },
+    "colors": {
+        "color0": "#0d1115",
+        "color1": "#887773",
+        "color2": "#2F609B",
+        "color3": "#5C629E",
+        "color4": "#5E43A5",
+        "color5": "#896FC3",
+        "color6": "#638FBB",
+        "color7": "#c8c4e0",
+        "color8": "#8c899c",
+        "color9": "#887773",
+        "color10": "#2F609B",
+        "color11": "#5C629E",
+        "color12": "#5E43A5",
+        "color13": "#896FC3",
+        "color14": "#638FBB",
+        "color15": "#c8c4e0"
+    }
+}

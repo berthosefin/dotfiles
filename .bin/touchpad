@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# To activate touchpad
+# birkhoff
+
+synclient TapButton1=1

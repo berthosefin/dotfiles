@@ -41,7 +41,7 @@ set_from_resource $red color1 #ffffff
 exec --no-startup-id ~/.fehbg &
 
 # polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh --forest &
+exec_always --no-startup-id ~/.config/polybar/launch.sh --grayblocks &
 
 # applications
 exec --no-startup-id picom &
@@ -284,7 +284,7 @@ bindsym $super+x exec --no-startup-id next-workspace
 #####################################################################################################################
 
 # assign workspaces
-assign [class=firefox|Brave-browser] 2
+assign [class=firefox|Google-chrome] 2
 assign [class=Gimp*|Inkscape|Darktable|kdenlive] 3
 assign [class=VirtualBox*|code-oss] 4
 assign [class=Lxappearance|Oomox|Pavucontrol|GParted] 5

@@ -1,24 +1,8 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/home/birkhoff/Bureau/Windows 7.desktop]
-row=7
-col=18
-
-[/home/birkhoff/Bureau/Windows XP.desktop]
-row=6
-col=18
-
-[/home/birkhoff/Bureau/Windows Server.desktop]
-row=5
-col=18
-
 [6C90E46090E431EE]
 row=2
-col=22
-
-[534D36F54F505EAF]
-row=3
 col=22
 
 [Corbeille]

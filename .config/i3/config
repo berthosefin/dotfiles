@@ -38,7 +38,8 @@ set_from_resource $red color1 #ffffff
 # set wallpaper
 #exec --no-startup-id nitrogen --restore &
 #exec --no-startup-id feh-blur --blur 5 &
-exec --no-startup-id ~/.fehbg &
+#exec --no-startup-id ~/.fehbg &
+exec --no-startup-id feh --randomize --bg-fill ~/Images/Nord/*
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh --grayblocks &
@@ -80,6 +81,9 @@ bindsym $super+Shift+w exec firefox
 
 # start a file manager
 bindsym $super+Shift+f exec thunar
+
+# start a music player
+bindsym $alt+m exec urxvt -e ncmpcpp
 
 # lock screen
 bindsym $alt+l exec ~/.bin/blurlock
@@ -386,7 +390,7 @@ for_window [class="Xfce4-appfinder"] floating enable
 for_window [class="Xfce4-settings-manager"] floating disable
 for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="xdman-Main"] floating enable
-for_window [class="URxvt|Xfce4-terminal|Gnome-terminal"] floating enable
+for_window [class="XTerm|URxvt|Xfce4-terminal|Gnome-terminal"] floating enable
 #for_window [class=VirtualBox*] floating disable
 
 for_window [title="Copying"] floating enable

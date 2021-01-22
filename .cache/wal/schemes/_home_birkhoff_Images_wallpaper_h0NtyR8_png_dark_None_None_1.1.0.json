@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/Images/wallpaper/h0NtyR8.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1b1e25",
+        "foreground": "#cbdee3",
+        "cursor": "#cbdee3"
+    },
+    "colors": {
+        "color0": "#1b1e25",
+        "color1": "#5C758D",
+        "color2": "#6D92A9",
+        "color3": "#78B4C8",
+        "color4": "#9BADA1",
+        "color5": "#87ADC6",
+        "color6": "#8BC1D1",
+        "color7": "#cbdee3",
+        "color8": "#8e9b9e",
+        "color9": "#5C758D",
+        "color10": "#6D92A9",
+        "color11": "#78B4C8",
+        "color12": "#9BADA1",
+        "color13": "#87ADC6",
+        "color14": "#8BC1D1",
+        "color15": "#cbdee3"
+    }
+}

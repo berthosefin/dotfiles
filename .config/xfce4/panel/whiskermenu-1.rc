@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=xfce-wm-settings.desktop,mixxx.desktop,xfce-ui-settings.desktop,org.gnome.Nautilus.desktop,libreoffice-startcenter.desktop,xfce-mouse-settings.desktop,xfce4-web-browser.desktop,xfce4-file-manager.desktop,xfce-wmtweaks-settings.desktop,clementine.desktop
+recent=xfce4-about.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,org.gnome.Nautilus.desktop,libreoffice-startcenter.desktop,xfce-mouse-settings.desktop,xfce4-web-browser.desktop,xfce4-file-manager.desktop,xfce-wmtweaks-settings.desktop,clementine.desktop
 button-icon=archlinux-logo
 button-single-row=false
 show-button-title=false

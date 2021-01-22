@@ -1,0 +1,23 @@
+frame * {
+    border-color: #b2cfff;
+}
+
+label#userlbl {
+    font-size: 18px;
+    color: #b2cfff;
+}
+label#lbl {
+    font-size: 14px;
+    color: #aabcda;
+}
+button {
+    border-color: #282828;
+    border-radius: 12px;
+    background-color: #1d2025;
+}
+
+button:hover {
+    border-color: #2d3d57;
+    background-color: #2d3d57;
+    box-shadow: 0px 0px 8px 2px rgba(178, 207, 255, 0.47);
+}

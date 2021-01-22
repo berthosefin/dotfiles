@@ -1,2 +1,3 @@
 alias ll='ls -la'
 alias lc='colorls'
+alias wp-docker="docker-compose run --rm wpcli"

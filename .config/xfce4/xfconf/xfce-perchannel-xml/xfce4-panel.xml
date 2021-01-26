@@ -59,6 +59,7 @@
       </property>
       <property name="size-max" type="uint" value="16"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
         <value type="string" value="gestionnaire de tâches"/>
         <value type="string" value="synapse"/>
         <value type="string" value="pamac-tray"/>

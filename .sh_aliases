@@ -1,3 +1,4 @@
-alias ll='ls -la'
-alias lc='colorls'
+alias ll="ls -la"
+alias lc="colorls"
+alias tb="taskbook"
 alias wp-docker="docker-compose run --rm wpcli"

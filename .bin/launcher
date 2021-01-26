@@ -5,5 +5,5 @@
 
 rofi -modi run,drun \
 	-show drun\
-	-config "~/.config/rofi/themes/full.rasi"
+	-config "~/.config/rofi/themes/WhiteSur.rasi"
 	-show-icons

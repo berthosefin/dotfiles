@@ -101,9 +101,6 @@ bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
 # settings
 bindsym control+$alt+m exec --no-startup-id xfce4-settings-manager
 
-# others
-bindsym $super+n exec --no-startup-id notify-todo
-
 #####################################################################################################################
 #################       Screenshots
 #####################################################################################################################

@@ -3,12 +3,12 @@
 <channel name="thunar" version="1.0">
   <property name="last-view" type="string" value="ThunarIconView"/>
   <property name="last-location-bar" type="string" value="ThunarLocationButtons"/>
-  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_50_PERCENT"/>
+  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
   <property name="last-separator-position" type="int" value="161"/>
-  <property name="last-window-maximized" type="bool" value="true"/>
+  <property name="last-window-maximized" type="bool" value="false"/>
   <property name="last-show-hidden" type="bool" value="true"/>
   <property name="last-window-width" type="int" value="1354"/>
-  <property name="last-window-height" type="int" value="703"/>
+  <property name="last-window-height" type="int" value="722"/>
   <property name="last-menubar-visible" type="bool" value="false"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="file:///"/>
@@ -23,8 +23,8 @@
   <property name="misc-single-click" type="bool" value="false"/>
   <property name="shortcuts-icon-size" type="string" value="THUNAR_ICON_SIZE_16"/>
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>
-  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,130,50,50,477,50,50,60,50,50"/>
+  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
+  <property name="last-details-view-column-widths" type="string" value="50,75,50,50,383,50,50,60,50,103"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
 </channel>

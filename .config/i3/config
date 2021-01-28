@@ -62,7 +62,7 @@ exec --no-startup-id xset +fp ~/.fonts/misc
 #####################################################################################################################
 
 # program launcher
-bindsym $super+Shift+d exec dmenu_run -p 'Run ' -fn 'iosevka:size=10' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg"
+bindsym $super+Shift+d exec dmenu_run -p 'RUN ' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg"
 bindsym $super+F11 exec --no-startup-id launcher
 bindsym $super+d exec --no-startup-id rofi -show drun
 bindsym $alt+F3 exec --no-startup-id xfce4-appfinder
@@ -288,9 +288,9 @@ bindsym $super+x exec --no-startup-id next-workspace
 
 # assign workspaces
 assign [class=firefox|Google-chrome] 2
-assign [class=Gimp*|Inkscape|Darktable|kdenlive] 3
+assign [class=Gimp*|Inkscape|Darktable|kdenlive|Skype|TeamViewer] 3
 assign [class=VirtualBox*|code-oss] 4
-assign [class=Lxappearance|Oomox|Pavucontrol|GParted] 5
+assign [class=Xfce4-settings-manager|Lxappearance|Oomox|Pavucontrol|GParted|Deluge-gtk|xdman-Main] 5
 
 #####################################################################################################################
 #################                          border control                                           #################
@@ -378,19 +378,13 @@ bindsym $super+Shift+u scratchpad show
 for_window [instance='lock'] floating enable; focus floating
 #for_window [class="^.*"] floating enable
 for_window [class="Galculator"] floating enable
-for_window [class="Font-manager"] floating enable
-#for_window [class="qt5ct|Lxappearance] floating enable
-for_window [class="Nitrogen"] floating enable
-for_window [class="Pavucontrol"] floating enable
-for_window [class="^Vlc$"] floating disable
+for_window [class="Pavucontrol|Lxappearance"] floating enable
 for_window [class="mpv"] floating enable
-for_window [class="Xfburn"] floating disable
 for_window [class="Xfce4-appfinder"] floating enable
-for_window [class="Xfce4-settings-manager"] floating disable
 for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="xdman-Main"] floating enable
 for_window [class="XTerm|URxvt|Xfce4-terminal|Gnome-terminal"] floating enable
-#for_window [class=VirtualBox*] floating disable
+for_window [class=VirtualBox*] floating disable
 
 for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable

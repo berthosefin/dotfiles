@@ -10,4 +10,5 @@ rofi -modi run,drun \
 	-width 50 \
 	-padding 30 \
 	-hide-scrollbar \
-	-show-icons \
+	-config "~/.config/polybar/topy/scripts/rofi/rofin.rasi" \
+	-show-icons

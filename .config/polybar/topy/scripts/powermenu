@@ -3,7 +3,7 @@
 # By Birkhoff
 #
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'System' -location 3 -xoffset -5 -yoffset 40 -width 10 -hidescrollbar -line-padding 4 -padding 25 -lines 6 <<< "> Lock|> Exit|> Suspend|> Hibernate|> Reboot|> Shutdown")"
+MENU="$(rofi -config "~/.config/polybar/topy/scripts/rofi/rofin.rasi" -sep "|" -dmenu -i -p 'System' -location 3 -xoffset -5 -yoffset 40 -width 10 -hidescrollbar -line-padding 4 -padding 25 -lines 6 <<< "> Lock|> Exit|> Suspend|> Hibernate|> Reboot|> Shutdown")"
             case "$MENU" in
 		*Lock) ~/.bin/blurlock ;;
 		*Exit) i3-msg exit ;;

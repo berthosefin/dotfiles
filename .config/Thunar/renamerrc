@@ -22,7 +22,7 @@ Start=01
 
 [ThunarSbrInsertRenamer]
 Offset=0
-Text=-Edit
+Text=.txt
 Mode=THUNAR_SBR_INSERT_MODE_INSERT
 OffsetMode=THUNAR_SBR_OFFSET_MODE_RIGHT
 

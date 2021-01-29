@@ -66,6 +66,7 @@
         <value type="string" value="applet networkmanager"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="Skype1"/>
         <value type="string" value="vlc"/>
       </property>
     </property>

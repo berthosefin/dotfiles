@@ -8,16 +8,16 @@ print_info() {
     #info "Host" model
     info "Kernel" kernel
     info "Uptime" uptime
-    #info "Packages" packages
+    info "Packages" packages
     info "Shell" shell
     #info "Resolution" resolution
     #info "DE" de
     info "WM" wm
-    info "WM Theme" wm_theme
-    #info "Theme" theme
-    #info "Icons" icons
+    #info "WM Theme" wm_theme
+    info "Theme" theme
+    info "Icons" icons
     info "Terminal" term
-    #info "Terminal Font" term_font
+    info "Terminal Font" term_font
     #info "CPU" cpu
     #info "GPU" gpu
     #info "Memory" memory
@@ -745,7 +745,7 @@ image_source="auto"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-ascii_distro="Arch_small"
+ascii_distro="Arch"
 
 # Ascii Colors
 #

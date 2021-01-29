@@ -1,0 +1,41 @@
+#!/bin/bash
+
+# Change polybar style
+DIR="$HOME/.config/polybar"
+STYLE=$(sed -n '4s/STYLE=//p' $DIR/launch.sh);
+
+sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+
+if [[ "$1" == "blocks" ]]; then
+	style="topy"
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "fin" ]]; then
+	style="grayblocks"
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "forest" ]]; then
+	style="blocks"
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "grayblocks" ]]; then
+	style="forest"
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "topy" ]]; then
+	style="forest-bitmap"
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "topy" ]]; then
+	style="forest-bitmap"
+	sh $DIR/launch.sh
+
+else
+	cat <<- EOF
+	Usage : cpolybar [THEME]
+		
+	Available Themes :
+	- blocks	- fin	- forest
+	- grayblocks	- topy	- wave
+	EOF
+fi

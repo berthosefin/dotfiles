@@ -1,14 +1,11 @@
 /*
  *
- * Author  : Aditya Shakya
- * Mail    : adi1090x@gmail.com
- * Github  : @adi1090x
- * Twitter : @adi1090x
+ * User  : Birkhoff
  *
  */
 
 configuration {
-	font:							"Iosevka Nerd Font 10";
+	font:							"Iosevka Nerd Font 8";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";

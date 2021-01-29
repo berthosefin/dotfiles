@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rofi -no-lazy-grab -show drun -theme ~/.config/polybar/fin/scripts/rofi/launcher.rasi

@@ -36,13 +36,13 @@ set_from_resource $red color1 #ffffff
 #####################################################################################################################
 
 # set wallpaper
-#exec --no-startup-id nitrogen --restore &
-#exec --no-startup-id feh-blur --blur 5 &
 #exec --no-startup-id ~/.fehbg &
-exec --no-startup-id feh --randomize --bg-fill ~/Images/Nord/*
+#exec --no-startup-id feh-blur --blur 5 &
+#exec --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
+exec --no-startup-id ~/.bin/randomwall &
 
 # polybar
-exec_always --no-startup-id ~/.config/polybar/launch.sh --grayblocks &
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # applications
 exec --no-startup-id picom &
@@ -100,6 +100,10 @@ bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
 
 # settings
 bindsym control+$alt+m exec --no-startup-id xfce4-settings-manager
+
+# others
+bindsym $alt+f exec --no-startup-id fsearch
+bindsym $alt+g exec --no-startup-id galculator
 
 #####################################################################################################################
 #################       Screenshots
@@ -290,7 +294,7 @@ bindsym $super+x exec --no-startup-id next-workspace
 assign [class=firefox|Google-chrome] 2
 assign [class=Gimp*|Inkscape|Darktable|kdenlive|Skype|TeamViewer] 3
 assign [class=VirtualBox*|code-oss] 4
-assign [class=Xfce4-settings-manager|Lxappearance|Oomox|Pavucontrol|GParted|Deluge-gtk|xdman-Main] 5
+assign [class=Xfce4-settings-manager|Lxappearance|Oomox|Pavucontrol|GParted|Deluge-gtk|Youtube-dl-gui] 5
 
 #####################################################################################################################
 #################                          border control                                           #################
@@ -378,11 +382,12 @@ bindsym $super+Shift+u scratchpad show
 for_window [instance='lock'] floating enable; focus floating
 #for_window [class="^.*"] floating enable
 for_window [class="Galculator"] floating enable
-for_window [class="Pavucontrol|Lxappearance"] floating enable
+for_window [class="Pavucontrol"] floating enable
 for_window [class="mpv"] floating enable
-for_window [class="Xfce4-appfinder"] floating enable
+for_window [class="Xfce4-appfinder|Fsearch"] floating enable
 for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="xdman-Main"] floating enable
+for_window [class="Youtube-dl-gui"] floating enable
 for_window [class="XTerm|URxvt|Xfce4-terminal|Gnome-terminal"] floating enable
 for_window [class=VirtualBox*] floating disable
 

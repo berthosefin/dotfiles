@@ -1,0 +1,14 @@
+/* Color-Scheme */
+
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    BG:    @background;
+    BGA:   @active-background;
+    FG:    @foreground;
+    SEL:   #F48FB1;
+    SEL1:   #92B6F4;
+    UGT:   #BD99FF;
+	ON:    #A1EFD3;
+	OFF:   #F48FB1;
+}

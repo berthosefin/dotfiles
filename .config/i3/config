@@ -38,8 +38,8 @@ set_from_resource $red color1 #ffffff
 # set wallpaper
 #exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id feh-blur --blur 5 &
-#exec --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
-exec --no-startup-id ~/.bin/randomwall &
+#exec --no-startup-id ~/.bin/randomwall &
+exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -244,10 +244,10 @@ floating_modifier $super
 bindsym $super+space floating toggle
 
 # change focus
-bindsym $super+j focus left
-bindsym $super+k focus down
-bindsym $super+l focus up
-bindsym $super+m focus right
+bindsym $super+h focus left
+bindsym $super+j focus down
+bindsym $super+k focus up
+bindsym $super+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $super+Left focus left
@@ -256,10 +256,10 @@ bindsym $super+Up focus up
 bindsym $super+Right focus right
 
 # move focused window
-bindsym $super+Shift+j move left
-bindsym $super+Shift+k move down
-bindsym $super+Shift+l move up
-bindsym $super+Shift+m move right
+bindsym $super+Shift+h move left
+bindsym $super+Shift+j move down
+bindsym $super+Shift+k move up
+bindsym $super+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $super+Shift+Left move left
@@ -346,10 +346,10 @@ for_window [class=".*"] title_format " <span foreground='$fg' background='$bg'> 
 default_orientation horizontal
 
 # split in horizontal orientation
-bindsym $super+h split h
+bindsym $alt+h split h
 
 # split in vertical orientation
-bindsym $super+v split v
+bindsym $alt+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $super+f fullscreen toggle
@@ -408,10 +408,10 @@ for_window [window_role="setup"] floating enable
 # resize window (you can also use the mouse for that)
 bindsym $super+r mode "resize"
 mode "resize" {
-        bindsym j      resize shrink width 10 px or 10 ppt
-        bindsym k       resize grow height 10 px or 10 ppt
-        bindsym l         resize shrink height 10 px or 10 ppt
-        bindsym m      resize grow width 10 px or 10 ppt
+        bindsym h      resize shrink width 10 px or 10 ppt
+        bindsym j       resize grow height 10 px or 10 ppt
+        bindsym k         resize shrink height 10 px or 10 ppt
+        bindsym l      resize grow width 10 px or 10 ppt
 
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
@@ -477,7 +477,7 @@ gaps bottom 0
 #smart_gaps on
 #smart_borders on
 #border_radius 5
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 
 #####################################################################################################################
 #################       Bar appearance

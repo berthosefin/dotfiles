@@ -12,28 +12,33 @@
 
 " Set compatibility to Vim only.
 set nocompatible
-filetype off
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" Plugins
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'preservim/nerdtree'
-
-" All of your Plugins must be added before the following line
-call vundle#end()
+" Turn on syntax highlighting and plugins.
+syntax on
+filetype on
 filetype plugin indent on
+
+" Encoding
+set encoding=utf-8
+
+" Show line numbers
+set relativenumber
+highlight LineNr ctermfg=white
 
 " Always show current position
 set ruler
 
-" Turn on syntax highlighting.
-syntax on
+" Highlight matching search patterns
+set hlsearch
 
-" Turn off modelines
-set modelines=0
+" Enable incremental search
+set incsearch
+
+" Ignore case when searching
+set ignorecase
+
+" When searching try to be smart about cases 
+set smartcase
 
 " Uncomment below to set the max textwidth. Use a value corresponding to the width of your screen.
 " set textwidth=80
@@ -44,11 +49,15 @@ set softtabstop=4
 set expandtab
 set noshiftround
 
-" Ignore case when searching
-set ignorecase
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
 
-" When searching try to be smart about cases 
-set smartcase
+" Display all matching files when we tab complete
+set wildmenu
+
+" Turn off modelines
+set modelines=0
 
 " Don't redraw while executing macros (good performance config)
 set lazyredraw
@@ -70,22 +79,14 @@ set cmdheight=1
 " Highlight matching pairs of brackets. Use the '%' character to jump between them.
 set matchpairs+=<:>
 
-" Display different types of white spaces.
-"set list
-"set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
-
-" Show line numbers
-set number
-highlight LineNr ctermfg=black
-
 " Set status line display
 set laststatus=2
-hi StatusLine ctermfg=NONE ctermbg=red cterm=NONE
-hi StatusLineNC ctermfg=black ctermbg=red cterm=NONE
-hi User1 ctermfg=black ctermbg=magenta
+hi StatusLine ctermfg=black ctermbg=gray cterm=NONE
+hi StatusLineNC ctermfg=black ctermbg=gray cterm=NONE
+hi User1 ctermfg=black ctermbg=white
 hi User2 ctermfg=NONE ctermbg=NONE
-hi User3 ctermfg=black ctermbg=blue
-hi User4 ctermfg=black ctermbg=cyan
+hi User3 ctermfg=black ctermbg=gray
+hi User4 ctermfg=black ctermbg=white
 set statusline=\                    " Padding
 set statusline+=%f                  " Path to the file
 set statusline+=\ %1*\              " Padding & switch colour
@@ -102,20 +103,13 @@ set statusline+=\                   " Padding
 set statusline+=%L                  " Total line
 set statusline+=\                   " Padding
 
-" Encoding
-set encoding=utf-8
-
-" Highlight matching search patterns
-set hlsearch
-
-" Enable incremental search
-set incsearch
-
-" Include matching uppercase words with lowercase search term
-set ignorecase
-
-" Include only uppercase words with uppercase search term
-set smartcase
+" Tweaks for browser
+let g:newtrw_banner=0           " disable annoying banner
+let g:newtrw_browser_split=4    " open in prior window
+let g:newtrw_altv=1             " open splits to the right
+let g:newtrw_liststyle=3        " tree view
+let g:newtrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide=',\(^\|\s\s)\zs\.\S\+'
 
 " Store info from no more than 100 files at a time, 9999 lines of text
 " 100kb of data. Useful for copying large amounts of data between files.

@@ -4,30 +4,34 @@
 DIR="$HOME/.config/polybar"
 STYLE=$(sed -n '4s/STYLE=//p' $DIR/launch.sh);
 
-sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-
 if [[ "$1" == "blocks" ]]; then
-	style="topy"
+	style="blocks"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "fin" ]]; then
-	style="grayblocks"
+	style="fin"
+	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "forest" ]]; then
-	style="blocks"
+	style="forest"
+   	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "grayblocks" ]]; then
-	style="forest"
+	style="grayblocks"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 elif [[ "$1" == "topy" ]]; then
-	style="forest-bitmap"
+	style="topy"
+	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
-elif [[ "$1" == "topy" ]]; then
-	style="forest-bitmap"
+elif [[ "$1" == "wave" ]]; then
+	style="wave"
+	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
 else

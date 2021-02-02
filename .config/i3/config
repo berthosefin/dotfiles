@@ -472,11 +472,8 @@ mode "$mode_gaps_outer" {
 # set gaps
 gaps inner 5
 gaps outer 0
-gaps top 0
-gaps bottom 0
-#smart_gaps on
-#smart_borders on
-#border_radius 5
+smart_gaps on
+smart_borders on
 for_window [class="^.*"] border pixel 1
 
 #####################################################################################################################

@@ -12,6 +12,7 @@
       <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
+        <value type="int" value="3"/>
         <value type="int" value="2"/>
         <value type="int" value="4"/>
         <value type="int" value="12"/>
@@ -66,12 +67,13 @@
         <value type="string" value="applet networkmanager"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="redshift"/>
         <value type="string" value="Skype1"/>
         <value type="string" value="vlc"/>
       </property>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="%a %d %b, %R"/>
+      <property name="digital-format" type="string" value="%a %d, %R"/>
       <property name="mode" type="uint" value="2"/>
     </property>
     <property name="plugin-4" type="string" value="separator">
@@ -90,5 +92,9 @@
     <property name="plugin-15" type="string" value="notification-plugin"/>
     <property name="plugin-2" type="string" value="taskbar"/>
     <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
   </property>
 </channel>

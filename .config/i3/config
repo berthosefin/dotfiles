@@ -25,11 +25,11 @@ font pango:iosevka 8
 #####################################################################################################################
 
 # Xressources
-set_from_resource $bg background #000000
-set_from_resource $fg foreground #ffffff
-set_from_resource $ac color2 #777777
-set_from_resource $mf color4 #ffffff
-set_from_resource $red color1 #ffffff
+set_from_resource $bg background #2e3440
+set_from_resource $fg foreground #d8dee9
+set_from_resource $ac color2 #5e81ac
+set_from_resource $mf color4 #8fbcbb
+set_from_resource $red color1 #BF616A
 
 #####################################################################################################################
 #################       Autostart
@@ -37,25 +37,25 @@ set_from_resource $red color1 #ffffff
 
 # set wallpaper
 #exec --no-startup-id ~/.fehbg &
-#exec --no-startup-id feh-blur --blur 5 &
 #exec --no-startup-id ~/.bin/randomwall &
 exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
+# compositor
+exec_always --no-startup-id picom &
+
 # applications
-exec --no-startup-id picom &
-exec --no-startup-id dunst &
 #exec --no-startup-id conky &
-#exec --no-startup-id wal -R &
+exec --no-startup-id dunst &
 exec --no-startup-id mpd &
 exec --no-startup-id redshift &
 exec --no-startup-id xsettingsd &
 exec --no-startup-id xfce4-power-manager &
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id xrdb ~/.Xresources &
 exec --no-startup-id xset +fp ~/.fonts/misc
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #####################################################################################################################
 #################       Menu
@@ -72,10 +72,10 @@ bindsym $alt+F3 exec --no-startup-id xfce4-appfinder
 #####################################################################################################################
 
 # start a terminal
-bindsym $super+Return exec xfce4-terminal
+bindsym $super+Return exec termite
 
 # start an alternative terminal
-bindsym $super+Shift+Return exec gnome-terminal
+bindsym $super+Shift+Return exec xfce4-terminal
 
 # start a web browser
 bindsym $super+Shift+w exec firefox
@@ -84,22 +84,16 @@ bindsym $super+Shift+w exec firefox
 bindsym $super+Shift+f exec thunar
 
 # start a music player
-bindsym $alt+m exec urxvt -e ncmpcpp
+bindsym $alt+m exec termite -e ncmpcpp
+
+# system monitor
+bindsym control+Shift+Escape exec termite -e htop
 
 # lock screen
 bindsym $alt+l exec ~/.bin/blurlock
 
 # rofi theme selector
 bindsym control+$alt+r exec --no-startup-id rofi-theme-selector
-
-# pavucontrol
-bindsym control+$alt+u exec --no-startup-id pavucontrol
-
-# system monitor
-bindsym control+Shift+Escape exec --no-startup-id xfce4-taskmanager;focus
-
-# settings
-bindsym control+$alt+m exec --no-startup-id xfce4-settings-manager
 
 # others
 bindsym $alt+f exec --no-startup-id fsearch
@@ -142,7 +136,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20 # decrease
 
 # kill focused window
 bindsym $super+q kill
-bindsym $mod+Shift+q kill
+bindsym $super+Shift+q kill
 
 #####################################################################################################################
 #################       How to exit, logoff, suspend, ...
@@ -204,7 +198,7 @@ workspace 6 output $secondMonitor
 workspace 7 output $secondMonitor
 workspace 8 output $secondMonitor
 workspace 9 output $secondMonitor
-workspace 10 output $secondMonitor
+workspace 0 output $secondMonitor
 
 set $firstMonitor LVDS1
 set $secondMonitor LVDS1
@@ -292,9 +286,9 @@ bindsym $super+x exec --no-startup-id next-workspace
 
 # assign workspaces
 assign [class=firefox|Google-chrome] 2
-assign [class=Gimp*|Inkscape|Darktable|kdenlive|Skype|TeamViewer] 3
+assign [class=Gimp*|Inkscape|Darktable|kdenlive] 3
 assign [class=VirtualBox*|code-oss] 4
-assign [class=Xfce4-settings-manager|Lxappearance|Oomox|Pavucontrol|GParted|Deluge-gtk|Youtube-dl-gui] 5
+assign [class=Lxappearance|Pavucontrol|GParted] 5
 
 #####################################################################################################################
 #################                          border control                                           #################
@@ -368,27 +362,19 @@ bindsym $super+a focus parent
 # focus the child container
 bindsym $super+Shift+a focus child
 
-# move the currently focused container to the scratchpad
-bindsym $super+u move scratchpad
-
-# show/hide the scratchpad
-bindsym $super+Shift+u scratchpad show
-
 #####################################################################################################################
 #################       Floating mode
 #####################################################################################################################
 
 # floating mode
-for_window [instance='lock'] floating enable; focus floating
 #for_window [class="^.*"] floating enable
+for_window [instance='lock'] floating enable; focus floating
 for_window [class="Galculator"] floating enable
-for_window [class="Pavucontrol"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="Xfce4-appfinder|Fsearch"] floating enable
 for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="xdman-Main"] floating enable
-for_window [class="Youtube-dl-gui"] floating enable
-for_window [class="XTerm|URxvt|Xfce4-terminal|Gnome-terminal"] floating enable
+for_window [class="Termite|Xfce4-terminal|Gnome-terminal"] floating enable
 for_window [class=VirtualBox*] floating disable
 
 for_window [title="Copying"] floating enable

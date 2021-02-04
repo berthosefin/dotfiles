@@ -8,6 +8,5 @@
   bga:  @active-background;
   fga:  @active-foreground;
   fg:   @foreground;
-  ac:   #B9C244FF;
-  se:   #B9C24440;
+  ac:   @active-background;
 }

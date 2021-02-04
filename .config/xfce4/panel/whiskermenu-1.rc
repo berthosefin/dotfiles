@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=synapse.desktop,xfce-keyboard-settings.desktop,xfce4-about.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,org.gnome.Nautilus.desktop,libreoffice-startcenter.desktop,xfce-mouse-settings.desktop,xfce4-web-browser.desktop,xfce4-file-manager.desktop
+recent=synapse.desktop,xfce-workspaces-settings.desktop,xfce-keyboard-settings.desktop,xfce4-about.desktop,xfce-wm-settings.desktop,xfce-ui-settings.desktop,org.gnome.Nautilus.desktop,libreoffice-startcenter.desktop,xfce-mouse-settings.desktop,xfce4-web-browser.desktop
 button-icon=archlinux-logo
 button-single-row=false
 show-button-title=false
@@ -9,7 +9,7 @@ launcher-show-description=true
 launcher-show-tooltip=true
 item-icon-size=2
 hover-switch-category=true
-category-show-name=true
+category-show-name=false
 category-icon-size=0
 load-hierarchy=false
 view-as-icons=true

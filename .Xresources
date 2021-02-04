@@ -9,21 +9,3 @@ Xft.antialias: true
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
-
-! URxvt Appearance
-URxvt.font: -*-rissole-*
-URxvt.boldFont: -*-rissole-*
-URxvt.italicFont: -*-rissole-*
-URxvt.boldItalicfont: -*-rissole-*
-URxvt.letterSpace: 0
-URxvt.lineSpace: 0
-URxvt.geometry: 90x24
-URxvt.internalBorder: 24
-URxvt.cursorBlink: true
-URxvt.cursorUnderline: false
-URxvt.saveline: 2048
-URxvt.scrollBar: false
-URxvt.scrollBar_right: false
-URxvt.urgentOnBell: true
-URxvt.depth: 24
-URxvt.iso14755: false3

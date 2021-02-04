@@ -32,7 +32,9 @@ FontAllowBold=FALSE
 ShortcutsNoHelpkey=TRUE
 ShortcutsNoMenukey=TRUE
 ShortcutsNoMnemonics=TRUE
-ColorForeground=#000000
-ColorBackground=#ffffff
+ColorForeground=#c0c0bfbfbcbc
+ColorBackground=#24241f1f3131
 ColorPalette=#000000;#cd0000;#00cd00;#cdcd00;#0000cd;#cd00cd;#00cdcd;#e5e5e5;#7f7f7f;#ff0000;#00ff00;#ffff00;#5c5cff;#ff00ff;#00ffff;#ffffff
+TabActivityColor=#a5a51d1d2d2d
+ColorUseTheme=TRUE
 

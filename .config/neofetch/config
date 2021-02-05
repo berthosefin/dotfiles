@@ -1,23 +1,31 @@
 # See this wiki page for more info:
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
-    #info title
-    #info underline
+    info title
+    info underline
 
-    info "OS" distro
+    info "[]" distro
+    info "[]" kernel
+    info "[]" packages
+    info "[]" wm
+    info "[]" memory
+    info "[]" uptime
+    info cols
+
+    #info "OS" distro
     #info "Host" model
-    info "Kernel" kernel
-    info "Uptime" uptime
-    info "Packages" packages
-    info "Shell" shell
+    #info "Kernel" kernel
+    #info "Uptime" uptime
+    #info "Packages" packages
+    #info "Shell" shell
     #info "Resolution" resolution
     #info "DE" de
-    info "WM" wm
+    #info "WM" wm
     #info "WM Theme" wm_theme
-    info "Theme" theme
-    info "Icons" icons
-    info "Terminal" term
-    info "Terminal Font" term_font
+    #info "Theme" theme
+    #info "Icons" icons
+    #info "Terminal" term
+    #info "Terminal Font" term_font
     #info "CPU" cpu
     #info "GPU" gpu
     #info "Memory" memory
@@ -745,7 +753,7 @@ image_source="auto"
 #       Slackware, SunOS, LinuxLite, OpenSUSE, Raspbian,
 #       postmarketOS, and Void have a smaller logo variant.
 #       Use '{distro name}_small' to use the small variants.
-ascii_distro="Arch"
+ascii_distro="auto"
 
 # Ascii Colors
 #

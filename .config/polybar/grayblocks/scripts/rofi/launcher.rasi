@@ -104,7 +104,7 @@ element-text {
 }
 
 element selected {
-    background-color:               @bga;
+    background-color:               @ac;
     text-color:                     @fg;
 	border:							0px 0px 0px 0px;
     border-radius:                  0px;

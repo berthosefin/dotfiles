@@ -38,7 +38,7 @@ set_from_resource $red color1 #BF616A
 # set wallpaper
 #exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id ~/.bin/randomwall &
-exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
+exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Dracula/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -63,8 +63,8 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # program launcher
 bindsym $super+Shift+d exec dmenu_run -p 'RUN ' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg"
-bindsym $super+F11 exec --no-startup-id launcher
-bindsym $super+d exec --no-startup-id rofi -show drun
+bindsym $super+F11 exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/WhiteSur.rasi
+bindsym $super+d exec --no-startup-id rofi -show drun -show-icons
 bindsym $alt+F3 exec --no-startup-id xfce4-appfinder
 
 #####################################################################################################################
@@ -144,8 +144,7 @@ bindsym $super+Shift+q kill
 
 # exit i3 (logs you out of your X session)
 bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-#bindsym $super+e exec --no-startup-id powermenu
-bindsym $super+e exec --no-startup-id ~/.bin/hefflogout
+bindsym $super+e exec --no-startup-id powermenu
 
 # press alt and X to exit - check toolbar for next choices
 bindsym $alt+x mode "$mode_system"

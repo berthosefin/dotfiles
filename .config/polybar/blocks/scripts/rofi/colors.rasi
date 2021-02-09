@@ -8,5 +8,5 @@
   bga:  @active-background;
   fga:  @active-foreground;
   fg:   @foreground;
-  ac:   @selected-active-background;
+  ac:   @active-background;
 }

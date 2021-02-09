@@ -1,6 +1,11 @@
 #!/bin/bash
 
-# Change polybar style
+# ----------------------------------------------
+# Descritpion : Change polybar style
+# Autor : Berthose Fin (birkhoff)
+# Date : 2021-02-09
+# ----------------------------------------------
+
 DIR="$HOME/.config/polybar"
 STYLE=$(sed -n '4s/STYLE=//p' $DIR/launch.sh);
 
@@ -36,7 +41,7 @@ elif [[ "$1" == "wave" ]]; then
 
 else
 	cat <<- EOF
-	Usage : cpolybar [THEME]
+	Usage : spolybar [THEME]
 		
 	Available Themes :
 	- blocks	- fin	- forest

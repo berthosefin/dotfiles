@@ -35,7 +35,7 @@ prompt {
     enabled: 						true;
 	padding: 						0px;
 	background-color: 				@bga;
-	text-color: 					@ac;
+	text-color: 					@fg;
 	font:							"feather 12";
 }
 

@@ -5,146 +5,89 @@
  *
  */
 
-@import "~/.cache/wal/colors-rofi-dark.rasi"
+configuration {
+    display-drun:                   "Apps";
+    display-window:                 "Window";
+    show-icons:true;
+    terminal:"termite";
+}
+
+@import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-    font: "Iosevka 8";
-    display-drun:	"Apps";
-    display-window:	"Window";
-    show-icons:	true;
+    columns: 3;
+    background-color: @xbg;
+    border-color: #00000000;
+    text-color: @xfg;
+    font: "Iosevka 10";
 }
 
-window {
-    background-color: @background;
+#window {
+/*    fullscreen:true;
+	location:	 west;
+    anchor: west;*/
     border: 0;
+    border-radius: 4px;
+    padding: 40;
+    width: 70%;
+    height: 70%;
+}
+
+#mainbox {
+    background-color: #e9e9e900;
+    children: [inputbar, listview];
+    spacing: 10px;
+    /*margin: 20%;*/
+    padding: 20px 20px;
     border-radius: 5px;
-    padding: 2.5ch;
+    border: 1px;
+    border-color: @base0D;
 }
 
-mainbox {
-    border: 0;
-    padding: 0;
-}
 
-message {
-    border: 2px 0px 0px;
-    border-color: @border-color;
-    padding: 1px;
-}
-
-textbox {
-    text-color: @foreground;
-}
-
-inputbar {
-    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
-}
-
-textbox-prompt-colon {
-    expand: false;
-    str: ":";
-    margin: 0px 0.3em 0em 0em;
-    text-color: @normal-foreground;
-}
-
-listview {
+#listview {
+    background-color: #e9e9e900;
     fixed-height: 0;
-    border: 2px 0px 0px;
-    border-color: @border-color;
-    spacing: 2px;
-    scrollbar: true;
-    padding: 2px 0px 0px;
+    border: 0px;
+    spacing: 5px;
+    scrollbar: false;
+    padding: 10px 10px 0px;
 }
 
-element {
+#element {
+    background-color: #e9e9e900;
     border: 0;
-    border-radius: 5px;
-    padding: 3 0 3 4;
+    border-radius: 4px;
+    padding: 3 4 3 4 ;
 }
 
-element.normal.normal {
-    background-color: @normal-background;
-    text-color: @normal-foreground;
+#element selected {
+    background-color: #bd93f990;
+    text-color: @xfs;
 }
 
-element.normal.urgent {
-    background-color: @urgent-background;
-    text-color: @urgent-foreground;
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    background-color: #00000000;
 }
 
-element.normal.active {
-    background-color: @active-background;
-    text-color: @active-foreground;
+#case-indicator {
+    background-color: #00000000;
+    spacing:    0;
+}
+#entry {
+    background-color: #00000000;
+    spacing:    0;
+}
+#prompt {
+    background-color: #00000000;
+    spacing:    0;
 }
 
-element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color: @selected-normal-foreground;
-}
-
-element.selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color: @selected-urgent-foreground;
-}
-
-element.selected.active {
-    background-color: @selected-active-background;
-    text-color: @selected-active-foreground;
-}
-
-element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color: @alternate-normal-foreground;
-}
-
-element.alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color: @alternate-urgent-foreground;
-}
-
-element.alternate.active {
-    background-color: @alternate-active-background;
-    text-color: @alternate-active-foreground;
-}
-
-scrollbar {
-    width: 4px;
-    border: 0;
-    handle-width: 8px;
-    padding: 0;
-}
-
-sidebar {
-    border: 2px 0px 0px;
-    border-color: @border-color;
-}
-
-button {
-    text-color: @normal-foreground;
-}
-
-button.selected {
-    background-color: @selected-normal-background;
-    text-color: @selected-normal-foreground;
-}
-
-inputbar {
-    spacing: 0;
-    text-color: @normal-foreground;
-    padding: 1px;
-}
-
-case-indicator {
-    spacing: 0;
-    text-color: @normal-foreground;
-}
-
-entry {
-    spacing: 0;
-    text-color: @normal-foreground;
-}
-
-prompt {
-    spacing: 0;
-    text-color: @normal-foreground;
+#textbox-prompt-colon {
+    background-color: #00000000;
+    expand:     false;
+    str:        ":";
+    margin:     0px 0.3em 0em 0em ;
 }

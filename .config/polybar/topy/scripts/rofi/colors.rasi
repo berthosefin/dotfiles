@@ -8,5 +8,5 @@
   bga:  @active-background;
   bar:  #FFFFFFFF;
   fg:   @foreground;
-  ac:   @selected-active-background;
+  ac:   @background;
 }

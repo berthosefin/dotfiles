@@ -1,84 +1,12 @@
-#!/usr/bin/env bash
+	#!/bin/bash
 
-rofi_command="rofi -theme ~/.config/polybar/fin/scripts/rofi/powermenu.rasi"
+## By Birkhoff
 
-uptime=$(uptime -p | sed -e 's/up //g')
-
-# Options
-if [[ "$DIR" == "powermenus" ]]; then
-	shutdown=""
-	reboot=""
-	lock=""
-	suspend=""
-	logout=""
-	ddir="$HOME/.config/rofi/$DIR"
-else
-	shutdown=" Shutdown"
-	reboot=" Restart"
-	lock=" Lock"
-	suspend=" Sleep"
-	logout=" Logout"
-	ddir="$HOME/.config/rofi/dialogs"
-fi
-
-rdialog () {
-rofi -dmenu\
-    -i\
-    -no-fixed-num-lines\
-    -p "Are You Sure? : "\
-    -theme "$ddir/confirm.rasi"
-}
-
-# Variable passed to rofi
-MSG="Options : yes / no / y / n"
-options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
-
-chosen="$(echo -e "$options" | $rofi_command -p "UP - $uptime" -dmenu -selected-row 0)"
-case $chosen in
-    $shutdown)
-		ans=$(rdialog &)
-		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-        systemctl poweroff
-		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
-        exit
-        else
-        rofi -theme "$ddir/askpass.rasi" -e "$MSG"
-        fi
-        ;;
-    $reboot)
-		ans=$(rdialog &)
-		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-        systemctl reboot
-		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
-        exit
-        else
-        rofi -theme "$ddir/askpass.rasi" -e "$MSG"
-        fi
-        ;;
-    $lock)
-        betterlockscreen --lock
-        ;;
-    $suspend)
-		ans=$(rdialog &)
-		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-        mpc -q pause
-        amixer set Master mute
-        betterlockscreen --suspend
-		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
-        exit
-        else
-        rofi -theme "$ddir/askpass.rasi" -e "$MSG"
-        fi
-        ;;
-    $logout)
-		ans=$(rdialog &)
-		if [[ $ans == "yes" ]] || [[ $ans == "YES" ]] || [[ $ans == "y" ]]; then
-        openbox --exit
-		elif [[ $ans == "no" ]] || [[ $ans == "NO" ]] || [[ $ans == "n" ]]; then
-        exit
-        else
-        rofi -theme "$ddir/askpass.rasi" -e "$MSG"
-        fi
-        ;;
-esac
-
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 5 <<< "> Lock|> Exit|> Suspend|> Reboot|> Shutdown")"
+            case "$MENU" in
+		*Lock) ~/.bin/blurlock ;;
+		*Exit) i3-msg exit ;;
+        	*Suspend) systemctl suspend ;;
+		*Reboot) systemctl reboot ;;
+		*Shutdown) systemctl poweroff
+            esac

@@ -7,5 +7,5 @@
   bg:   @background;
   bga:  @active-background;
   fg:   @foreground;
-  ac:   @selected-active-background;
+  ac:   @active-background;
 }

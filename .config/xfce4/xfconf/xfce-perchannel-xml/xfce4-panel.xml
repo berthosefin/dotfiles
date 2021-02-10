@@ -12,10 +12,10 @@
       <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
-        <value type="int" value="3"/>
         <value type="int" value="2"/>
         <value type="int" value="4"/>
         <value type="int" value="12"/>
+        <value type="int" value="3"/>
         <value type="int" value="13"/>
         <value type="int" value="15"/>
         <value type="int" value="6"/>

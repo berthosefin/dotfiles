@@ -64,7 +64,6 @@
       <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="gnome-terminal"/>
       <property name="&lt;Super&gt;l" type="string" value="blurlock"/>
       <property name="&lt;Alt&gt;m" type="string" value="urxvt -e ncmpcpp"/>
-      <property name="&lt;Super&gt;e" type="string" value="hefflogout"/>
       <property name="&lt;Alt&gt;f" type="string" value="fsearch"/>
       <property name="&lt;Alt&gt;g" type="string" value="galculator"/>
     </property>

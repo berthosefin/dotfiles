@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="~/.config/polybar/topy/scripts/rofi"
+dir="~/.config/polybar/hack/scripts/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -theme $dir/powermenu.rasi"
@@ -27,7 +27,7 @@ msg() {
 }
 
 # Variable passed to rofi
-options="$lock\n$logout\n$suspend\n$reboot\n$shutdown"
+options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
 
 chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 0)"
 case $chosen in

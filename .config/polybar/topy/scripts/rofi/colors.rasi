@@ -3,10 +3,9 @@
 @import "~/.cache/wal/colors-rofi-dark.rasi"
 
 * {
-  al:   #00000000;
-  bg:   @background;
-  bga:  @active-background;
-  bar:  #FFFFFFFF;
-  fg:   @foreground;
-  ac:   @background;
+  al:    #00000000;
+  bg:    @background;
+  ac:    @active-background;
+  se:    @selected-active-background;
+  fg:    @foreground;
 }

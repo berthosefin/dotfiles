@@ -1,5 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# By Birkhoff
+#
 
-FILE="$HOME/.config/polybar/blocks/scripts/rofi/colors.rasi"
-
-rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/blocks/scripts/rofi/launcher.rasi
+rofi -modi run,drun \
+	-show drun\
+	-show-icons

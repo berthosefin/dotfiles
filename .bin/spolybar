@@ -14,6 +14,11 @@ if [[ "$1" == "blocks" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
+elif [[ "$1" == "docky" ]]; then
+	style="docky"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
 elif [[ "$1" == "fin" ]]; then
 	style="fin"
 	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
@@ -26,6 +31,16 @@ elif [[ "$1" == "forest" ]]; then
 
 elif [[ "$1" == "grayblocks" ]]; then
 	style="grayblocks"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "hack" ]]; then
+	style="hack"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "material" ]]; then
+	style="material"
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
@@ -44,7 +59,8 @@ else
 	Usage : spolybar [THEME]
 		
 	Available Themes :
-	- blocks	- fin	- forest
-	- grayblocks	- topy	- wave
+	- blocks	- docky		- fin
+	- forest	- grayblocks	- hack	
+	- material	- topy		- wave
 	EOF
 fi

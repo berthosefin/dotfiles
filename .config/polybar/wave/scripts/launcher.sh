@@ -6,4 +6,4 @@
 rofi -modi run,drun \
 	-show drun \
 	-show-icons \
-	-theme ~/.config/polybar/forest/scripts/rofi/config.rasi
+	-theme ~/.config/polybar/wave/scripts/rofi/config.rasi

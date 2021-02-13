@@ -2,7 +2,7 @@
 
 ## By Birkhoff
 
-MENU="$(rofi -sep "|" -dmenu -i -p 'System' -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 5 <<< "> Lock|> Exit|> Suspend|> Reboot|> Shutdown")"
+MENU="$(rofi -sep "|" -dmenu -i -p 'System' -width 12 -hide-scrollbar -line-padding 4 -padding 20 -lines 5 -theme ~/.config/polybar/forest/scripts/rofi/config.rasi <<< "> Lock|> Exit|> Suspend|> Reboot|> Shutdown")"
             case "$MENU" in
 		*Lock) ~/.bin/blurlock ;;
 		*Exit) i3-msg exit ;;

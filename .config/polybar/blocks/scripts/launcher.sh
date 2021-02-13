@@ -4,5 +4,6 @@
 #
 
 rofi -modi run,drun \
-	-show drun\
-	-show-icons
+	-show drun \
+	-show-icons \
+	-theme ~/.config/polybar/blocks/scripts/rofi/config.rasi

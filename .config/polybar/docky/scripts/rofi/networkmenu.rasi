@@ -5,15 +5,15 @@
  */
 
 configuration {
-	font:							"Iosevka Nerd Font 8";
+    font:			    "Iosevka Nerd Font 8";
     show-icons:                     true;
-	icon-theme: 					"Papirus";
-    display-drun: 					"";
+    icon-theme: 		    "Papirus";
+    display-drun: 		    "";
     drun-display-format:            "{name}";
     disable-history:                false;
     fullscreen:                     false;
-	hide-scrollbar: 				true;
-	sidebar-mode: 					false;
+    hide-scrollbar: 		    true;
+    sidebar-mode: 		    false;
 }
 
 @import "colors.rasi"
@@ -22,28 +22,28 @@ window {
     transparency:                   "real";
     background-color:               @bg;
     text-color:                     @fg;
-	border:							1px;
-	border-color:					@ac;
+    border:			    1px;
+    border-color:		    @ac;
     border-radius:                  0px;
-	width:							400px;
+    width:			    400px;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
 }
 
 prompt {
-    enabled: 						true;
+    enabled: 			    true;
     padding:                        10px 10px 10px 0px;
-	background-color: 				@al;
-	text-color: 					@ac;
-	font:							"Iosevka Nerd Font 10";
+    background-color: 		    @al;
+    text-color: 		    @ac;
+    font:			    "Iosevka Nerd Font 8";
 }
 
 textbox-prompt-colon {
-	padding: 						10px 15px 10px 15px;
-	font:							"Iosevka Nerd Font 10";
-	background-color: 				@al;
-	text-color: 					@ac;
+	padding: 		    10px 15px 10px 15px;
+	font:			    "Iosevka Nerd Font 8";
+	background-color: 	    @al;
+	text-color: 		    @ac;
 	expand: false;
 	str: "直";
 }
@@ -61,13 +61,13 @@ entry {
 }
 
 inputbar {
-	children: 						[ textbox-prompt-colon, prompt ];
+    children: 			    [ textbox-prompt-colon, prompt ];
     background-color:               @al;
     text-color:                     @fg;
     expand:                         false;
-	border:							0px 0px 1px 0px;
+    border:			    0px 0px 1px 0px;
     border-radius:                  0px;
-	border-color:					@ac;
+    border-color:		    @ac;
     spacing:                        0px;
 }
 
@@ -84,11 +84,11 @@ listview {
 
 mainbox {
     background-color:               @al;
-	border:							0px;
+    border:			    0px;
     border-radius:                  0px;
-	border-color:					@ac;
+    border-color:		    @ac;
     children:                       [ inputbar, listview ];
-    spacing:                       	10px;
+    spacing:                        10px;
     padding:                        2px 10px 10px 10px;
 }
 
@@ -115,7 +115,7 @@ element-text {
 element selected {
     background-color:               @se;
     text-color:                     @fg;
-	border:							0px 0px 0px 0px;
+    border:			    0px 0px 0px 0px;
     border-radius:                  0px;
-    border-color:                  	@ac;
+    border-color:                   @ac;
 }

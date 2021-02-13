@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="~/.config/polybar/hack/scripts/rofi"
+dir="~/.config/polybar/docky/scripts/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -theme $dir/powermenu.rasi"

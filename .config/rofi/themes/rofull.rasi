@@ -1,5 +1,5 @@
 /*
- * Rofull
+ * Rofin
  *
  * User: birkhoff
  *
@@ -9,9 +9,10 @@ configuration {
     display-drun:                   "Apps";
     display-window:                 "Window";
     show-icons:true;
+    terminal:"termite";
 }
 
-@import "~/.cache/wal/colors-rofi-dark.rasi"
+@import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
 
 * {
     columns: 3;
@@ -19,16 +20,17 @@ configuration {
     border-color: #00000000;
     text-color: @xfg;
     font: "Iosevka 10";
-    fullscreen:true;
 }
 
 #window {
-/*    fullscreen:true;
-	location:	 west;
-    anchor: west;*/
+    fullscreen:true;
+/*    location:	 west;
+    anchor: west; */
     border: 0;
-    border-radius: 0px;
+    border-radius: 5px;
     padding: 100;
+/*    width: 50%;
+    height: 50%; */
 }
 
 #mainbox {
@@ -36,7 +38,7 @@ configuration {
     children: [inputbar, listview];
     spacing: 10px;
     /*margin: 20%;*/
-    padding: 20px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     border: 1px;
     border-color: @base0D;

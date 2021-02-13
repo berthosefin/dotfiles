@@ -81,7 +81,7 @@ My personal backup of my dotfiles.
 ## Notes
 - If you want to use this configuration, inspect the code before use.
 - Install git
-- Clone this repo `git clone --depth=1 https://github.com/berthosefin/Dotfiles ~/.dotfiles`
+- Clone this repo `git clone --depth=1 https://github.com/berthosefin/dotfiles ~/.dotfiles`
 - Deploy the dotfiles `cp -rv ~/.dotfiles/* ~`
 - Change the default CLI Shell `chsh $(whoami) -s /bin/zsh`
 - If you find "birkhoff" in the configuration file, replace it with your own username.

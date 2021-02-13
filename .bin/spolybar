@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # ----------------------------------------------
-# Descritpion : Change polybar style
+# Descritpion : Polybar style changer
 # Autor : Berthose Fin (birkhoff)
-# Date : 2021-02-09
+# Date : 2021-02-13
 # ----------------------------------------------
 
 DIR="$HOME/.config/polybar"
@@ -56,11 +56,16 @@ elif [[ "$1" == "wave" ]]; then
 
 else
 	cat <<- EOF
-	Usage : spolybar [THEME]
+	
+	Spolybar - polybar style changer
+
+	Usage:
+	spolybar [THEME]
 		
 	Available Themes :
-	- blocks	- docky		- fin
-	- forest	- grayblocks	- hack	
-	- material	- topy		- wave
+	. blocks	. docky		. fin
+	. forest	. grayblocks	. hack	
+	. material	. topy		. wave
+
 	EOF
 fi

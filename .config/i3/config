@@ -38,7 +38,7 @@ set_from_resource $red color1 #BF616A
 # set wallpaper
 #exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id ~/.bin/randomwall &
-exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Dracula/* &
+exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &

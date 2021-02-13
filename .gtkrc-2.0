@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/birkhoff/.gtkrc-2.0.mine"
-gtk-theme-name="Nordic"
+gtk-theme-name="Nordic-Darker"
 gtk-icon-theme-name="Nord-Icons"
 gtk-font-name="Iosevka 8"
 gtk-cursor-theme-name="Qogir-dark"

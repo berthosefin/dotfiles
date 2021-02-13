@@ -1,2 +1,1 @@
 alias tb="taskbook"
-alias wp-docker="docker-compose run --rm wpcli"

@@ -1,4 +1,5 @@
 export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.symfony/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export QT_STYLE_OVERRRIDE="kvantum"
 export QT_QPA_PLATFORMTHEME="qt5ct"

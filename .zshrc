@@ -2,8 +2,7 @@
 # PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/birkhoff/.oh-my-zsh
-  export PATH="/home/birkhoff/.bin:$PATH"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -60,7 +59,12 @@ ZSH_THEME="spaceship"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git sudo colored-man-pages
+  archlinux
+  docker
+  docker-compose
+  git
+  sudo
+  systemd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -93,10 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-if [ -f ~/.sh_aliases ]; then
-    . ~/.sh_aliases
-fi
+alias tb="taskbook"
 
 # Wal colors
 (cat ~/.cache/wal/sequences &)

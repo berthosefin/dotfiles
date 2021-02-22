@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="numbersign_underscore.liga" format="2">
+  <advance width="1200"/>
+  <outline>
+    <contour>
+      <point x="836" y="-176" type="line"/>
+      <point x="1012" y="-176" type="line"/>
+      <point x="1146" y="1420" type="line"/>
+      <point x="970" y="1420" type="line"/>
+    </contour>
+    <contour>
+      <point x="280" y="360" type="line"/>
+      <point x="1280" y="360" type="line"/>
+      <point x="1280" y="530" type="line"/>
+      <point x="280" y="530" type="line"/>
+    </contour>
+    <contour>
+      <point x="414" y="0" type="line"/>
+      <point x="590" y="0" type="line"/>
+      <point x="710" y="1420" type="line"/>
+      <point x="534" y="1420" type="line"/>
+    </contour>
+    <contour>
+      <point x="900" y="-176" type="line"/>
+      <point x="2160" y="-176" type="line"/>
+      <point x="2160" y="0" type="line"/>
+      <point x="902" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="280" y="890" type="line"/>
+      <point x="1280" y="890" type="line"/>
+      <point x="1280" y="1060" type="line"/>
+      <point x="280" y="1060" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

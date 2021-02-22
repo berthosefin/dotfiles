@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Chedescender-cy" format="2">
+  <advance width="1200"/>
+  <unicode hex="04B6"/>
+  <anchor x="550" y="0" name="bottom"/>
+  <anchor x="550" y="1420" name="top"/>
+  <outline>
+    <contour>
+      <point x="915" y="-290" type="line"/>
+      <point x="1177" y="-290" type="line"/>
+      <point x="1177" y="243" type="line"/>
+      <point x="915" y="243" type="line"/>
+    </contour>
+    <component base="Che-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>Che-cy</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

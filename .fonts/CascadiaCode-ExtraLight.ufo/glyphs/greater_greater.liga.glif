@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="greater_greater.liga" format="2">
+  <advance width="1200"/>
+  <outline>
+    <contour>
+      <point x="1201" y="214" type="line"/>
+      <point x="2160" y="653" type="line"/>
+      <point x="2160" y="765" type="line"/>
+      <point x="1201" y="1204" type="line"/>
+      <point x="1201" y="1109" type="line"/>
+      <point x="2082" y="713" type="line"/>
+      <point x="2082" y="705" type="line"/>
+      <point x="1201" y="309" type="line"/>
+    </contour>
+    <contour>
+      <point x="280" y="214" type="line"/>
+      <point x="1238" y="653" type="line"/>
+      <point x="1238" y="765" type="line"/>
+      <point x="280" y="1204" type="line"/>
+      <point x="280" y="1109" type="line"/>
+      <point x="1160" y="713" type="line"/>
+      <point x="1160" y="705" type="line"/>
+      <point x="280" y="309" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.98,0.36,0.67,1</string>
+    </dict>
+  </lib>
+</glyph>

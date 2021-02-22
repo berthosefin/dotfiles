@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="upDashArrow" format="2">
+  <advance width="1200"/>
+  <unicode hex="21E1"/>
+  <outline>
+    <contour>
+      <point x="506" y="0" type="line"/>
+      <point x="694" y="0" type="line"/>
+      <point x="694" y="194" type="line"/>
+      <point x="506" y="194" type="line"/>
+    </contour>
+    <contour>
+      <point x="506" y="304" type="line"/>
+      <point x="694" y="304" type="line"/>
+      <point x="694" y="486" type="line"/>
+      <point x="506" y="486" type="line"/>
+    </contour>
+    <contour>
+      <point x="506" y="596" type="line"/>
+      <point x="694" y="596" type="line"/>
+      <point x="694" y="778" type="line"/>
+      <point x="506" y="778" type="line"/>
+    </contour>
+    <contour>
+      <point x="506" y="888" type="line"/>
+      <point x="694" y="888" type="line"/>
+      <point x="694" y="1292" type="line"/>
+      <point x="506" y="1292" type="line"/>
+    </contour>
+    <contour>
+      <point x="195" y="864" type="line"/>
+      <point x="591" y="1246" type="line"/>
+      <point x="609" y="1246" type="line"/>
+      <point x="1007" y="864" type="line"/>
+      <point x="1122" y="994" type="line"/>
+      <point x="661" y="1440" type="line"/>
+      <point x="539" y="1440" type="line"/>
+      <point x="80" y="994" type="line"/>
+    </contour>
+  </outline>
+</glyph>

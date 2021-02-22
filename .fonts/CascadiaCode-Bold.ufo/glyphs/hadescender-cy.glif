@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="hadescender-cy" format="2">
+  <advance width="1200"/>
+  <unicode hex="04B3"/>
+  <anchor x="600" y="0" name="bottom"/>
+  <anchor x="600" y="1060" name="top"/>
+  <outline>
+    <contour>
+      <point x="904" y="-270" type="line"/>
+      <point x="1173" y="-270" type="line"/>
+      <point x="1173" y="252" type="line"/>
+      <point x="904" y="252" type="line"/>
+    </contour>
+    <component base="ha-cy"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.ComponentInfo</key>
+      <array>
+        <dict>
+          <key>alignment</key>
+          <integer>-1</integer>
+          <key>index</key>
+          <integer>0</integer>
+          <key>name</key>
+          <string>ha-cy</string>
+        </dict>
+      </array>
+    </dict>
+  </lib>
+</glyph>

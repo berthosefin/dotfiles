@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="boxDownLightAndLeftHeavy" format="2">
+  <advance width="1200"/>
+  <unicode hex="2511"/>
+  <outline>
+    <contour>
+      <point x="479" y="-891" type="line"/>
+      <point x="721" y="-891" type="line"/>
+      <point x="721" y="951" type="line"/>
+      <point x="-121" y="951" type="line"/>
+      <point x="-121" y="467" type="line"/>
+      <point x="479" y="467" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>public.markColor</key>
+      <string>0.5,0.09,0.79,1</string>
+    </dict>
+  </lib>
+</glyph>

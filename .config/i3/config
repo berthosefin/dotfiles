@@ -28,8 +28,8 @@ font pango:iosevka 8
 set_from_resource $bg background #2e3440
 set_from_resource $fg foreground #d8dee9
 set_from_resource $ac color2 #5e81ac
-set_from_resource $mf color4 #8fbcbb
-set_from_resource $red color1 #BF616A
+set_from_resource $mf color1 #8fbcbb
+set_from_resource $red color6 #BF616A
 
 #####################################################################################################################
 #################       Autostart

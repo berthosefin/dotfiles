@@ -27,9 +27,9 @@ font pango:iosevka 8
 # Xressources
 set_from_resource $bg background #2e3440
 set_from_resource $fg foreground #d8dee9
-set_from_resource $ac color2 #5e81ac
-set_from_resource $mf color1 #8fbcbb
-set_from_resource $red color6 #BF616A
+set_from_resource $c1 color1 #8fbcbb
+set_from_resource $c2 color2 #5e81ac
+set_from_resource $c6 color6 #BF616A
 
 #####################################################################################################################
 #################       Autostart
@@ -466,9 +466,9 @@ for_window [class="^.*"] border pixel 1
 #####################################################################################################################
 
 # class                 border     backgr.    text     indicator     child_border
-client.focused          $ac        $ac        $bg      $bg           $ac
-client.focused_inactive $mf        $mf        $bg      $bg           $mf
-client.unfocused        $mf        $mf        $bg      $bg           $mf
+client.focused          $c2        $c2        $bg      $bg           $c2
+client.focused_inactive $c1        $c1        $bg      $bg           $c1
+client.unfocused        $c1        $c1        $bg      $bg           $c1
 client.urgent           $red       $red       $bg      $bg           $red
 client.placeholder      $bg        $bg        $bg      $bg           $bg
 client.background       $bg

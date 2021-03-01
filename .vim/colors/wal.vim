@@ -1,0 +1,1 @@
+/home/birkhoff/.cache/wal/colors-wal.vim

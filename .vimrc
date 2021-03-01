@@ -61,6 +61,8 @@ set statusline+=%L                  " Total line
 set statusline+=\                   " Padding
 
 " Colors
+colorscheme wal
+
 hi StatusLine ctermfg=white ctermbg=gray cterm=NONE
 hi StatusLineNC ctermfg=white ctermbg=gray cterm=NONE
 hi User1 ctermfg=NONE ctermbg=NONE

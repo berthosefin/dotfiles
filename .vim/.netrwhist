@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/birkhoff/.config/dunst'
+let g:netrw_dirhist_6='/home/birkhoff/LAB/docker-wordpress-thos'
+let g:netrw_dirhist_5='/home/birkhoff/.config/polybar/fin'
+let g:netrw_dirhist_4='/home/birkhoff/dotfiles/config/vim'
+let g:netrw_dirhist_3='/home/birkhoff/.vim'
+let g:netrw_dirhist_2='/home/birkhoff/Documents/GESTION/M2 BF/Analyse Financière'
+let g:netrw_dirhist_1='/home/birkhoff/Downloads'

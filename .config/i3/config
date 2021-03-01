@@ -36,9 +36,9 @@ set_from_resource $c6 color6 #BF616A
 #####################################################################################################################
 
 # set wallpaper
-#exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id ~/.bin/randomwall &
-exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
+#exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -62,7 +62,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #####################################################################################################################
 
 # program launcher
-bindsym $super+Shift+d exec dmenu_run -p 'RUN ' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg"
+bindsym $super+Shift+d exec dmenu_run -p 'RUN ' -nb "$bg" -nf "$c2" -sb "$c2" -sf "$bg"
 bindsym $super+F11 exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/WhiteSur.rasi
 bindsym $super+d exec --no-startup-id rofi -show drun -show-icons
 bindsym $alt+F3 exec --no-startup-id xfce4-appfinder

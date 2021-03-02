@@ -47,14 +47,14 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 exec_always --no-startup-id picom &
 
 # applications
-#exec --no-startup-id conky &
+exec --no-startup-id conky &
 exec --no-startup-id dunst &
 exec --no-startup-id mpd &
 exec --no-startup-id redshift &
 exec --no-startup-id xsettingsd &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id xrdb ~/.Xresources &
-exec --no-startup-id xset +fp ~/.fonts/misc
+exec --no-startup-id xset +fp ~/.fonts/misc &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 #####################################################################################################################

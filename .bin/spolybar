@@ -9,7 +9,12 @@
 DIR="$HOME/.config/polybar"
 STYLE=$(sed -n '4s/STYLE=//p' $DIR/launch.sh);
 
-if [[ "$1" == "blocks" ]]; then
+if [[ "$1" == "default" ]]; then
+	style="default"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
+elif [[ "$1" == "blocks" ]]; then
 	style="blocks"
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
@@ -44,11 +49,6 @@ elif [[ "$1" == "material" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
-elif [[ "$1" == "simple" ]]; then
-	style="simple"
-    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-	sh $DIR/launch.sh
-
 elif [[ "$1" == "topy" ]]; then
 	style="topy"
 	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
@@ -68,9 +68,9 @@ else
 	spolybar [THEME]
 		
 	Available Themes :
-	. blocks	. docky		. fin
-	. forest	. grayblocks	. hack	
-	. material	. simple	. topy
+	. default	. blocks	. docky		
+	. fin		. forest	. grayblocks	
+	. hack		. material	. topy
 	. wave
 
 	EOF

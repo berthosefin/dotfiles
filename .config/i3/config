@@ -36,9 +36,9 @@ set_from_resource $c6 color6 #BF616A
 #####################################################################################################################
 
 # set wallpaper
-exec --no-startup-id ~/.fehbg &
+#exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id ~/.bin/randomwall &
-#exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
+exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -369,7 +369,7 @@ bindsym $super+Shift+a focus child
 #for_window [class="^.*"] floating enable
 for_window [instance='lock'] floating enable; focus floating
 for_window [class="Galculator"] floating enable
-for_window [class="mpv"] floating enable
+for_window [class="mpv|Ristretto|Evince"] floating enable
 for_window [class="Xfce4-appfinder|Fsearch"] floating enable
 for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="xdman-Main"] floating enable

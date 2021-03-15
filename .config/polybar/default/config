@@ -60,7 +60,7 @@ font-2 = material:pixelsize=8;1
 
 modules-left = i3
 modules-center = xwindow
-modules-right = mpd alsa wlan eth memory cpu filesystem date battery
+modules-right = mpd alsa date wlan eth memory cpu filesystem battery
 
 tray-position = none
 tray-padding = 2
@@ -117,7 +117,7 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.primary}
+label-focused-background = #000000ff
 label-focused-underline= ${colors.foreground}
 label-focused-padding = 2
 

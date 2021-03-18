@@ -54,6 +54,11 @@ elif [[ "$1" == "material" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
+elif [[ "$1" == "minimal" ]]; then
+	style="minimal"
+    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
+	sh $DIR/launch.sh
+
 elif [[ "$1" == "topy" ]]; then
 	style="topy"
 	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
@@ -76,7 +81,7 @@ else
 	. default	. blocks	. cuts
 	. docky		. fin		. forest	
 	. grayblocks	. hack		. material	
-	. topy		. wave
+	. minimal	. topy		. wave
 
 	EOF
 fi

@@ -7,8 +7,9 @@ My personal backup of my dotfiles.
 ![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview2.png)
 ### xfce
 ![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview3.png)
-### qtile
 ![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview4.png)
+### qtile
+![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview5.png)
 
 ## Details
 - **Display Server** X11

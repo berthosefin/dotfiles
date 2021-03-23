@@ -7,13 +7,15 @@ My personal backup of my dotfiles.
 ![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview2.png)
 ### xfce
 ![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview3.png)
+### qtile
+![alt text](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Images/Previews/preview4.png)
 
 ## Details
 - **Display Server** X11
 - **Display Manager** LightDM
 - **Greeter** LightDM Webkit2 Greeter
 - **Desktop Environment** Xfce
-- **WM** Xfwm4, i3-gaps
+- **WM** Xfwm4, i3-gaps, qtile
 - **Launcher** Rofi, Synapse
 - **Panel** Polybar
 - **Dock** Plank

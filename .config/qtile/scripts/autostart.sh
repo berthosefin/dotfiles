@@ -8,8 +8,8 @@ function run {
 }
 
 # Set Wallpaper
-run ~/.fehbg &
-#run feh --randomize --bg-fill ~/Images/Nord/* &
+#run ~/.fehbg &
+run feh --randomize --bg-fill ~/Images/Nord/* &
 
 # Run compositor
 run picom &

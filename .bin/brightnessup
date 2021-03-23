@@ -1,0 +1,5 @@
+#!/bin/bash
+AMOUNT=5
+brightnessctl set $AMOUNT%+
+BRIGHTNESS=$(brightnessctl | awk 'FNR==2{ gsub(/\(|\)/," "); print $4 }')
+notify-send "Brightness: $BRIGHTNESS"

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+pactl set-sink-mute @DEFAULT_SINK@ toggle
+if [[ $(pactl list sinks | awk 'FNR==9 { print $2 }') == 'yes' ]]
+then 
+    notify-send "Volume Muted."
+else
+    notify-send "Volume Unmuted."
+fi

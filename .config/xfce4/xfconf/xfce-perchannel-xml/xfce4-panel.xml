@@ -5,21 +5,21 @@
   <property name="panels" type="array">
     <value type="int" value="1"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=683;y=16"/>
+      <property name="position" type="string" value="p=6;x=683;y=13"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="16"/>
-      <property name="size" type="uint" value="24"/>
+      <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="1"/>
         <value type="int" value="2"/>
         <value type="int" value="4"/>
-        <value type="int" value="12"/>
-        <value type="int" value="3"/>
+        <value type="int" value="7"/>
         <value type="int" value="13"/>
-        <value type="int" value="15"/>
-        <value type="int" value="6"/>
         <value type="int" value="5"/>
+        <value type="int" value="15"/>
+        <value type="int" value="12"/>
+        <value type="int" value="6"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="background-rgba" type="array">
@@ -28,52 +28,12 @@
         <value type="double" value="0.176471"/>
         <value type="double" value="1.000000"/>
       </property>
+      <property name="mode" type="uint" value="2"/>
     </property>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-6" type="string" value="systray">
-      <property name="show-frame" type="bool" value="false"/>
-      <property name="square-icons" type="bool" value="false"/>
-      <property name="names-ordered" type="array">
-        <value type="string" value="teamviewer"/>
-        <value type="string" value="notes"/>
-        <value type="string" value="pamac-tray"/>
-        <value type="string" value="zoiper"/>
-        <value type="string" value="ibus-ui-gtk3"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="veracrypt"/>
-        <value type="string" value="orage"/>
-        <value type="string" value="dnfdragora-updater"/>
-        <value type="string" value="lecture de musique pragha"/>
-        <value type="string" value="seapplet"/>
-        <value type="string" value="megasync"/>
-        <value type="string" value="stacer"/>
-        <value type="string" value="toolbox"/>
-        <value type="string" value="zeal"/>
-        <value type="string" value="redshift-gtk"/>
-        <value type="string" value="gestionnaire de tâches"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="synapse"/>
-        <value type="string" value="thunar"/>
-        <value type="string" value="dropbox"/>
-        <value type="string" value="applet networkmanager"/>
-      </property>
-      <property name="size-max" type="uint" value="16"/>
-      <property name="known-legacy-items" type="array">
-        <value type="string" value="thunar"/>
-        <value type="string" value="gestionnaire de tâches"/>
-        <value type="string" value="synapse"/>
-        <value type="string" value="pamac-tray"/>
-        <value type="string" value="applet networkmanager"/>
-      </property>
-      <property name="known-items" type="array">
-        <value type="string" value="redshift"/>
-        <value type="string" value="Skype1"/>
-        <value type="string" value="vlc"/>
-      </property>
-    </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="digital-format" type="string" value="%a %d, %R"/>
+      <property name="digital-format" type="string" value="%R"/>
       <property name="mode" type="uint" value="2"/>
     </property>
     <property name="plugin-4" type="string" value="separator">
@@ -92,9 +52,36 @@
     <property name="plugin-15" type="string" value="notification-plugin"/>
     <property name="plugin-2" type="string" value="taskbar"/>
     <property name="plugin-1" type="string" value="whiskermenu"/>
-    <property name="plugin-3" type="string" value="separator">
-      <property name="expand" type="bool" value="true"/>
-      <property name="style" type="uint" value="0"/>
+    <property name="plugin-7" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="thunar"/>
+        <value type="string" value="pamac-tray"/>
+        <value type="string" value="applet networkmanager"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="redshift"/>
+      </property>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="hidden-legacy-items" type="array">
+      </property>
+    </property>
+    <property name="plugin-6" type="string" value="actions">
+      <property name="items" type="array">
+        <value type="string" value="-lock-screen"/>
+        <value type="string" value="-switch-user"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
+        <value type="string" value="-hybrid-sleep"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="-shutdown"/>
+        <value type="string" value="-restart"/>
+        <value type="string" value="-separator"/>
+        <value type="string" value="+logout"/>
+        <value type="string" value="-logout-dialog"/>
+      </property>
+      <property name="appearance" type="uint" value="0"/>
     </property>
   </property>
 </channel>

@@ -36,9 +36,9 @@ set_from_resource $c6 color6 #BF616A
 #####################################################################################################################
 
 # set wallpaper
-#exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id ~/.bin/randomwall &
-exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
+#exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -46,8 +46,11 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # compositor
 exec_always --no-startup-id picom &
 
+# conky
+exec --no-startup-id conky -c ~/.config/conky/holybible.conf &
+exec --no-startup-id conky -c ~/.config/conky/datetime.conf &
+
 # applications
-exec --no-startup-id start-conky &
 exec --no-startup-id dunst &
 exec --no-startup-id mpd &
 exec --no-startup-id redshift &
@@ -82,12 +85,6 @@ bindsym $super+Shift+w exec firefox
 
 # start a file manager
 bindsym $super+Shift+f exec thunar
-
-# start a music player
-bindsym $alt+m exec termite -e ncmpcpp
-
-# system monitor
-bindsym control+Shift+Escape exec termite -e htop
 
 # lock screen
 bindsym $alt+l exec ~/.bin/blurlock
@@ -369,7 +366,7 @@ bindsym $super+Shift+a focus child
 #for_window [class="^.*"] floating enable
 for_window [instance='lock'] floating enable; focus floating
 for_window [class="Galculator"] floating enable
-for_window [class="mpv|Ristretto|Evince"] floating enable
+for_window [class="mpv|Ristretto|Evince|Lxappearance|Pavucontrol|GParted"] floating enable
 for_window [class="Xfce4-appfinder|Fsearch"] floating enable
 for_window [class="Xfce4-taskmanager"] floating enable
 for_window [class="xdman-Main"] floating enable

@@ -1,0 +1,3 @@
+#!/bin/bash
+AMOUNT=10
+pactl set-sink-volume @DEFAULT_SINK@ -$AMOUNT%

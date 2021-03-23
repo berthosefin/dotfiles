@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ $(pactl list sinks | awk 'FNR==9 { print $2 }') == 'yes' ]]
+then 
+    printf "ﱝ "
+else
+	VOLUME=$(pactl list sinks |  awk 'FNR==10 { print $5 }')
+	if [[ "$VOLUME" > "100" ]]; then
+		SYMBOL=" "
+	elif [[ "$VOLUME" < "20" ]]; then 
+		SYMBOL="奄"
+	else
+		SYMBOLS=("奄" " " "奔" "墳" " ")
+		SYMBOL=${SYMBOLS[$(( $VOLUME / 20  ))]}
+	fi
+    printf "%s %s" "$SYMBOL" "$VOLUME" | tee /tmp/volumestatus
+fi

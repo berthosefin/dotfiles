@@ -63,8 +63,8 @@ set statusline+=\                   " Padding
 " Colors
 colorscheme wal
 
-hi StatusLine ctermfg=white ctermbg=gray cterm=NONE
-hi StatusLineNC ctermfg=white ctermbg=gray cterm=NONE
+hi StatusLine ctermfg=black ctermbg=gray cterm=NONE
+hi StatusLineNC ctermfg=black ctermbg=gray cterm=NONE
 hi User1 ctermfg=NONE ctermbg=NONE
 hi User2 ctermfg=black ctermbg=white
-hi User3 ctermfg=white ctermbg=gray
+hi User3 ctermfg=black ctermbg=gray

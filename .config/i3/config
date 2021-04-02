@@ -36,9 +36,9 @@ set_from_resource $c6 color6 #BF616A
 #####################################################################################################################
 
 # set wallpaper
-exec --no-startup-id ~/.fehbg &
+#exec --no-startup-id ~/.fehbg &
 #exec --no-startup-id ~/.bin/randomwall &
-#exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
+exec_always --no-startup-id feh --randomize --bg-fill ~/Images/Nord/* &
 
 # polybar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -67,7 +67,6 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # program launcher
 bindsym $super+Shift+d exec dmenu_run -p 'RUN ' -nb "$bg" -nf "$c2" -sb "$c2" -sf "$bg"
-bindsym $super+F11 exec --no-startup-id rofi -show drun -theme ~/.config/rofi/themes/WhiteSur.rasi
 bindsym $super+d exec --no-startup-id rofi -show drun -show-icons
 bindsym $alt+F3 exec --no-startup-id xfce4-appfinder
 
@@ -465,8 +464,8 @@ for_window [class="^.*"] border pixel 1
 
 # class                 border     backgr.    text     indicator     child_border
 client.focused          $c2        $c2        $bg      $bg           $c2
-client.focused_inactive $c1        $c1        $bg      $bg           $c1
-client.unfocused        $c1        $c1        $bg      $bg           $c1
+client.focused_inactive $c1        $c1        $bg      $bg           $bg
+client.unfocused        $c1        $c1        $bg      $bg           $bg
 client.urgent           $red       $red       $bg      $bg           $red
 client.placeholder      $bg        $bg        $bg      $bg           $bg
 client.background       $bg

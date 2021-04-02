@@ -48,8 +48,8 @@ exec_always --no-startup-id picom &
 
 # conky
 exec --no-startup-id conky -c ~/.config/conky/datetime.conf &
-exec --no-startup-id conky -c ~/.config/conky/taskbook.conf &
-#exec --no-startup-id conky -c ~/.config/conky/holybible.conf &
+#exec --no-startup-id conky -c ~/.config/conky/taskbook.conf &
+exec --no-startup-id conky -c ~/.config/conky/holybible.conf &
 
 # applications
 exec --no-startup-id dunst &
@@ -297,7 +297,7 @@ bindsym $alt+b exec --no-startup-id i3-msg border toggle
 
 # changing border style
 bindsym $alt+t border normal
-bindsym $alt+p border pixel 2
+bindsym $alt+p border pixel 1
 bindsym $alt+n border none
 
 #new_window pixel 2

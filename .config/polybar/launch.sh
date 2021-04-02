@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 # Launch the bar
-STYLE=grayblocks
+STYLE=wave
 
 bash "$HOME"/.config/polybar/"$STYLE"/launch.sh

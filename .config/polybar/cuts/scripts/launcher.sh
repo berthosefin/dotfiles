@@ -1,3 +1,9 @@
-#!/usr/bin/env bash
+#!/bin/bash
+#
+# By Birkhoff
+#
 
-rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/cuts/scripts/rofi/launcher.rasi
+rofi -modi run,drun \
+	-show drun \
+	-show-icons \
+	-theme ~/.config/polybar/cuts/scripts/rofi/config.rasi

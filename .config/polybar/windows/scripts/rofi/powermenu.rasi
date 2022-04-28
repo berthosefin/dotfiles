@@ -4,7 +4,7 @@
  *******************************************************************************/
 
 configuration {
-    font:                           "Iosevka 8";
+    font:                           "Iosevka Custom 8";
     show-icons:                     true;
     display-drun: 					"";
     drun-display-format:            "{icon} {name}";

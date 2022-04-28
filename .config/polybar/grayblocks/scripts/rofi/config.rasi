@@ -8,10 +8,11 @@
 configuration {
     display-drun:   "Apps";
     display-window: "Windows";
+    show-icons: true;
 }
 *{
 	fullscreen:		 false;
-    font: 			 "Iosevka 10";
+    font: 			 "Iosevka Custom 8";
     separatorcolor:              @selected-normal-background;
 }
 window {

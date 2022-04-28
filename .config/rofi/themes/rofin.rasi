@@ -7,8 +7,7 @@
 
 configuration{
     modi: "run,drun,window";
-    lines: 12;
-    font: "Iosevka 10";
+    font: "Iosevka Custom 8";
     show-icons: true;
     icon-theme: "Papirus-dark";
     terminal: "alacritty";

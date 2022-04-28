@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/birkhoff/.local/share/backgrounds/Fluent-building-night.png",
+    "alpha": "100",
+    "special": {
+        "background": "#070F1B",
+        "foreground": "#91bfef",
+        "cursor": "#91bfef"
+    },
+    "colors": {
+        "color0": "#070F1B",
+        "color1": "#1950B0",
+        "color2": "#083CC8",
+        "color3": "#1258D6",
+        "color4": "#196AD3",
+        "color5": "#1773ED",
+        "color6": "#1D8AF8",
+        "color7": "#91bfef",
+        "color8": "#6585a7",
+        "color9": "#1950B0",
+        "color10": "#083CC8",
+        "color11": "#1258D6",
+        "color12": "#196AD3",
+        "color13": "#1773ED",
+        "color14": "#1D8AF8",
+        "color15": "#91bfef"
+    }
+}

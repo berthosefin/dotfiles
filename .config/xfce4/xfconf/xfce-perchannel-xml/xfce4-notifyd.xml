@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="balena-etcher-electron"/>
+      <value type="string" value="bleachbit"/>
+      <value type="string" value="blueman"/>
+      <value type="string" value="clementine"/>
+      <value type="string" value="dunstify"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="Gestionnaire de paquets"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="notify-send"/>
+      <value type="string" value="org.gnome.Nautilus"/>
+      <value type="string" value="QWinFF"/>
+      <value type="string" value="seapplet"/>
+      <value type="string" value="thunar"/>
+      <value type="string" value="thunar-volman"/>
+      <value type="string" value="Thunderbird"/>
+      <value type="string" value="Transmission"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
+      <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="xfdesktop"/>
+    </property>
+  </property>
+  <property name="primary-monitor" type="uint" value="0"/>
+  <property name="notify-location" type="uint" value="2"/>
+  <property name="log-level" type="uint" value="0"/>
+  <property name="log-level-apps" type="uint" value="0"/>
+  <property name="do-slideout" type="bool" value="true"/>
+  <property name="plugin" type="empty">
+    <property name="log-only-today" type="bool" value="false"/>
+    <property name="hide-clear-prompt" type="bool" value="false"/>
+  </property>
+  <property name="theme" type="string" value="Default"/>
+  <property name="initial-opacity" type="double" value="1.000000"/>
+</channel>

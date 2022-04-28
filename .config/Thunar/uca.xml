@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Ouvrir un terminal ici</name>
+	<unique-id>1568289119292135-1</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Exemple d’une action personnalisée</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>administration</icon>
+	<name>Ouvrir en tant que superutilisateur</name>
+	<unique-id>1646974502695576-2</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>Ouvre le dossier avec les privilèges de l&apos;administrateur</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>preferences-system-search</icon>
+	<name>Rechercher dans ce dossier</name>
+	<unique-id>1646974607424913-3</unique-id>
+	<command>catfish --path=%f</command>
+	<description>Rechercher des fichiers dans ce dossier</description>
+	<patterns>*</patterns>
+	<directories/>
+</action>
+<action>
+	<icon>printer</icon>
+	<name>Imprimer le(s) fichier(s)</name>
+	<unique-id>1646974712204989-4</unique-id>
+	<command>thunar-print %F</command>
+	<description>Envoyer un ou plusieurs fichiers à l&apos;imprimante par défaut</description>
+	<patterns>*</patterns>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+</action>
+</actions>

@@ -1,0 +1,11 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[Corbeille]
+row=12
+col=22
+
+[/home/birkhoff]
+row=1
+col=0
+

@@ -1,0 +1,11 @@
+delay=3
+region=1
+show_mouse=0
+screenshot_dir=file:/home/birkhoff/Lab/dotfiles/Previews
+app=gimp-2.10
+last_user=
+action=1
+last_extension=png
+enable_imgur_upload=true
+show_border=1
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=8;x=683;y=752"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="16"/>
+      <property name="size" type="uint" value="30"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="9"/>
+        <value type="int" value="1"/>
+        <value type="int" value="3"/>
+        <value type="int" value="12"/>
+        <value type="int" value="13"/>
+        <value type="int" value="4"/>
+        <value type="int" value="2"/>
+      </property>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="0.000000"/>
+        <value type="double" value="1.000000"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="nrows" type="uint" value="1"/>
+    </property>
+    <property name="dark-mode" type="bool" value="false"/>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-12" type="string" value="clock">
+      <property name="digital-format" type="string" value="%_H:%M"/>
+      <property name="mode" type="uint" value="2"/>
+      <property name="show-seconds" type="bool" value="true"/>
+      <property name="flash-separators" type="bool" value="true"/>
+      <property name="show-meridiem" type="bool" value="false"/>
+    </property>
+    <property name="plugin-13" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chromium.instance14203;chromium.instance2581;chromium.instance3464;chromium.instance42551;chromium.instance4880;clementine;firefox.instance10053;firefox.instance10536;firefox.instance11715;firefox.instance1176;firefox.instance1274;firefox.instance1280;firefox.instance132814;firefox.instance13932;firefox.instance1463;firefox.instance1499;firefox.instance1668;firefox.instance16866;firefox.instance1902;firefox.instance191901;firefox.instance1922;firefox.instance208375;firefox.instance21230;firefox.instance21695;firefox.instance24178;firefox.instance256863;firefox.instance27437;firefox.instance28178;firefox.instance3014;firefox.instance3126;firefox.instance35017;firefox.instance3844;firefox.instance38983;firefox.instance40221;firefox.instance4170;firefox.instance4363;firefox.instance5176;firefox.instance5457;firefox.instance5962;firefox.instance59975;firefox.instance62897;firefox.instance6484;firefox.instance7009;firefox.instance7861;firefox.instance97735;firefox.instance98706;firefox.instance99659;org.gnome.Music;rhythmbox;smplayer;vlc"/>
+      <property name="enable-wnck" type="bool" value="false"/>
+      <property name="enable-multimedia-keys" type="bool" value="true"/>
+      <property name="enable-mpris" type="bool" value="true"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="string" value="whiskermenu"/>
+    <property name="plugin-1" type="string" value="tasklist">
+      <property name="show-labels" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="window-scrolling" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="show-only-minimized" type="bool" value="false"/>
+      <property name="middle-click" type="uint" value="1"/>
+      <property name="sort-order" type="uint" value="0"/>
+    </property>
+    <property name="plugin-2" type="string" value="power-manager-plugin"/>
+    <property name="plugin-4" type="string" value="systray">
+      <property name="known-legacy-items" type="array">
+        <value type="string" value="clipman"/>
+        <value type="string" value="aucune connexion réseau"/>
+        <value type="string" value="veracrypt"/>
+        <value type="string" value="notes"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="redshift-gtk"/>
+        <value type="string" value="applet networkmanager"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="vlc"/>
+        <value type="string" value="ulauncher"/>
+        <value type="string" value="Zeal"/>
+        <value type="string" value="redshift"/>
+      </property>
+      <property name="icon-size" type="int" value="20"/>
+      <property name="single-row" type="bool" value="false"/>
+      <property name="hide-new-items" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="hidden-items" type="array">
+      </property>
+      <property name="menu-is-primary" type="bool" value="false"/>
+    </property>
+  </property>
+</channel>

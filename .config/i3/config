@@ -22,6 +22,8 @@ exec --no-startup-id tlp start &
 exec --no-startup-id dunst &
 exec --no-startup-id redshift &
 exec --no-startup-id mpd &
+
+# Autotiling
 exec_always --no-startup-id autotiling --workspace 1 &
 
 # Wallpaper
@@ -257,9 +259,6 @@ smart_gaps on
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
-# Border radius
-border_radius 0
-
 # Press $super+g to enter the gap mode
 # Choose o or i for modifying outer/inner gaps
 # Press one of +/- (increment/decrement) for current workspace or 0 (remove gaps for current workspace)
@@ -308,16 +307,16 @@ set_from_resource $mf color8
 set_from_resource $red color1
 
 # Class                 border  backgr. text    indicator child_border
-client.focused          $ac     $ac     $bg     $fg       $ac
-client.focused_inactive $mf     $mf     $bg     $fg       $mf
-client.unfocused        $mf     $mf     $bg     $fg       $mf
-client.urgent           $red    $red    $bg     $fg       $red
-client.placeholder      $fg     $fg     $bg     $fg       $fg
+client.focused          $bg     $bg     $ac     $fg       $ac
+client.focused_inactive $bg     $bg     $mf     $fg       $mf
+client.unfocused        $bg     $bg     $mf     $fg       $mf
+client.urgent           $bg     $bg     $red    $fg       $red
+client.placeholder      $bg     $bg     $fg     $fg       $fg
 
 client.background       $fg
 
 # Windows rules
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 for_window [class="^.*"] focus
 for_window [class="^.*"] title_format " [%class] - %title "
 

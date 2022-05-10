@@ -27,8 +27,8 @@ exec --no-startup-id mpd &
 exec_always --no-startup-id autotiling --workspace 1 &
 
 # Wallpaper
-exec --no-startup-id ~/.fehbg &
-# exec --no-startup-id ~/.bin/randomwall &
+# exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.bin/randomwall &
 
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -321,7 +321,7 @@ for_window [class="^.*"] focus
 for_window [class="^.*"] title_format " [%class] - %title "
 
 # Floating mode
-for_window [class="^.*"] floating enable border pixel 0
+for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal"] floating enable
 for_window [class="Galculator|Catfish"] floating enable
 for_window [class="Zathura|Viewnior|mpv"] floating enable

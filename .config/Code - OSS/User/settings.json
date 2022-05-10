@@ -5,6 +5,7 @@
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "workbench.colorTheme": "Nord",
+    "python.languageServer": "Pylance",
     "editor.tokenColorCustomizations": {
         "textMateRules": [
           {

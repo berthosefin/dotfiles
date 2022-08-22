@@ -3,7 +3,7 @@
  * User: Birkhoff
  *******************************************************************************/
 
-@import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
+@import "/home/thos/.cache/wal/colors-rofi-dark.rasi"
 
 configuration {
     display-drun:   "Apps";
@@ -13,7 +13,7 @@ configuration {
 *{
 	fullscreen:		 false;
     font: 			 "Iosevka Custom 8";
-    separatorcolor:              @selected-normal-background;
+    separatorcolor:  @selected-urgent-background;
 }
 window {
     background-color: @background;
@@ -65,7 +65,7 @@ element.normal.active {
 }
 element.selected.normal {
     background-color: @normal-background;
-    text-color:       @selected-normal-background;
+    text-color:       @selected-urgent-background;
 }
 element.selected.urgent {
     background-color: @selected-urgent-background;

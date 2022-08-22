@@ -295,6 +295,7 @@
     background = "#D8DEE9"
     foreground = "#2E3440"
     timeout = 10
+    script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with low urgency, uncomment to enable
     #icon = /path/to/icon
 
@@ -302,6 +303,7 @@
     background = "#D8DEE9"
     foreground = "#2E3440"
     timeout = 10
+    script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
@@ -311,6 +313,7 @@
     timeout = 10
     frame_color = "#BF616A"
     timeout = 0
+    script = ~/.config/dunst/sound-critical.sh
     # Icon for notifications with critical urgency, uncomment to enable
     #icon = /path/to/icon
 
@@ -434,7 +437,3 @@
 [scrot]
     appname = scrot
     format = "<span size="x-large">📷<b>  %s </b></span>\n<i>%b</i>"
-
-[play_sound]
-    summary = "*"
-    script = ~/.config/dunst/sound.sh

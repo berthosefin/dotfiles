@@ -18,7 +18,7 @@
           <value type="uint" value="65535"/>
         </property>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/home/birkhoff/.local/share/backgrounds/Fluent-building-day.png"/>
+        <property name="image-path" type="string" value="/home/thos/Lab/linux/dotfiles/Images/Nordic/nordic.jpg"/>
         <property name="image-show" type="bool" value="true"/>
         <property name="last-image" type="empty"/>
         <property name="last-single-image" type="empty"/>
@@ -282,8 +282,9 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/birkhoff/.local/share/backgrounds/Fluent-building-day.png"/>
+          <property name="last-image" type="string" value="/home/thos/Lab/linux/dotfiles/Images/Nordic/nordic.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>
+          <property name="backdrop-cycle-random-order" type="bool" value="true"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -331,15 +332,18 @@
       <property name="show-network-removable" type="bool" value="true"/>
     </property>
     <property name="font-size" type="double" value="8.000000"/>
-    <property name="gravity" type="int" value="0"/>
-    <property name="icon-size" type="uint" value="28"/>
+    <property name="gravity" type="int" value="1"/>
+    <property name="icon-size" type="uint" value="26"/>
     <property name="primary" type="bool" value="true"/>
     <property name="show-thumbnails" type="bool" value="true"/>
-    <property name="use-custom-font-size" type="bool" value="true"/>
+    <property name="use-custom-font-size" type="bool" value="false"/>
     <property name="style" type="int" value="2"/>
   </property>
   <property name="last" type="empty">
     <property name="window-height" type="int" value="622"/>
     <property name="window-width" type="int" value="800"/>
+  </property>
+  <property name="desktop-menu" type="empty">
+    <property name="show-icons" type="bool" value="true"/>
   </property>
 </channel>

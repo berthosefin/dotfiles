@@ -1,6 +1,6 @@
 /* Color-Scheme */
 
-@import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
+@import "/home/thos/.cache/wal/colors-rofi-dark.rasi"
 
 * {
 BG:    @background;

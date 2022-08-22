@@ -67,6 +67,7 @@ plugins=(
     docker-compose
     git
     history
+    python
     sudo
     systemadmin
     systemd

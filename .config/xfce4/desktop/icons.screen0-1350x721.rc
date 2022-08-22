@@ -1,23 +1,15 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/home/birkhoff/Bureau/Exo]
-row=3
-col=0
-
-[/home/birkhoff/Bureau/birkhoff.xspf]
-row=4
-col=0
-
-[43BD21B81740DDBF]
-row=2
-col=0
+[E04ACDDD4ACDB098]
+row=0
+col=2
 
 [Corbeille]
 row=0
 col=0
 
-[/home/birkhoff]
-row=1
-col=0
+[/home/thos]
+row=0
+col=1
 

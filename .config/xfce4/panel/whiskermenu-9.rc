@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=nvim.desktop,xfce-ui-settings.desktop,xfce-wm-settings.desktop,rhythmbox.desktop,io.dbeaver.DBeaver.desktop,code-oss.desktop,mpv.desktop,xdman.desktop,jconsole-java11-openjdk.desktop,Alacritty.desktop,qt5ct.desktop,virtualbox.desktop,vlc.desktop,xfce4-file-manager.desktop,xfce-mouse-settings.desktop,org.xfce.Catfish.desktop,ulauncher.desktop,xfce-session-settings.desktop,veracrypt.desktop
+recent=gsmartcontrol.desktop,gparted.desktop,ventoy.desktop,ulauncher.desktop,xfce-wmtweaks-settings.desktop,xfce-ui-settings.desktop,darktable.desktop,org.inkscape.Inkscape.desktop,org.shotcut.Shotcut.desktop,gimp.desktop,brave-browser.desktop,mpv.desktop,org.gnome.Rhythmbox3.desktop,xfce4-terminal.desktop,xfce-wm-settings.desktop,xfce-keyboard-settings.desktop,firefox.desktop,xdman.desktop,nm-connection-editor.desktop,code-oss.desktop
 button-icon=applications-all
 button-single-row=true
 show-button-title=false

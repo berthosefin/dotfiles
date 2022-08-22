@@ -5,7 +5,7 @@
     <property name="mode" type="int" value="0"/>
     <property name="enabled" type="bool" value="false"/>
     <property name="idle-activation" type="empty">
-      <property name="enabled" type="bool" value="true"/>
+      <property name="enabled" type="bool" value="false"/>
     </property>
   </property>
   <property name="lock" type="empty">

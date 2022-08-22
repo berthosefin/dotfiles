@@ -52,7 +52,7 @@
       <property name="RefreshRate" type="double" value="59.999865"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
+      <property name="Primary" type="bool" value="true"/>
       <property name="Scale" type="empty">
         <property name="X" type="double" value="1.000000"/>
         <property name="Y" type="double" value="1.000000"/>
@@ -116,7 +116,7 @@
       <property name="RefreshRate" type="double" value="59.999865"/>
       <property name="Rotation" type="int" value="0"/>
       <property name="Reflection" type="string" value="0"/>
-      <property name="Primary" type="bool" value="false"/>
+      <property name="Primary" type="bool" value="true"/>
       <property name="Scale" type="empty">
         <property name="X" type="double" value="1.000000"/>
         <property name="Y" type="double" value="1.000000"/>
@@ -127,4 +127,6 @@
       </property>
     </property>
   </property>
+  <property name="AutoEnableProfiles" type="bool" value="false"/>
+  <property name="IdentityPopups" type="bool" value="false"/>
 </channel>

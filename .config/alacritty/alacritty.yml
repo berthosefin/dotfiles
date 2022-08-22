@@ -222,6 +222,35 @@ draw_bold_text_with_bright_colors: true
 ##      START OF COLOR SCHEMES       ##
 #######################################
 schemes:
+  ### Fluent ###
+  Fluent: &Fluent
+    # Default colors
+    primary:
+      background: '#1d1f21'
+      foreground: '#c5c8c6'
+
+    # Normal colors
+    normal:
+      black:   '#1d1f21'
+      red:     '#CC342B'
+      green:   '#198844'
+      yellow:  '#FBA922'
+      blue:    '#3971ED'
+      magenta: '#A36AC7'
+      cyan:    '#3971ED'
+      white:   '#c5c8c6'
+
+    # Bright colors
+    bright:
+      black:   '#969896'
+      red:     '#CC342B'
+      green:   '#198844'
+      yellow:  '#FBA922'
+      blue:    '#3971ED'
+      magenta: '#A36AC7'
+      cyan:    '#3971ED'
+      white:   '#ffffff'
+
   ### Doom One ###
   DoomOne: &DoomOne
     primary:
@@ -526,7 +555,7 @@ schemes:
       magenta: '#6c71c4' # violet
       cyan:    '#93a1a1' # base1
       white:   '#fdf6e3' # base3
-
+  
   ### Tomorrow Night ###
   TomorrowNight: &TomorrowNight
      # Default colors
@@ -565,6 +594,7 @@ schemes:
 ## SET THEME: Choose ONE color scheme from those in the above list. ##
 ## ###################################################################
 # Available themes are:
+# *Fluent
 # *DoomOne
 # *Dracula
 # *GruvboxDark

@@ -1,5 +1,5 @@
 ! Colorscheme
-#include "/home/birkhoff/.cache/wal/colors.Xresources"
+#include "/home/thos/.cache/wal/colors.Xresources"
 
 ! Xft Antialiasing
 Xft.dpi: 86

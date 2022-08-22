@@ -2,9 +2,8 @@
 My personal backup of my dotfiles.
 
 ## Previews
-![img-3](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/img-1.png)
-![img-1](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/img-1.png)
-![img-2](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/img-2.png)
+![xfce](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/xfce.png)
+![i3wm](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/i3wm.png)
 
 ## Details
 - **Display Server** X11
@@ -16,18 +15,18 @@ My personal backup of my dotfiles.
 - **Panel** Xfce4-panel, Polybar
 - **Compositor** Picom-ibhagwan-git
 - **GTK+ Theme Switcher** Lxappearance
-- **GTK Theme** Fluent-light, Nordic-Darker
-- **Icons** Fluent, Nord-Darker
-- **GTK Fonts** Iosevka Custom
+- **GTK Theme** Nordic-Darker
+- **Icons** Nord-Darker
+- **GTK Fonts** Roboto
 - **File Manager** Thunar
 - **Web Browser** Firefox
 - **Task Manager** Htop
 - **Power Manager** Tlp
-- **Image Viewer** Viewnior, Feh
+- **Image Viewer** Ristretto, Viewnior, Feh
 - **Sound Mixer** PulseAudio
 - **Terminal** Alacritty, Xfce4-terminal
 - **CLI Shell** Zsh
-- **Archiver** XFile-roller
+- **Archiver** File-roller
 - **Notification Daemon** Dunst
 - **Graphic Editor** Gimp
 - **CLI Text Editor** Vim
@@ -80,7 +79,7 @@ My personal backup of my dotfiles.
 - Clone this repo `git clone --depth=1 https://github.com/berthosefin/dotfiles ~/.dotfiles`
 - Deploy the dotfiles `cp -rv ~/.dotfiles/* ~`
 - Change the default CLI Shell `chsh $(whoami) -s /bin/zsh`
-- If you find "birkhoff" in the configuration file, replace it with your own username.
+- If you find "thos" in the configuration file, replace it with your own username.
 - Edit some system configuration, example in ~/.dotfiles/.system
 - Reboot
 - Fix some errors

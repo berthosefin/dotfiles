@@ -22,13 +22,12 @@ exec --no-startup-id tlp start &
 exec --no-startup-id dunst &
 exec --no-startup-id redshift &
 exec --no-startup-id mpd &
-
-# Autotiling
-exec_always --no-startup-id autotiling --workspace 1 &
+exec --no-startup-id ~/.bin/xidle &
+# exec --no-startup-id conky -c ~/.config/conky/holybible.conf &
 
 # Wallpaper
-# exec --no-startup-id ~/.fehbg &
-exec --no-startup-id ~/.bin/randomwall &
+exec --no-startup-id ~/.fehbg &
+# exec --no-startup-id ~/.bin/randomwall &
 
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -186,16 +185,22 @@ bindsym $super+Shift+ampersand move container to workspace $ws1
 bindsym $super+Shift+eacute move container to workspace $ws2
 bindsym $super+Shift+quotedbl move container to workspace $ws3
 bindsym $super+Shift+apostrophe move container to workspace $ws4
-bindsym $super+Shift+5 move container to workspace $ws5
+bindsym $super+Shift+parenleft move container to workspace $ws5
 bindsym $super+Shift+minus move container to workspace $ws6
 bindsym $super+Shift+egrave move container to workspace $ws7
 bindsym $super+Shift+underscore move container to workspace $ws8
 bindsym $super+Shift+ccedilla move container to workspace $ws9
 bindsym $super+Shift+agrave move container to workspace $ws10
 
+# Make the currently focused window a scratchpad
+bindsym $super+Shift+u move scratchpad
+
+# Show the first scratchpad window
+bindsym $super+u scratchpad show
+
 # Assign workspaces
-assign [class=firefox] 2
-assign [class=^VirtualBox|GNS3|^code|DesktopEditors] 3
+assign [class=firefox|Brave-browser] 2
+assign [class=^VirtualBox|^code|DesktopEditors|Soffice] 3
 assign [class=^Gimp|Inkscape|Darktable|Blender|Shotcut|Audacity] 4
 assign [class=Pavucontrol|Blueman-manager|Lxappearance|GParted] 5
 
@@ -302,7 +307,7 @@ mode "$mode_gaps_outer" {
 # Color from xressources
 set_from_resource $bg background
 set_from_resource $fg foreground
-set_from_resource $ac color2
+set_from_resource $ac color4
 set_from_resource $mf color8
 set_from_resource $red color1
 
@@ -312,24 +317,23 @@ client.focused_inactive $bg     $bg     $mf     $fg       $mf
 client.unfocused        $bg     $bg     $mf     $fg       $mf
 client.urgent           $bg     $bg     $red    $fg       $red
 client.placeholder      $bg     $bg     $fg     $fg       $fg
-
 client.background       $fg
 
 # Windows rules
 for_window [class="^.*"] border pixel 1
-for_window [class="^.*"] focus
+# for_window [class="^.*"] focus
 for_window [class="^.*"] title_format " [%class] - %title "
 
 # Floating mode
-for_window [class="^.*"] floating enable border pixel 1
+# for_window [class="^.*"] floating enable border pixel 0
 for_window [class="Xfce4-terminal"] floating enable
 for_window [class="Galculator|Catfish"] floating enable
-for_window [class="Zathura|Viewnior|mpv"] floating enable
+for_window [class="Zathura|Viewnior|mpv|Mousepad"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main|Transmission-gtk"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
+for_window [class="VirtualBox Manager|VirtualBox Machine|^code"] floating disable
 
 for_window [instance='lock'] floating enable; focus floating
-for_window [class="VirtualBox Manager|VirtualBox Machine|GNS3|^code|DesktopEditors"] floating disable
 
 for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable

@@ -30,7 +30,7 @@
     </property>
   </property>
   <property name="shutdown" type="empty">
-    <property name="LockScreen" type="bool" value="true"/>
+    <property name="LockScreen" type="bool" value="false"/>
   </property>
   <property name="security" type="empty">
     <property name="EnableTcp" type="bool" value="false"/>

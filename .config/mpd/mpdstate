@@ -1,9 +1,8 @@
 sw_volume: 100
 audio_device_state:1:pulse audio
 audio_device_state:1:my_fifo
-state: play
-current: 44
-time: 31.628000
+state: stop
+current: 51
 random: 1
 repeat: 1
 single: 0
@@ -12,86 +11,87 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Gas/Ayam/Ayam - 'In.mp3
-1:Gas/Ayam/Ayam - 00H00.mp3
-2:Gas/Ayam/Ayam - 2 Am.mp3
-3:Gas/Ayam/Ayam - Agis.mp3
-4:Gas/Ayam/Ayam - Allo maman.mp3
-5:Gas/Ayam/Ayam - AM-2.mp3
-6:Gas/Ayam/Ayam - And Ayam is born.mp3
-7:Gas/Ayam/Ayam - Anyway.mp3
-8:Gas/Ayam/Ayam - Bad choice.mp3
-9:Gas/Ayam/Ayam - Biiip.mp3
-10:Gas/Ayam/Ayam - Birthday.mp3
-11:Gas/Ayam/Ayam - Chill motivation.mp3
-12:Gas/Ayam/Ayam - Coup de gueule.mp3
-13:Gas/Ayam/Ayam - Crush.mp3
-14:Gas/Ayam/Ayam - Dear parents.mp3
-15:Gas/Ayam/Ayam - Diablesse.mp3
-16:Gas/Ayam/Ayam - Eto ambaravaran-kely.mp3
-17:Gas/Ayam/Ayam - Facile a dire qu'à faire.mp3
-18:Gas/Ayam/Ayam - Faites quelque chose s'il vous plaît.mp3
-19:Gas/Ayam/Ayam - Faith.mp3
-20:Gas/Ayam/Ayam - Firework.mp3
-21:Gas/Ayam/Ayam - Forget.mp3
-22:Gas/Ayam/Ayam - Fri-End.mp3
-23:Gas/Ayam/Ayam - Goodbye.mp3
-24:Gas/Ayam/Ayam - Helas.mp3
-25:Gas/Ayam/Ayam - I don't believe.mp3
-26:Gas/Ayam/Ayam - I have a dream.mp3
-27:Gas/Ayam/Ayam - I know you.mp3
-28:Gas/Ayam/Ayam - Il était une fois.mp3
-29:Gas/Ayam/Ayam - Improvise.mp3
-30:Gas/Ayam/Ayam - Iray minitra.mp3
-31:Gas/Ayam/Ayam - J'ai quelques mots pour vous.mp3
-32:Gas/Ayam/Ayam - J'aime la musique.mp3
-33:Gas/Ayam/Ayam - J'y étais presque....mp3
-34:Gas/Ayam/Ayam - Juste be you.mp3
-35:Gas/Ayam/Ayam - Juste give up.mp3
-36:Gas/Ayam/Ayam - Juste pour ce soir.mp3
-37:Gas/Ayam/Ayam - Keep smile.mp3
-38:Gas/Ayam/Ayam - La nuit je fume.mp3
-39:Gas/Ayam/Ayam - La vingtaine.mp3
-40:Gas/Ayam/Ayam - Laisse l'année passer, toi ne change pas.mp3
-41:Gas/Ayam/Ayam - Laisse.mp3
-42:Gas/Ayam/Ayam - Lockdown.mp3
-43:Gas/Ayam/Ayam - Lost without you.mp3
-44:Gas/Ayam/Ayam - Merci.mp3
-45:Gas/Ayam/Ayam - Missing us.mp3
-46:Gas/Ayam/Ayam - Mitsangàna teo.mp3
-47:Gas/Ayam/Ayam - Mon hero.mp3
-48:Gas/Ayam/Ayam - Must.mp3
-49:Gas/Ayam/Ayam - My Day.mp3
-50:Gas/Ayam/Ayam - N.B.mp3
-51:Gas/Ayam/Ayam - N'insiste pas (cover).mp3
-52:Gas/Ayam/Ayam - Never give up.mp3
-53:Gas/Ayam/Ayam - Noir et Blanc.mp3
-54:Gas/Ayam/Ayam - Not you.mp3
-55:Gas/Ayam/Ayam - Ny kaloko.mp3
-56:Gas/Ayam/Ayam - Oui je le veux.mp3
-57:Gas/Ayam/Ayam - Pray 2.0.mp3
-58:Gas/Ayam/Ayam - Pray 3.0.mp3
-59:Gas/Ayam/Ayam - Pray.mp3
-60:Gas/Ayam/Ayam - Raining.mp3
-61:Gas/Ayam/Ayam - Reality.mp3
-62:Gas/Ayam/Ayam - Right now.mp3
-63:Gas/Ayam/Ayam - Secret story.mp3
-64:Gas/Ayam/Ayam - Selfish.mp3
-65:Gas/Ayam/Ayam - So what_.mp3
-66:Gas/Ayam/Ayam - Stop it.mp3
-67:Gas/Ayam/Ayam - Stronger.mp3
-68:Gas/Ayam/Ayam - Supermom.mp3
-69:Gas/Ayam/Ayam - Take a break.mp3
-70:Gas/Ayam/Ayam - Tano mafy.mp3
-71:Gas/Ayam/Ayam - Test.mp3
-72:Gas/Ayam/Ayam - TG.mp3
-73:Gas/Ayam/Ayam - Tiens bon.mp3
-74:Gas/Ayam/Ayam - Tomorrow koa day.mp3
-75:Gas/Ayam/Ayam - Toxic.mp3
-76:Gas/Ayam/Ayam - Tsy anjara.mp3
-77:Gas/Ayam/Ayam - Tuto.mp3
-78:Gas/Ayam/Ayam - Winter.mp3
-79:Gas/Ayam/Ayam - You're perfect boy.mp3
-80:Gas/Ayam/Ayam.mp3
-81:Gas/Ayam/Hery-Zo & Ayam - Feno hasambarana.mp3
+0:Ext/L'Univers Alpha/bad mood/TEXTE 112 - JE NE T'OUBLIE PAS.mp3
+1:Ext/L'Univers Alpha/bad mood/TEXTE 114 - VIOLÉE, ELLE N'AVAIT RIEN DEMANDÉ.mp3
+2:Ext/L'Univers Alpha/bad mood/TEXTE 120 - JE ME BALADAIS IVRE _ Texte oral.mp3
+3:Ext/L'Univers Alpha/bad mood/TEXTE 122 - ELLE PARLAIT A LA LUNE (ft Black Bird ) _ Texte oral.mp3
+4:Ext/L'Univers Alpha/bad mood/TEXTE 124 - JE TE VOIS SOMBRER _ TEXTE ORAL.mp3
+5:Ext/L'Univers Alpha/bad mood/TEXTE 133 - TU M'AS DÉTRUIT(E) (ft Black Bird) _ Texte oral.mp3
+6:Ext/L'Univers Alpha/bad mood/TEXTE 139 - J'AI 15 ANS _ Texte oral.mp3
+7:Ext/L'Univers Alpha/bad mood/TEXTE 141 - J'AI 25 ANS.mp3
+8:Ext/L'Univers Alpha/bad mood/TEXTE 148 - J'AURAIS PEUT-ÊTRE DÛ...mp3
+9:Ext/L'Univers Alpha/bad mood/TEXTE 155 - ET SI J'ARRÊTAIS .mp3
+10:Ext/L'Univers Alpha/bad mood/TEXTE 160 - PETITE FILLE TRISTE.mp3
+11:Ext/L'Univers Alpha/bad mood/TEXTE 161 - QUAND JE MOURRAI.mp3
+12:Ext/L'Univers Alpha/bad mood/Texte 25 - Partir pour ne jamais revenir..mp3
+13:Ext/L'Univers Alpha/bad mood/Texte 32 - Cette fille qui a perdu confiance...mp3
+14:Ext/L'Univers Alpha/bad mood/Texte 34 - Drogué à s'en faire du mal.mp3
+15:Ext/L'Univers Alpha/bad mood/Texte 35 - Travers de la société (duo).mp3
+16:Ext/L'Univers Alpha/bad mood/Texte 39 - Tu ne partiras pas..mp3
+17:Ext/L'Univers Alpha/bad mood/Texte 40 - Désolé.mp3
+18:Ext/L'Univers Alpha/bad mood/Texte 52 - Tout aura changé.mp3
+19:Ext/L'Univers Alpha/bad mood/Texte 56 - Nostalgie  - Origine.mp3
+20:Ext/L'Univers Alpha/bad mood/Texte 59 - Yumi.mp3
+21:Ext/L'Univers Alpha/bad mood/Texte 61 - Regrets.mp3
+22:Ext/L'Univers Alpha/bad mood/Texte 62 - Prise de conscience ( Duo avec Dark pen ).mp3
+23:Ext/L'Univers Alpha/bad mood/Texte 70 - Confrontation sociale.mp3
+24:Ext/L'Univers Alpha/bad mood/Texte 92 - Bercée par la dépression.mp3
+25:Ext/L'Univers Alpha/bad mood/Texte 96 - Si je venais à partir.mp3
+26:Ext/L'Univers Alpha/bad mood/TEXTE 99 - PHOBIE SOCIALE.mp3
+27:Ext/L'Univers Alpha/bad mood/Texte oral - «À tout ce que j'ai loupé».mp3
+28:Ext/L'Univers Alpha/bad mood/Texte oral - «À tout mes anges».mp3
+29:Ext/L'Univers Alpha/bad mood/Texte oral - «Aime-moi comme au premier jour».mp3
+30:Ext/L'Univers Alpha/bad mood/Texte oral - «Au revoir» _ partie 2.mp3
+31:Ext/L'Univers Alpha/bad mood/Texte oral - «C'est plus comme avant».mp3
+32:Ext/L'Univers Alpha/bad mood/Texte oral - «Ça m'fait peur».mp3
+33:Ext/L'Univers Alpha/bad mood/Texte oral - «Coeur seul».mp3
+34:Ext/L'Univers Alpha/bad mood/Texte oral - «Comment te faire confiance».mp3
+35:Ext/L'Univers Alpha/bad mood/Texte oral - «Dans la Lune».mp3
+36:Ext/L'Univers Alpha/bad mood/Texte oral - «Dernier appel».mp3
+37:Ext/L'Univers Alpha/bad mood/Texte oral - «Désolé».mp3
+38:Ext/L'Univers Alpha/bad mood/Texte oral - «Elle avait peur des autres».mp3
+39:Ext/L'Univers Alpha/bad mood/Texte oral - «Elle avait peur du monde».mp3
+40:Ext/L'Univers Alpha/bad mood/Texte oral - «Est-ce que tu me vois».mp3
+41:Ext/L'Univers Alpha/bad mood/Texte oral - «Hypersensible».mp3
+42:Ext/L'Univers Alpha/bad mood/Texte oral - «J'ai mal».mp3
+43:Ext/L'Univers Alpha/bad mood/Texte oral - «J'ai peur de moi» ft Odélia.mp3
+44:Ext/L'Univers Alpha/bad mood/Texte oral - «J'ai peur pour toi».mp3
+45:Ext/L'Univers Alpha/bad mood/Texte oral - «J'ai plus la force».mp3
+46:Ext/L'Univers Alpha/bad mood/Texte oral - «J'aimerais devenir quelqu'un d'autre».mp3
+47:Ext/L'Univers Alpha/bad mood/Texte oral - «J'aurais tellement aimé».mp3
+48:Ext/L'Univers Alpha/bad mood/Texte oral - «J'en ai marre».mp3
+49:Ext/L'Univers Alpha/bad mood/Texte oral - «J'me sens vide».mp3
+50:Ext/L'Univers Alpha/bad mood/Texte oral - «J'me suis totalement perdu».mp3
+51:Ext/L'Univers Alpha/bad mood/Texte oral - «J'ressens plus rien».mp3
+52:Ext/L'Univers Alpha/bad mood/Texte oral - «Je me sens si seul(e)».mp3
+53:Ext/L'Univers Alpha/bad mood/Texte oral - «Je ne sais plus aimer» .mp3
+54:Ext/L'Univers Alpha/bad mood/Texte oral - «Je ne sais plus aimer».mp3
+55:Ext/L'Univers Alpha/bad mood/Texte oral - «Je ne suis qu'un(e) ami(e)».mp3
+56:Ext/L'Univers Alpha/bad mood/Texte oral - «Je pense toujours à toi».mp3
+57:Ext/L'Univers Alpha/bad mood/Texte oral - «Je t'ai attendu trop longtemps».mp3
+58:Ext/L'Univers Alpha/bad mood/Texte oral - «Je t'ai attendu».mp3
+59:Ext/L'Univers Alpha/bad mood/Texte oral - «Je te regarde sombrer».mp3
+60:Ext/L'Univers Alpha/bad mood/Texte oral - «La fin de notre histoire».mp3
+61:Ext/L'Univers Alpha/bad mood/Texte oral - «La mort par l'amour».mp3
+62:Ext/L'Univers Alpha/bad mood/Texte oral - «La nuit».mp3
+63:Ext/L'Univers Alpha/bad mood/Texte oral - «Ne me repousse pas».mp3
+64:Ext/L'Univers Alpha/bad mood/Texte oral - «Notes pour trop tard».mp3
+65:Ext/L'Univers Alpha/bad mood/Texte oral - «On était si beau».mp3
+66:Ext/L'Univers Alpha/bad mood/Texte oral - «On s'est fait du mal».mp3
+67:Ext/L'Univers Alpha/bad mood/Texte oral - «Perdu dans le noir».mp3
+68:Ext/L'Univers Alpha/bad mood/Texte oral - «Quand on s'aime jusqu'à l'overdose».mp3
+69:Ext/L'Univers Alpha/bad mood/Texte oral - «Si je m'accroche à toi».mp3
+70:Ext/L'Univers Alpha/bad mood/Texte oral - «Si on pouvait tout recommencer».mp3
+71:Ext/L'Univers Alpha/bad mood/Texte oral - «Si seul».mp3
+72:Ext/L'Univers Alpha/bad mood/Texte oral - «Solitaire» .mp3
+73:Ext/L'Univers Alpha/bad mood/Texte oral - «Solitaire».mp3
+74:Ext/L'Univers Alpha/bad mood/Texte oral - «T'as tout abandonné».mp3
+75:Ext/L'Univers Alpha/bad mood/Texte oral - «T'es le seul».mp3
+76:Ext/L'Univers Alpha/bad mood/Texte oral - «Tête dans les nuages».mp3
+77:Ext/L'Univers Alpha/bad mood/Texte oral - «Timidité maladive».mp3
+78:Ext/L'Univers Alpha/bad mood/Texte oral - «Ton absence».mp3
+79:Ext/L'Univers Alpha/bad mood/Texte oral - «Trop dur à dire».mp3
+80:Ext/L'Univers Alpha/bad mood/Texte oral - «Tu m'as fait du mal».mp3
+81:Ext/L'Univers Alpha/bad mood/Texte oral - «Un jour je partirai».mp3
+82:Ext/L'Univers Alpha/bad mood/Texte oral 176 - «Si j'avais osé».mp3
 playlist_end

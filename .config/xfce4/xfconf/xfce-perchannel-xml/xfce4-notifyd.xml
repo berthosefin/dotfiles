@@ -10,6 +10,7 @@
       <value type="string" value="dunstify"/>
       <value type="string" value="Firefox"/>
       <value type="string" value="Gestionnaire de paquets"/>
+      <value type="string" value="networkmanager-dmenu"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="notify-send"/>
       <value type="string" value="org.gnome.Nautilus"/>
@@ -19,6 +20,7 @@
       <value type="string" value="thunar-volman"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="Transmission"/>
+      <value type="string" value="ulauncher"/>
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="Xfce4-notifyd settings"/>
       <value type="string" value="xfce4-power-manager"/>

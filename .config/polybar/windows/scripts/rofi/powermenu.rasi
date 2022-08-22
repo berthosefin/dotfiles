@@ -27,7 +27,7 @@ window {
     border-radius:                  10px;
     width:                          400px;
     x-offset:                       -5;
-    y-offset:                       -35px;
+    y-offset:                       -45px;
 }
 
 prompt {

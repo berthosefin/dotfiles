@@ -1,7 +1,7 @@
-delay=3
-region=1
+delay=1
+region=3
 show_mouse=0
-screenshot_dir=file:/home/birkhoff/Lab/dotfiles/Previews
+screenshot_dir=file:/home/thos/Bureau
 app=gimp-2.10
 last_user=
 action=1

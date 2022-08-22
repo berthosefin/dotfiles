@@ -34,7 +34,7 @@ Plugin 'ap/vim-css-color'                               " Color previews for CSS
 Plugin 'junegunn/vim-emoji'                             " Vim needs emojis!
 Plugin 'tpope/vim-commentary'						    " Commentary 
 
-Plugin 'arcticicestudio/nord-vim', {'name': 'nord', 'on': 'NERDTreeToggle' }
+Plugin 'arcticicestudio/nord-vim', { 'name': 'nord', 'on': 'NERDTreeToggle' }
 
 call vundle#end()
 
@@ -78,9 +78,7 @@ let g:mapleader = ","
 " => Status Line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
-let g:lightline = {
-            \ 'colorscheme': 'nord',
-      \ }
+let g:lightline = { 'colorscheme': 'nord' }
 
 " Always show statusline
 set laststatus=2

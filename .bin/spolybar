@@ -19,11 +19,6 @@ elif [[ "$1" == "blocks" ]]; then
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
 	sh $DIR/launch.sh
 
-elif [[ "$1" == "bordered" ]]; then
-	style="bordered"
-    	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
-	sh $DIR/launch.sh
-
 elif [[ "$1" == "docky" ]]; then
 	style="docky"
     	sed -i "s/$STYLE/$1/g" $DIR/launch.sh
@@ -54,7 +49,6 @@ else
 		
 	Available Themes :
     . default
-    . bordered
     . blocks
     . docky
     . forest

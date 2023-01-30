@@ -17,17 +17,18 @@ floating_modifier $super
 # Autostart
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id xsettingsd &
+exec --no-startup-id xfce4-notifyd &
 exec --no-startup-id xfce4-power-manager &
 exec --no-startup-id tlp start &
 exec --no-startup-id dunst &
 exec --no-startup-id redshift &
 exec --no-startup-id mpd &
-exec --no-startup-id ~/.bin/xidle &
+# exec --no-startup-id ~/.bin/xidle &
 # exec --no-startup-id conky -c ~/.config/conky/holybible.conf &
 
 # Wallpaper
-exec --no-startup-id ~/.fehbg &
-# exec --no-startup-id ~/.bin/randomwall &
+# exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.bin/randomwall &
 
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -56,6 +57,7 @@ bindsym $alt+l exec betterlockscreen -l blur
 
 # Others keyboard shortcuts
 bindsym $alt+g exec --no-startup-id galculator
+bindsym control+Shift+f exec --no-startup-id fsearch
 
 # Change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
@@ -69,8 +71,8 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +10%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
 
 # Kill focused window
 bindsym $super+q kill
@@ -80,7 +82,7 @@ bindsym $super+Shift+d exec dmenu_run -p 'RUN »»' -nb "$bg" -nf "$ac" -sb "$ac
 bindsym $super+d exec --no-startup-id rofi -show drun
 
 # Powermenu
-bindsym $super+e exec --no-startup-id rofi -show power-menu -modi power-menu:~/.bin/rofi-power-menu
+bindsym $super+e exec --no-startup-id ~/.bin/powermenu
 
 # Rofi theme selector
 bindsym control+$alt+r exec --no-startup-id rofi-theme-selector
@@ -199,9 +201,9 @@ bindsym $super+Shift+u move scratchpad
 bindsym $super+u scratchpad show
 
 # Assign workspaces
-assign [class=firefox|Brave-browser] 2
+assign [class=firefox] 2
 assign [class=^VirtualBox|^code|DesktopEditors|Soffice] 3
-assign [class=^Gimp|Inkscape|Darktable|Blender|Shotcut|Audacity] 4
+assign [class=^Gimp|Inkscape|Darktable|Shotcut|Audacity] 4
 assign [class=Pavucontrol|Blueman-manager|Lxappearance|GParted] 5
 
 # Reload the configuration file
@@ -325,9 +327,9 @@ for_window [class="^.*"] border pixel 1
 for_window [class="^.*"] title_format " [%class] - %title "
 
 # Floating mode
-# for_window [class="^.*"] floating enable border pixel 0
+# for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal"] floating enable
-for_window [class="Galculator|Catfish"] floating enable
+for_window [class="Galculator|Fsearch"] floating enable
 for_window [class="Zathura|Viewnior|mpv|Mousepad"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main|Transmission-gtk"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
@@ -338,6 +340,7 @@ for_window [instance='lock'] floating enable; focus floating
 for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable
 for_window [title="Moving"] floating enable
+for_window [title="^Opération"] floating enable
 for_window [title="^Terminator Preferences$"] floating enable
 
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable

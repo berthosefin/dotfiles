@@ -1,51 +1,23 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[/home/birkhoff/Bureau/ArchLinux Pacman Trucs et Astuces Vérification avec la Mise à jour.mp4]
-row=0
-col=6
+[LLD L21]
+row=3
+col=0
 
-[/home/birkhoff/Bureau/wiki_archlinux_fr_Pacman_Trucs_et_Astuces.pdf]
-row=0
-col=4
-
-[/home/birkhoff/Bureau/APK]
-row=0
-col=3
-
-[/home/birkhoff/Bureau/wiki_archlinux_org_index_php_Touchpad_Synaptics.pdf]
+[E04ACDDD4ACDB098]
 row=2
-col=4
+col=0
 
-[/home/birkhoff/Bureau/logo]
-row=2
-col=3
-
-[/home/birkhoff/Bureau/Les consignes de base pour administrer une Archlinux.mp4]
-row=2
-col=6
-
-[/home/birkhoff/Bureau/wiki_archlinux_fr_Touchpad_Synaptics.pdf]
-row=1
-col=4
-
-[/home/birkhoff/Bureau/ArchLinux _ Manjaro _ Paramétrer les options de compilation des paquets AUR.mp4]
-row=1
-col=6
-
-[/home/birkhoff/Bureau/dots]
-row=1
-col=3
-
-[6C90E46090E431EE]
-row=2
+[2017-10-27-17-02-10-00]
+row=4
 col=0
 
 [Corbeille]
 row=0
 col=0
 
-[/home/birkhoff]
+[/home/thos]
 row=1
 col=0
 

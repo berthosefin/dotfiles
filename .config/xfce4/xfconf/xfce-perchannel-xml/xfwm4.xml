@@ -41,7 +41,7 @@
     <property name="raise_with_any_button" type="bool" value="true"/>
     <property name="repeat_urgent_blink" type="bool" value="true"/>
     <property name="resize_opacity" type="int" value="100"/>
-    <property name="scroll_workspaces" type="bool" value="true"/>
+    <property name="scroll_workspaces" type="bool" value="false"/>
     <property name="shadow_delta_height" type="int" value="0"/>
     <property name="shadow_delta_width" type="int" value="0"/>
     <property name="shadow_delta_x" type="int" value="0"/>
@@ -56,10 +56,10 @@
     <property name="snap_to_windows" type="bool" value="false"/>
     <property name="snap_width" type="int" value="10"/>
     <property name="sync_to_vblank" type="bool" value="false"/>
-    <property name="theme" type="string" value="Nordic-Darker"/>
+    <property name="theme" type="string" value="Nordic-darker"/>
     <property name="tile_on_move" type="bool" value="true"/>
     <property name="title_alignment" type="string" value="center"/>
-    <property name="title_font" type="string" value="Roboto Bold 8"/>
+    <property name="title_font" type="string" value="Iosevka Custom 8"/>
     <property name="title_horizontal_offset" type="int" value="0"/>
     <property name="titleless_maximize" type="bool" value="false"/>
     <property name="title_shadow_active" type="string" value="false"/>
@@ -74,16 +74,16 @@
     <property name="wrap_cycle" type="bool" value="true"/>
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="wrap_resistance" type="int" value="10"/>
-    <property name="wrap_windows" type="bool" value="true"/>
+    <property name="wrap_windows" type="bool" value="false"/>
     <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
     <property name="workspace_names" type="array">
-      <value type="string" value="1"/>
-      <value type="string" value="2"/>
-      <value type="string" value="3"/>
-      <value type="string" value="4"/>
-      <value type="string" value="Espace de travail 5"/>
-      <value type="string" value="Espace de travail 6"/>
+      <value type="string" value="I"/>
+      <value type="string" value="II"/>
+      <value type="string" value="III"/>
+      <value type="string" value="IV"/>
+      <value type="string" value="⚄"/>
+      <value type="string" value="⚅"/>
       <value type="string" value="Espace de travail 7"/>
       <value type="string" value="Espace de travail 8"/>
     </property>

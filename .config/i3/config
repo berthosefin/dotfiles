@@ -15,6 +15,7 @@ font pango:Iosevka Custom 8
 floating_modifier $super
 
 # Autostart
+# exec --no-startup-id ~/.bin/xidle &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id xsettingsd &
 exec --no-startup-id xfce4-notifyd &
@@ -23,8 +24,6 @@ exec --no-startup-id tlp start &
 exec --no-startup-id dunst &
 exec --no-startup-id redshift &
 exec --no-startup-id mpd &
-# exec --no-startup-id ~/.bin/xidle &
-# exec --no-startup-id conky -c ~/.config/conky/holybible.conf &
 
 # Wallpaper
 # exec --no-startup-id ~/.fehbg &
@@ -71,8 +70,8 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +10%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
 
 # Kill focused window
 bindsym $super+q kill
@@ -310,28 +309,30 @@ mode "$mode_gaps_outer" {
 set_from_resource $bg background
 set_from_resource $fg foreground
 set_from_resource $ac color4
-set_from_resource $mf color8
-set_from_resource $red color1
+set_from_resource $na color8
+set_from_resource $rr color1
 
 # Class                 border  backgr. text    indicator child_border
 client.focused          $bg     $bg     $ac     $fg       $ac
-client.focused_inactive $bg     $bg     $mf     $fg       $mf
-client.unfocused        $bg     $bg     $mf     $fg       $mf
-client.urgent           $bg     $bg     $red    $fg       $red
+client.focused_inactive $bg     $bg     $na     $fg       $na
+client.unfocused        $bg     $bg     $na     $fg       $na
+client.urgent           $bg     $bg     $rr     $fg       $rr
 client.placeholder      $bg     $bg     $fg     $fg       $fg
-client.background       $fg
+client.background       $bg
 
 # Windows rules
-for_window [class="^.*"] border pixel 1
 # for_window [class="^.*"] focus
 for_window [class="^.*"] title_format " [%class] - %title "
+for_window [class="^.*"] border pixel 1
+for_window [class="mpv"] border pixel 2
+
 
 # Floating mode
 # for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal"] floating enable
 for_window [class="Galculator|Fsearch"] floating enable
 for_window [class="Zathura|Viewnior|mpv|Mousepad"] floating enable
-for_window [class="Nm-connection-editor|xdman-Main|Transmission-gtk"] floating enable
+for_window [class="Nm-connection-editor|xdman-Main"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
 for_window [class="VirtualBox Manager|VirtualBox Machine|^code"] floating disable
 

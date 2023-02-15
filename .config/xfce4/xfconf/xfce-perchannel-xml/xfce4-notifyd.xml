@@ -13,7 +13,9 @@
       <value type="string" value="networkmanager-dmenu"/>
       <value type="string" value="nm-applet"/>
       <value type="string" value="notify-send"/>
+      <value type="string" value="org.freedesktop.network-manager-applet"/>
       <value type="string" value="org.gnome.Nautilus"/>
+      <value type="string" value="org.xfce.Thunar"/>
       <value type="string" value="QWinFF"/>
       <value type="string" value="seapplet"/>
       <value type="string" value="thunar"/>

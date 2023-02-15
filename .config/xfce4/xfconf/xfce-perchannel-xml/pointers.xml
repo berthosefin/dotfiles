@@ -3,8 +3,8 @@
 <channel name="pointers" version="1.0">
   <property name="SynPS2_Synaptics_TouchPad" type="empty">
     <property name="RightHanded" type="bool" value="true"/>
-    <property name="Threshold" type="int" value="4"/>
-    <property name="Acceleration" type="double" value="2.000000"/>
+    <property name="Threshold" type="int" value="-1"/>
+    <property name="Acceleration" type="double" value="-1"/>
     <property name="Properties" type="empty">
       <property name="Synaptics_Edge_Scrolling" type="array">
         <value type="int" value="0"/>
@@ -40,7 +40,7 @@
   <property name="USB_usb_keyboard_Consumer_Control" type="empty">
     <property name="RightHanded" type="bool" value="true"/>
     <property name="Threshold" type="int" value="4"/>
-    <property name="Acceleration" type="double" value="5.000000"/>
+    <property name="Acceleration" type="double" value="5"/>
   </property>
-  <property name="DisableTouchpadDuration" type="double" value="0.100000"/>
+  <property name="DisableTouchpadDuration" type="double" value="0.10000000000000001"/>
 </channel>

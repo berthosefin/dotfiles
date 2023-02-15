@@ -25,4 +25,7 @@
     <property name="limit-quality" type="bool" value="false"/>
     <property name="wrap" type="bool" value="false"/>
   </property>
+  <property name="slideshow" type="empty">
+    <property name="timeout" type="uint" value="10"/>
+  </property>
 </channel>

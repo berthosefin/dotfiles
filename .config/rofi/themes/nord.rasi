@@ -24,6 +24,7 @@ configuration {
 	nord14: #a3be8c;
 	nord15: #b48ead;
 
+    background:  @nord0;
     foreground:  @nord9;
     backlight:   #ccffeedd;
     background-color:  transparent;

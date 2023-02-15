@@ -63,6 +63,7 @@
       <property name="&lt;Alt&gt;g" type="string" value="galculator"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;Return" type="string" value="alacritty"/>
       <property name="&lt;Alt&gt;l" type="string" value="betterlockscreen -l blur"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;f" type="string" value="fsearch"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">

@@ -18,11 +18,11 @@
           <value type="uint" value="65535"/>
         </property>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/home/thos/Lab/linux/dotfiles/Images/Nordic/nordic.jpg"/>
+        <property name="image-path" type="string" value="/home/thos/Images/Nordic/audio-bunny.png"/>
         <property name="image-show" type="bool" value="true"/>
         <property name="last-image" type="empty"/>
         <property name="last-single-image" type="empty"/>
-        <property name="image-style" type="int" value="0"/>
+        <property name="image-style" type="int" value="5"/>
         <property name="workspace0" type="empty">
           <property name="brightness" type="int" value="0"/>
           <property name="color-style" type="int" value="0"/>
@@ -41,9 +41,9 @@
           <property name="image-path" type="string" value="/home/birkhoff/Images/kali-linux-wallpaper-v2.png"/>
           <property name="image-show" type="bool" value="true"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/birkhoff/Images/wallhaven/wallhaven-dpv8lj.jpg"/>
+          <property name="last-image" type="string" value="/home/thos/.local/share/backgrounds/Fluent-building-morning.png"/>
           <property name="last-single-image" type="string" value="/usr/share/images/desktop-base/default"/>
-          <property name="saturation" type="double" value="1.000000"/>
+          <property name="saturation" type="double" value="1"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="brightness" type="int" value="0"/>
@@ -65,7 +65,7 @@
           <property name="image-style" type="int" value="5"/>
           <property name="last-image" type="string" value="/home/birkhoff/Images/Vacance/317/darktable_exported/IMG_3247.jpg"/>
           <property name="last-single-image" type="string" value="/usr/share/images/desktop-base/default"/>
-          <property name="saturation" type="double" value="1.000000"/>
+          <property name="saturation" type="double" value="1"/>
         </property>
         <property name="workspace2" type="empty">
           <property name="brightness" type="int" value="0"/>
@@ -157,9 +157,9 @@
           <property name="backdrop-cycle-timer" type="uint" value="10"/>
           <property name="rgba1" type="array">
             <value type="double" value="0.466667"/>
-            <value type="double" value="0.462745"/>
-            <value type="double" value="0.482353"/>
-            <value type="double" value="1.000000"/>
+            <value type="double" value="0.46274500000000002"/>
+            <value type="double" value="0.48235299999999998"/>
+            <value type="double" value="1"/>
           </property>
         </property>
         <property name="workspace1" type="empty">
@@ -282,9 +282,10 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="5"/>
-          <property name="last-image" type="string" value="/home/thos/Lab/linux/dotfiles/Images/Nordic/nordic.jpg"/>
-          <property name="backdrop-cycle-enable" type="bool" value="false"/>
+          <property name="last-image" type="string" value="/home/thos/Images/Nordic/ign_black.jpg"/>
+          <property name="backdrop-cycle-enable" type="bool" value="true"/>
           <property name="backdrop-cycle-random-order" type="bool" value="true"/>
+          <property name="backdrop-cycle-timer" type="uint" value="5"/>
         </property>
         <property name="workspace1" type="empty">
           <property name="color-style" type="int" value="0"/>
@@ -317,6 +318,28 @@
           <property name="last-image" type="string" value="/home/birkhoff/Images/wallhaven/wallhaven-83jleo.jpg"/>
         </property>
       </property>
+      <property name="monitorHDMI1" type="empty">
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-verticals.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-verticals.png"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-verticals.png"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="0"/>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-verticals.png"/>
+        </property>
+      </property>
     </property>
     <property name="single-workspace-mode" type="bool" value="true"/>
     <property name="single-workspace-number" type="int" value="0"/>
@@ -331,9 +354,9 @@
       <property name="show-device-removable" type="bool" value="true"/>
       <property name="show-network-removable" type="bool" value="true"/>
     </property>
-    <property name="font-size" type="double" value="8.000000"/>
-    <property name="gravity" type="int" value="1"/>
-    <property name="icon-size" type="uint" value="26"/>
+    <property name="font-size" type="double" value="8"/>
+    <property name="gravity" type="int" value="0"/>
+    <property name="icon-size" type="uint" value="32"/>
     <property name="primary" type="bool" value="true"/>
     <property name="show-thumbnails" type="bool" value="true"/>
     <property name="use-custom-font-size" type="bool" value="false"/>
@@ -345,5 +368,6 @@
   </property>
   <property name="desktop-menu" type="empty">
     <property name="show-icons" type="bool" value="true"/>
+    <property name="show" type="bool" value="true"/>
   </property>
 </channel>

@@ -6,8 +6,8 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=683;y=16"/>
-      <property name="length" type="uint" value="100"/>
+      <property name="position" type="string" value="p=8;x=683;y=752"/>
+      <property name="length" type="double" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="30"/>
@@ -16,13 +16,22 @@
         <value type="int" value="4"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
+        <value type="int" value="15"/>
         <value type="int" value="12"/>
-        <value type="int" value="6"/>
         <value type="int" value="8"/>
+        <value type="int" value="6"/>
         <value type="int" value="9"/>
-        <value type="int" value="10"/>
         <value type="int" value="1"/>
       </property>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.11372549019607843"/>
+        <value type="double" value="0.12156862745098039"/>
+        <value type="double" value="0.12941176470588237"/>
+        <value type="double" value="1"/>
+      </property>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="nrows" type="uint" value="1"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -40,10 +49,17 @@
       <property name="rows" type="uint" value="1"/>
       <property name="miniature-view" type="bool" value="false"/>
       <property name="numbering" type="bool" value="false"/>
+      <property name="wrap-workspaces" type="bool" value="false"/>
+      <property name="workspace-scrolling" type="bool" value="true"/>
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="réseau désactivé"/>
+        <value type="string" value="anydesk"/>
+        <value type="string" value="connexion au réseau wi-fi « projet_jeune_leader » active : projet_jeune_leader (66 %)"/>
+        <value type="string" value="connexion au réseau wi-fi « projet_jeune_leader » active : projet_jeune_leader (69 %)"/>
+        <value type="string" value="notes"/>
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="applet networkmanager"/>
         <value type="string" value="ulauncher"/>
@@ -55,6 +71,7 @@
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="remmina-icon"/>
         <value type="string" value="GoldenDict"/>
         <value type="string" value="Latte Dock_microphone"/>
         <value type="string" value="blueman"/>
@@ -70,17 +87,48 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance1242;chromium.instance2786;firefox.instance15594;firefox.instance1721;firefox.instance24982;firefox.instance5425;firefox.instance840;rhythmbox;strawberry;vlc"/>
+      <property name="mpris-players" type="string" value="chromium.instance12271;chromium.instance1242;chromium.instance2786;clementine;firefox.instance1101;firefox.instance1165;firefox.instance12004;firefox.instance1303;firefox.instance13833;firefox.instance15594;firefox.instance1721;firefox.instance1756;firefox.instance1882;firefox.instance2206;firefox.instance24982;firefox.instance37265;firefox.instance5425;firefox.instance6904;firefox.instance840;firefox.instance9781;io.bassi.Amberol;rhythmbox;strawberry;vlc"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
-    <property name="plugin-10" type="string" value="notification-plugin"/>
     <property name="plugin-12" type="string" value="clock">
       <property name="digital-format" type="string" value="%_H:%M"/>
       <property name="mode" type="uint" value="2"/>
+      <property name="digital-time-format" type="string" value="%_H:%M"/>
+      <property name="digital-layout" type="uint" value="3"/>
     </property>
     <property name="plugin-7" type="string" value="whiskermenu"/>
     <property name="plugin-1" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-15" type="string" value="weather">
+      <property name="msl" type="int" value="0"/>
+      <property name="timezone" type="string" value=""/>
+      <property name="offset" type="string" value="+03:00"/>
+      <property name="cache-max-age" type="int" value="172800"/>
+      <property name="power-saving" type="bool" value="true"/>
+      <property name="units" type="empty">
+        <property name="temperature" type="int" value="0"/>
+        <property name="pressure" type="int" value="0"/>
+        <property name="windspeed" type="int" value="0"/>
+        <property name="precipitation" type="int" value="0"/>
+        <property name="altitude" type="int" value="0"/>
+        <property name="apparent-temperature" type="int" value="2"/>
+      </property>
+      <property name="round" type="bool" value="true"/>
+      <property name="single-row" type="bool" value="true"/>
+      <property name="tooltip-style" type="int" value="1"/>
+      <property name="forecast" type="empty">
+        <property name="layout" type="int" value="1"/>
+        <property name="days" type="int" value="5"/>
+      </property>
+      <property name="theme-dir" type="string" value="/usr/share/xfce4/weather/icons/liquid"/>
+      <property name="scrollbox" type="empty">
+        <property name="show" type="bool" value="true"/>
+        <property name="animate" type="bool" value="true"/>
+        <property name="lines" type="int" value="1"/>
+        <property name="color" type="string" value="rgba(0,0,0,0)"/>
+        <property name="use-color" type="bool" value="false"/>
+      </property>
     </property>
   </property>
 </channel>

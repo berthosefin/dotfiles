@@ -61,16 +61,13 @@ ZSH_THEME="spaceship-prompt/spaceship"
 plugins=(
     aliases
     archlinux
-    colored-man-pages
-    colorize
-    docker
-    docker-compose
     git
     history
     python
     sudo
     systemadmin
     systemd
+    themes
     zsh-autosuggestions
     zsh-completions
     zsh-syntax-highlighting

@@ -9,10 +9,10 @@
   <property name="match-results-exactly" type="bool" value="false"/>
   <property name="close-after-select" type="bool" value="false"/>
   <property name="search-compressed-files" type="bool" value="false"/>
-  <property name="window-width" type="int" value="650"/>
-  <property name="window-height" type="int" value="470"/>
-  <property name="window-x" type="int" value="95"/>
-  <property name="window-y" type="int" value="166"/>
+  <property name="window-width" type="int" value="645"/>
+  <property name="window-height" type="int" value="529"/>
+  <property name="window-x" type="int" value="646"/>
+  <property name="window-y" type="int" value="187"/>
   <property name="exclude-paths" type="string" value="/dev;~/.cache;~/.gvfs;"/>
   <property name="file-size-binary" type="bool" value="true"/>
 </channel>

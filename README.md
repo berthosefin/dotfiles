@@ -13,16 +13,16 @@ My personal backup of my dotfiles.
 - **WM** Xfwm4, i3-gaps
 - **Launcher** Rofi, Ulauncher
 - **Panel** Xfce4-panel, Polybar
-- **Compositor** Picom-ibhagwan-git
+- **Compositor** Picom-jonaburg-git
 - **GTK+ Theme Switcher** Lxappearance
 - **GTK Theme** Nordic-Darker
 - **Icons** Nord-Darker
-- **GTK Fonts** Roboto
-- **File Manager** Thunar
-- **Web Browser** Firefox
+- **GTK Fonts** Roboto, Iosevka Custom
+- **File Manager** Thunar, Ranger
+- **Web Browser** Firefox, Brave
 - **Task Manager** Htop
 - **Power Manager** Tlp
-- **Image Viewer** Ristretto, Viewnior, Feh
+- **Image Viewer** Viewnior, Feh
 - **Sound Mixer** PulseAudio
 - **Terminal** Alacritty, Xfce4-terminal
 - **CLI Shell** Zsh
@@ -32,7 +32,7 @@ My personal backup of my dotfiles.
 - **CLI Text Editor** Vim
 - **GUI Text Editor** Code - OSS
 - **CLI Music Player** Ncmpcpp
-- **GUI Music Player** Rhythmbox
+- **GUI Music Player** Rhythmbox, Clementine
 - **Media Player** Mpv, Vlc
 - **Policy Kit Frontend** Polkit-gnome
 - **Screenshooter** Scrot, Xfce4-screenshooter

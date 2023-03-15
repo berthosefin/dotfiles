@@ -33,7 +33,7 @@ exec --no-startup-id ~/.bin/randomwall &
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # Compositor
-exec_always --no-startup-id picom &
+exec_always --no-startup-id picom -b &
 
 # Start a terminal
 bindsym $super+Return exec alacritty
@@ -258,6 +258,8 @@ mode "resize" {
 gaps inner 5
 gaps outer 0
 
+# border_radius 5
+
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
@@ -331,7 +333,7 @@ for_window [class="mpv"] border pixel 2
 # for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal"] floating enable
 for_window [class="Galculator|Fsearch"] floating enable
-for_window [class="Zathura|Viewnior|mpv|Mousepad"] floating enable
+for_window [class="Mousepad|Zathura|Evince|Viewnior|mpv|vlc"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
 for_window [class="VirtualBox Manager|VirtualBox Machine|^code"] floating disable

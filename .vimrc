@@ -35,6 +35,7 @@ Plugin 'junegunn/vim-emoji'                             " Vim needs emojis!
 Plugin 'tpope/vim-commentary'						    " Commentary 
 
 Plugin 'arcticicestudio/nord-vim', { 'name': 'nord', 'on': 'NERDTreeToggle' }
+Plugin 'dracula/vim', { 'name': 'dracula' }
 
 call vundle#end()
 

@@ -26,8 +26,8 @@ exec --no-startup-id redshift &
 exec --no-startup-id mpd &
 
 # Wallpaper
-# exec --no-startup-id ~/.fehbg &
-exec --no-startup-id ~/.bin/randomwall &
+exec --no-startup-id ~/.fehbg &
+# exec --no-startup-id ~/.bin/randomwall &
 
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -202,7 +202,7 @@ bindsym $super+u scratchpad show
 # Assign workspaces
 assign [class=firefox] 2
 assign [class=^VirtualBox|^code|DesktopEditors|Soffice] 3
-assign [class=^Gimp|Inkscape|Darktable|Shotcut|Audacity] 4
+assign [class=^Gimp|Inkscape|Darktable|Shotcut|Tenacity] 4
 assign [class=Pavucontrol|Blueman-manager|Lxappearance|GParted] 5
 
 # Reload the configuration file
@@ -331,8 +331,8 @@ for_window [class="mpv"] border pixel 2
 
 # Floating mode
 # for_window [class="^.*"] floating enable border pixel 1
-for_window [class="Xfce4-terminal"] floating enable
-for_window [class="Galculator|Fsearch"] floating enable
+for_window [class="Xfce4-terminal|Xfce4-appfinder"] floating enable
+for_window [class="Galculator|Fsearch|SimpleScreenRecorder"] floating enable
 for_window [class="Mousepad|Zathura|Evince|Viewnior|mpv|vlc"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable

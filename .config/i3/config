@@ -26,8 +26,8 @@ exec --no-startup-id redshift &
 exec --no-startup-id mpd &
 
 # Wallpaper
-exec --no-startup-id ~/.fehbg &
-# exec --no-startup-id ~/.bin/randomwall &
+# exec --no-startup-id ~/.fehbg &
+exec --no-startup-id ~/.bin/randomwall &
 
 # Bar
 exec_always --no-startup-id ~/.config/polybar/launch.sh &
@@ -201,7 +201,7 @@ bindsym $super+u scratchpad show
 
 # Assign workspaces
 assign [class=firefox] 2
-assign [class=^VirtualBox|^code|DesktopEditors|Soffice] 3
+assign [class=^VirtualBox|^code|^ONLYOFFICE|Soffice] 3
 assign [class=^Gimp|Inkscape|Darktable|Shotcut|Tenacity] 4
 assign [class=Pavucontrol|Blueman-manager|Lxappearance|GParted] 5
 
@@ -258,8 +258,6 @@ mode "resize" {
 gaps inner 5
 gaps outer 0
 
-# border_radius 5
-
 # Smart gaps (gaps used if only more than one container on the workspace)
 smart_gaps on
 
@@ -306,6 +304,12 @@ mode "$mode_gaps_outer" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
+
+# Mouse bindings normally only work on window titlebars.
+# The --whole-window flag makes them work if the cursor is anywhere within the window
+set $resize_step 10
+bindsym --whole-window $alt+button4 resize grow width $resize_step; resize grow height $resize_step
+bindsym --whole-window $alt+button5 resize shrink width $resize_step; resize shrink height $resize_step
 
 # Color from xressources
 set_from_resource $bg background

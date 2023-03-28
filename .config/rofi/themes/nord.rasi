@@ -3,7 +3,7 @@
 configuration {
     display-drun:   "Apps";
     display-window: "Windows";
-    show-icons: true;
+    show-icons: false;
 }
 
 * {

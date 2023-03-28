@@ -15,29 +15,28 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle For Managing Plugins
+" => VIM Plug For Managing Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set rtp+=~/.vim/bundle/Vundle.vim
+call plug#begin()
 
-call vundle#begin('~/.vim/plugins')
+Plug 'itchyny/lightline.vim'                          " Lightline statusbar
+Plug 'scrooloose/nerdtree'                            " Nerdtree
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'        " Highlighting Nerdtree
+Plug 'ryanoasis/vim-devicons'                         " Icons for Nerdtree
+Plug 'tpope/vim-surround'                             " Change surrounding marks
+Plug 'PotatoesMaster/i3-vim-syntax'                   " i3 config highlighting
+Plug 'vim-python/python-syntax'                       " Python highlighting
+Plug 'ap/vim-css-color'                               " Color previews for CSS
+Plug 'junegunn/vim-emoji'                             " Vim needs emojis!
+Plug 'tpope/vim-commentary'						      " Commentary 
+Plug 'mattn/emmet-vim'						          " Emmet
 
-Plugin 'VundleVim/Vundle.vim'                           " Vundle
-Plugin 'itchyny/lightline.vim'                          " Lightline statusbar
-Plugin 'scrooloose/nerdtree'                            " Nerdtree
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'        " Highlighting Nerdtree
-Plugin 'ryanoasis/vim-devicons'                         " Icons for Nerdtree
-Plugin 'tpope/vim-surround'                             " Change surrounding marks
-Plugin 'PotatoesMaster/i3-vim-syntax'                   " i3 config highlighting
-Plugin 'vim-python/python-syntax'                       " Python highlighting
-Plugin 'ap/vim-css-color'                               " Color previews for CSS
-Plugin 'junegunn/vim-emoji'                             " Vim needs emojis!
-Plugin 'tpope/vim-commentary'						    " Commentary 
+Plug 'arcticicestudio/nord-vim', { 'as': 'nord', 'on': 'NERDTreeToggle' }
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
-Plugin 'arcticicestudio/nord-vim', { 'name': 'nord', 'on': 'NERDTreeToggle' }
-Plugin 'dracula/vim', { 'name': 'dracula' }
-
-call vundle#end()
+call plug#end()
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:

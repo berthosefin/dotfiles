@@ -51,7 +51,7 @@
     # Draw a line of "separator_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 5
+    separator_height = 0
 
     # Padding between text and separator.
     padding = 24
@@ -61,18 +61,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 0
-
-    # Defines color of the frame around the notification window.
-    frame_color = "#00000000"
-
-    # Define a color for the separator.
-    # possible values are:
-    #  * auto: dunst tries to find a color fitting to the background;
-    #  * foreground: use the same color as the foreground;
-    #  * frame: use the same color as the frame;
-    #  * anything else will be interpreted as a X color.
-    separator_color = "#00000000"
+    frame_width = 1
 
     # Sort messages by urgency.
     sort = yes
@@ -289,11 +278,15 @@
     # Context menu.
     context = ctrl+shift+period
 
+[global]
+    frame_color = "#81A1C1"
+    separator_color= frame
+
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#2E3440"
-    foreground = "#88C0D0"
+    foreground = "#D8DEE9"
     timeout = 10
     script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with low urgency, uncomment to enable
@@ -301,14 +294,14 @@
 
 [urgency_normal]
     background = "#2E3440"
-    foreground = "#81A1C1"
+    foreground = "#D8DEE9"
     timeout = 10
     script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with normal urgency, uncomment to enable
     #icon = /path/to/icon
 
 [urgency_critical]
-    background = "#BF616A"
+    background = "#2E3440"
     foreground = "#D8DEE9"
     timeout = 10
     frame_color = "#BF616A"

@@ -1,0 +1,10 @@
+
+@import url("theme.css");
+
+.input {
+    caret-color: #89b4fa;
+}
+.selected.item-box {
+    /* workaround for a bug in GTK+ < 3.20 */
+    border: none;
+}

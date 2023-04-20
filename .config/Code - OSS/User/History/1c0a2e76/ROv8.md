@@ -1,0 +1,16 @@
+<h1 align="center">
+CyberThos
+</h1>
+
+> A Cyber Counter CLI Tool
+
+## Packages Used
+
+- chalk
+- inquirer
+
+## Install
+
+```
+$ git clone https://github.com/berthosefin/cyberthos
+```

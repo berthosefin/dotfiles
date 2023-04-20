@@ -1,0 +1,40 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <title>{% block title %}Ma boutique{% endblock %}</title>
+</head>
+<body>
+    <a href="{% url 'index' %}">
+        <h1>Ma boutique</h1>
+    </a>
+
+    {% if  user.is_authenticated %}
+        {{ user.username }}
+        <a href="{% url 'logout' %}">Déconnexion</a>
+    {% else %}
+        <a href="{% url 'login' %}">Connexion</a>
+        <a href="{% url 'signup' %}">S'inscrire</a>
+    {% endif %}
+
+    {% if user.cart %}
+        <p>
+            <a href="{% url 'cart' %}">Voir le panier ({{ user.cart.orders.count }})</a>
+        </p>
+    {% endif %}
+
+    <main>
+        <div class="container">
+        {% block content %}
+        {% endblock %}
+        </div>
+    </main>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+</body>
+</html>

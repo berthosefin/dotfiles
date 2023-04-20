@@ -1,0 +1,22 @@
+.navbar {
+  border-bottom: 1px #d4d4d4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #d4d5d5;
+}
+
+.navItems ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navItems ul li {
+  margin-right: 10px;
+}
+
+.navItems ul li a {
+  text-decoration: none;
+}

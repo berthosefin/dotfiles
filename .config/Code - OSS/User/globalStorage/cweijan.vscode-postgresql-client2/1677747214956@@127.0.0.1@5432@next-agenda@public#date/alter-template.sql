@@ -1,0 +1,2 @@
+ALTER TABLE Agenda ALTER COLUMN date TYPE text;
+ALTER TABLE Agenda ALTER RENAME COLUMN date TO [newColumnName];

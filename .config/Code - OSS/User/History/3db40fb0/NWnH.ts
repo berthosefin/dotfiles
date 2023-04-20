@@ -1,0 +1,3 @@
+type toggleFormType = {
+  toggleForm: boolean;
+};

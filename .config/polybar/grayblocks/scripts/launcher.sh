@@ -1,9 +1,3 @@
-#!/bin/bash
-#
-# By Birkhoff
-#
+#!/usr/bin/env bash
 
-rofi -modi run,drun \
-	-show drun \
-	-show-icons \
-	-theme ~/.config/polybar/grayblocks/scripts/rofi/config.rasi
+rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/rofi/config.rasi

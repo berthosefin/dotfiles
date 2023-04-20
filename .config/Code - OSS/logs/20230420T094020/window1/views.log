@@ -1,0 +1,14 @@
+2023-04-20 09:40:22.836 [info] Added views:workbench.panel.markers.view in workbench.panel.markers
+2023-04-20 09:40:22.836 [info] Added views:terminal in terminal
+2023-04-20 09:40:22.836 [info] Added views:workbench.panel.output in workbench.view.explorer
+2023-04-20 09:40:22.836 [info] Added views:workbench.scm in workbench.view.scm
+2023-04-20 09:40:22.836 [info] Added views:workbench.view.search in workbench.view.search
+2023-04-20 09:40:22.836 [info] Added views:workbench.explorer.emptyView in workbench.view.explorer
+2023-04-20 09:40:22.836 [info] Added views:workbench.explorer.openEditorsView in workbench.view.explorer
+2023-04-20 09:40:23.138 [info] Added views:workbench.debug.variablesView,workbench.debug.watchExpressionsView,workbench.debug.callStackView,workbench.debug.breakPointsView in workbench.view.debug
+2023-04-20 09:40:23.458 [info] Added views:github.cweijan.mysql in workbench.view.extension.github-cweijan-mysql
+2023-04-20 09:40:23.459 [info] Added views:github.cweijan.nosql in workbench.view.extension.github-cweijan-nosql
+2023-04-20 09:40:23.460 [info] Added views:thunder-client-sidebar in workbench.view.extension.thunder-client
+2023-04-20 09:40:24.664 [info] Added views:workbench.panel.repl.view in workbench.panel.repl
+2023-04-20 09:40:24.671 [info] Removed views:workbench.debug.breakPointsView,workbench.debug.callStackView,workbench.debug.watchExpressionsView,workbench.debug.variablesView from workbench.view.debug
+2023-04-20 09:40:24.673 [info] Added views:workbench.debug.welcome in workbench.view.debug

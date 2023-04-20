@@ -1,0 +1,13 @@
+{
+  "name": "json-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "json-server --watch db.jsonjso"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,454 @@
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/backlight]
+type = internal/xbacklight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+
+format = <ramp> <label>
+format-background = ${color.background}
+
+label = %percentage%%
+label-foreground = ${color.font}
+
+ramp-0 =
+ramp-1 =
+ramp-2 =
+ramp-3 =
+ramp-4 =
+ramp-5 =
+ramp-6 =
+ramp-7 =
+ramp-8 =
+ramp-9 =
+ramp-font = 2
+ramp-foreground = ${color.font}
+
+[module/brightness]
+type = internal/backlight
+
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/brightness/
+card = ${system.graphics_card}
+
+enable-scroll = true
+
+format = <ramp> <label>
+format-background = ${color.black}
+format-padding = 0
+
+label =%percentage%%
+label-foreground = ${color.font}
+
+ramp-0 =
+ramp-1 =
+ramp-2 =
+ramp-3 =
+ramp-4 =
+ramp-5 =
+ramp-6 =
+ramp-7 =
+ramp-8 =
+ramp-9 =
+ramp-font = 2
+ramp-foreground = ${color.blue}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/temperature]
+type = internal/temperature
+
+format = <ramp> <label> 
+format-background = ${color.black}
+format-padding = 1
+
+label = %temperature%
+label-foreground = ${color.font}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-font = 1
+ramp-foreground = ${color.blue}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/volume]
+type = internal/pulseaudio
+
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+use-ui-max = false
+
+interval = 5
+
+format-volume = <ramp-volume><label-volume>
+
+format-muted = <label-muted>
+format-muted-prefix = " "
+format-muted-prefix-font = 2
+format-muted-prefix-foreground = ${color.red}
+format-muted-prefix-background = ${color.black}
+
+label-volume = "%percentage%% "
+label-muted = "Mute"
+
+label-volume-background = ${color.black}
+label-muted-background = ${color.black}
+
+label-volume-foreground = ${color.font}
+label-muted-foreground = ${color.altblack}
+
+ramp-volume-0 = "  "
+ramp-volume-1 = "  "
+ramp-volume-2 = "  "
+ramp-volume-3 = "  "
+ramp-volume-4 = "  "
+ramp-volume-5 = "  "
+ramp-volume-6 = "  "
+ramp-volume-7 = "  "
+ramp-volume-8 = "  "
+ramp-volume-9 = "  "
+ramp-volume-font = 2
+ramp-volume-foreground = ${color.blue}
+ramp-volume-background = ${color.black}
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = ${system.battery}
+adapter = ${system.adapter}
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging = <animation-charging><label-charging>
+format-charging-prefix = 
+
+format-discharging = <ramp-capacity><label-discharging>
+
+format-full = <label-full>
+format-full-prefix = " "
+format-full-prefix-font = 2
+format-full-prefix-foreground = ${color.red}
+format-full-prefix-background = ${color.black}
+
+label-charging = "%percentage%% "
+label-discharging = "%percentage%% "
+label-full = "%percentage%% "
+
+label-charging-background = ${color.black}
+label-discharging-background = ${color.black}
+label-full-background = ${color.black}
+
+label-charging-foreground = ${color.font}
+label-discharging-foreground = ${color.font}
+label-full-foreground = ${color.font}
+
+ramp-capacity-0 = " "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
+ramp-capacity-3 = " "
+ramp-capacity-4 = " "
+ramp-capacity-font = 2
+ramp-capacity-foreground = ${color.blue}
+ramp-capacity-background = ${color.black}
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
+animation-charging-font = 2
+animation-charging-foreground = ${color.blue}
+animation-charging-background = ${color.black}
+animation-charging-framerate = 750
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/i3]
+type = internal/i3
+
+; Only show workspaces defined on the same output as the bar
+;
+; Useful if you want to show monitor specific workspaces
+; on different bars
+;
+; Default: false
+pin-workspaces = true
+
+; This will split the workspace name on ':'
+; Default: false
+strip-wsnumbers = true
+
+; Sort the workspaces by index instead of the default
+; sorting that groups the workspaces by output
+; Default: false
+index-sort = true
+
+; Create click handler used to focus workspace
+; Default: true
+enable-click = true
+
+; Create scroll handlers used to cycle workspaces
+; Default: true
+enable-scroll = false
+
+; Wrap around when reaching the first/last workspace
+; Default: true
+;;wrapping-scroll = false
+
+; Set the scroll cycle direction 
+; Default: true
+reverse-scroll = false
+
+; Use fuzzy (partial) matching on labels when assigning 
+; icons to workspaces
+; Example: code;♚ will apply the icon to all workspaces 
+; containing 'code' in the label
+; Default: false
+;;fuzzy-match = true
+
+; ws-icon-[0-9]+ = label;icon
+; NOTE: The label needs to match the name of the i3 workspace
+ws-icon-0 = 1;❶
+ws-icon-1 = 2;❷
+ws-icon-2 = 3;❸
+ws-icon-3 = 4;❹
+ws-icon-4 = 5;❺
+ws-icon-5 = 6;❻
+ws-icon-6 = 7;❼
+ws-icon-7 = 8;❽
+ws-icon-8 = 9;❾
+ws-icon-default = ⓿
+; NOTE: You cannot skip icons, e.g. to get a ws-icon-6
+; you must also define a ws-icon-5.
+
+; Available tags:
+;   <label-state> (default) - gets replaced with <label-(focused|unfocused|visible|urgent)>
+;   <label-mode> (default)
+format = <label-state><label-mode>
+
+; Available tokens:
+;   %mode%
+; Default: %mode%
+label-mode = %mode%
+label-mode-padding = 2
+label-mode-background = ${color.black}
+label-mode-foreground = ${color.red}
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-focused = %icon%
+label-focused-foreground = ${color.font}
+label-focused-background = ${color.black}
+;;label-focused-underline = #fba922
+label-focused-padding = 1
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-unfocused = %icon%
+label-unfocused-foreground = ${color.altblack}
+label-unfocused-background = ${color.black}
+label-unfocused-padding = 1
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-visible = %icon%
+;;label-visible-underline = #555555
+label-visible-padding = 1
+
+; Available tokens:
+;   %name%
+;   %icon%
+;   %index%
+;   %output%
+; Default: %icon%  %name%
+label-urgent = %icon%
+label-urgent-foreground = ${color.red}
+label-urgent-background = ${color.black}
+label-urgent-padding = 1
+
+; Separator in between workspaces
+;;label-separator = |
+;;label-separator-padding = 2
+;;label-separator-foreground = #ffb52a
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = "  "
+format-prefix-foreground = ${color.blue}
+format-foreground = ${color.font}
+format-background = ${color.black}
+label = "%{A1:xfce4-terminal -e htop &:}%percentage%% %{A}"
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/time]
+type = internal/date
+interval = 1
+format-margin = 0
+time = "%H:%M"
+; time-alt = "%A, %m/%d/%y"
+
+format-prefix = 
+format-prefix-foreground = ${color.blue}
+format-prefix-background = ${color.black}
+
+label = %time%
+label-foreground = ${color.font}
+label-background = ${color.black}
+label-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/date]
+type = internal/date
+interval = 1
+format-margin = 0
+time = "%A, %d"
+; time-alt = "%A, %m/%d/%y"
+
+format-prefix = 
+format-prefix-foreground = ${color.blue}
+format-prefix-background = ${color.black}
+
+label = %time%
+label-foreground = ${color.font}
+label-background = ${color.black}
+label-padding = 1
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+interval = 30
+fixed-values = true
+
+format-mounted = <label-mounted>
+format-mounted-prefix = ""
+format-mounted-prefix-foreground = ${color.blue}
+format-mounted-prefix-background = ${color.black}
+
+format-unmounted = <label-unmounted>
+format-unmounted-prefix = " "
+format-unmounted-prefix-foreground = ${color.blue}
+format-unmounted-prefix-background = ${color.black}
+
+label-mounted = "%{A1:thunar &:} %free%%{A}"
+label-unmounted = " %mountpoint%: NA"
+label-mounted-foreground = ${color.font}
+
+label-mounted-background = ${color.black}
+label-unmounted-background = ${color.black}
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/memory]
+type = internal/memory
+
+interval = 1
+
+format = <label>
+format-prefix = " "
+format-prefix-foreground = ${color.blue}
+format-foreground = ${color.font}
+format-background = ${color.black}
+
+label = "%{A1:xfce4-terminal -e htop &:} %percentage_used%% %{A}"
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/launcher]
+type=custom/text
+content = 🆁
+content-font = 1
+content-foreground= ${color.blue}
+content-background = ${color.background} 
+content-padding = 1
+click-left=rofi -show drun
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/wired-network]
+type = internal/network
+interface = ${system.network_interface}
+
+[module/wireless-network]
+type = internal/network
+interface = ${system.network_interface}
+
+[module/network]
+type = internal/network
+interface = ${system.network_interface}
+
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <ramp-signal><label-connected>
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = "睊 "
+format-disconnected-prefix-font = 2
+format-disconnected-foreground = ${color.font}
+format-disconnected-background = ${color.black}
+
+label-connected = "%{A1:networkmanager_dmenu &:}%essid%%{A}"
+label-disconnected = "%{A1:networkmanager_dmenu &:}Offline%{A}"
+
+label-connected-foreground = ${color.blue}
+label-disconnected-foreground = ${color.blue}
+
+label-connected-background = ${color.black}
+label-disconnected-background = ${color.black}
+
+ramp-signal-0 = " "
+ramp-signal-1 = " "
+ramp-signal-2 = " "
+ramp-signal-3 = " "
+ramp-signal-4 = " "
+ramp-signal-foreground = ${color.font}
+ramp-signal-background = ${color.black}
+ramp-signal-font = 2
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/title]
+type = internal/xwindow
+
+format = <label>
+format-prefix = 
+format-foreground = ${color.altblack}
+format-background = ${color.background}
+
+label = " %title%"
+label-maxlen = 35
+
+label-empty = " Desktop"

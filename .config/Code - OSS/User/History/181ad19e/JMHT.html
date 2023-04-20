@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>{% block title %}My shop{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{% static 'store/css/bootstrap.min.css' %}" rel="stylesheet" crossorigin="anonymous">
+        <script src="{% static 'store/js/popper.min.js' %}" crossorigin="anonymous"></script>
+        <script src="{% static 'store/js/bootstrap.min.js' %}" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="content">{% block content %} {% endblock %}</div>
+    </body>
+</html>

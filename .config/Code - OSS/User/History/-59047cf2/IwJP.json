@@ -1,0 +1,106 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Products 1",
+            "category": "electronics",
+            "price": 4000,
+            "description": "This is description about products 1"
+        },
+        {
+            "id": 2,
+            "title": "Products 2",
+            "category": "electronics",
+            "price": 4000,
+            "description": "This is description about products 2"
+        },
+        {
+            "id": 3,
+            "title": "Products 3",
+            "category": "books",
+            "price": 4000,
+            "description": "This is description about products 3"
+        },
+        {
+            "id": 4,
+            "title": "Products 4",
+            "category": "sports",
+            "price": 4000,
+            "description": "This is description about products 4"
+        },
+        {
+            "id": 5,
+            "title": "Products 5",
+            "category": "sports",
+            "price": 4000,
+            "description": "This is description about products 5"
+        },
+        {
+            "id": 6,
+            "title": "Products 6",
+            "category": "books",
+            "price": 4000,
+            "description": "This is description about products 6"
+        },
+        {
+            "id": 7,
+            "title": "Products 7",
+            "category": "sports",
+            "price": 4000,
+            "description": "This is description about products 7"
+        },
+        {
+            "id": 8,
+            "title": "Products 8",
+            "category": "electronics",
+            "price": 4000,
+            "description": "This is description about products 8"
+        },
+        {
+            "id": 9,
+            "title": "Products 9",
+            "category": "electronics",
+            "price": 4000,
+            "description": "This is description about products 9"
+        },
+        {
+            "id": 10,
+            "title": "Products 10",
+            "category": "sports",
+            "price": 4000,
+            "description": "This is description about products 10"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "rating": 3,
+            "comment": "Review 1 for product id 1",
+            "productId": 1
+        },
+        {
+            "id": 2,
+            "rating": 4,
+            "comment": "Review 2 for product id 1",
+            "productId": 1
+        },
+        {
+            "id": 3,
+            "rating": 4,
+            "comment": "Review 3 for product id 1",
+            "productId": 1
+        },
+        {
+            "id": 4,
+            "rating": 5,
+            "comment": "Review 4 for product id 5",
+            "productId": 1
+        },
+        {
+            "id": 5,
+            "rating": 3,
+            "comment": "Review 5 for product id 3",
+            "productId": 1
+        }
+    ]
+}

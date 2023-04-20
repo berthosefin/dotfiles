@@ -1,0 +1,3 @@
+
+
+texte = input("Entrer ")

@@ -1,0 +1,24 @@
+
+/* .xfce4-panel .background {} */
+
+/* .xfce4-panel .vertical .background {} */
+
+/* .xfce4-panel .horizontal .background {} */
+
+.xfce4-panel button {
+	margin: 2px;
+	padding: 2px;
+	border-radius: 2px;
+	transition: 0.2s;
+	box-shadow: none;
+	background-image: none;
+}
+
+.tasklist { 
+	font-size: 8px; 
+	-XfceTasklist-max-button-length: 120; 
+}
+
+VteTerminal, vte-terminal {
+	padding: 12px 12px 12px 12px;
+}

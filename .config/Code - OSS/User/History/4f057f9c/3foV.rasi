@@ -1,0 +1,13 @@
+/* colors */
+
+@import "$HOME/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+  al:   #00000000;
+  bg:   @background;
+  bga:  #38444AFF;
+  fga:  #FDF6E3FF;
+  fg:   @foreground;
+  ac:   #6D8895FF;
+  se:   #6D889540;
+}

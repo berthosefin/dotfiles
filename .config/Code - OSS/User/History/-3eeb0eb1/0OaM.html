@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for order in orders %}
+    <h2>{{ order.product.name }}</h2>
+{% endfor %}
+
+{% endblock %}

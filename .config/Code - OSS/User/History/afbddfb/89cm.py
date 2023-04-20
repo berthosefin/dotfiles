@@ -1,0 +1,14 @@
+
+
+def find_in_list(i, lst):
+    if i < len(lst):
+        return lst[i]
+    else:
+        raise IndexError("list index out of range")
+
+
+DAY = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+print(find_in_list(3, DAY))
+print(find_in_list(8, DAY))
+

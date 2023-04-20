@@ -1,0 +1,9 @@
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    background: #3b5998 url('../img/logo.png') no-repeat 50px 25px;
+    border-bottom: 1px solid #133783;
+}

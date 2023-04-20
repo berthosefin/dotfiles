@@ -1,0 +1,29 @@
+{
+  "name": "B_Thos",
+  "avatar": "/thirteen.svg",
+  "links": [
+    {
+      "title": "My Personal Site",
+      "href": "https://b_thos.com/",
+      "image": "/thirteen.svg"
+    },
+    {
+      "title": "Vercel",
+      "href": "https://vercel.com/"
+    },
+    {
+      "title": "NEXTjs",
+      "href": "https://nextjs.org/"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "href": "https://twitter.com/"
+    },
+    {
+      "title": "Github",
+      "href": "https://github.com/"
+    }
+  ]
+}

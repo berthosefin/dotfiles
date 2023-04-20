@@ -1,0 +1,2 @@
+2023-04-20 15:32:09.567 [info] Starting worker process with pid 31449 (type: fileWatcher, window: 1).
+2023-04-20 15:32:48.544 [error] [uncaught exception in sharedProcess]: A system error occurred (ENOENT: no such file or directory, scandir '/home/thos/.config/Code - OSS/clp/22d102f4a4470ddf48e5310875e62b8d.fr'): Error: ENOENT: no such file or directory, scandir '/home/thos/.config/Code - OSS/clp/22d102f4a4470ddf48e5310875e62b8d.fr'

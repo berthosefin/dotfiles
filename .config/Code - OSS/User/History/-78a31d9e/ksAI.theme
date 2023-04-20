@@ -1,0 +1,7 @@
+[X-GNOME-Metatheme]
+Name=HackTheBox
+Encoding=UTF-8
+GtkTheme=HackTheBox
+IconTheme=Adwaita
+CursorTheme=Adwaita
+CursorSize=24

@@ -1,0 +1,24 @@
+{
+  "name": "B_Thos",
+  "avatar": "/thirteen.svg",
+  "links": [
+    {
+      "title": "My Personal Site",
+      "url": "https://b_thos.com/"
+    },
+    {
+      "title": "Vercel",
+      "url": "https://vercel.com/"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "title": "Github",
+      "url": "https://github.com/"
+    }
+  ]
+}

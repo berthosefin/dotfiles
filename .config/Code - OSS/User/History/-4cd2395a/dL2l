@@ -1,0 +1,94 @@
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[global/wm]
+margin-bottom = 0
+margin-top = 0
+
+include-file = ~/.config/polybar/ozo/colors
+include-file = ~/.config/polybar/ozo/modules
+include-file = ~/.config/polybar/ozo/decor
+include-file = ~/.config/polybar/ozo/system
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[bar/main]
+monitor =
+monitor-fallback =
+monitor-strict = false
+
+override-redirect = false
+
+bottom = false
+fixed-center = true
+
+width = 100%
+height = 20
+
+offset-x = 0%
+offset-y = 0%
+
+background = ${color.background}
+foreground = ${color.foreground}
+
+radius-top = 0
+radius-bottom = 0.0
+
+line-size = 2
+line-color = ${color.blue}
+
+border-size = 6
+border-color = ${color.background}
+
+padding = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+wm-restack = i3
+
+font-0 = "Operator Mono:size=8;2"
+font-1 = "Iosevka Nerd Font:size=8;2"
+font-2 = "Iosevka Nerd Font:size=12;3"
+font-3 = "Tomb Raider:size=12;3"
+
+# Default
+modules-left = spacing YLD launcher RD GPL i3 GRD sep YLD network RD GPL GPL battery GPL GPL brightness GPL GPL volume GRD
+modules-center = title
+modules-right = GLD temperature GPL cpu GPL memory GPL BLD filesystem BRD sep GLD date GPL BLD time BRD spacing
+
+spacing = 0
+dim-value = 1.0
+
+locale = fr_FR.UTF-8
+
+tray-position = none
+tray-detached = false
+tray-maxsize = 16
+tray-background = ${color.background}
+tray-offset-x = 0
+tray-offset-y = 0
+tray-padding = 0
+tray-scale = 1.0
+
+enable-ipc = true
+
+cursor-click = 
+cursor-scroll = 
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+
+screenchange-reload = false
+
+compositing-background = source
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+pseudo-transparency = false
+
+;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% block title %}Accueil{% endblock %}
+{% block bodyId %}welcomePage{% endblock %}
+
+{% block headerContent %}
+<p id="name">{{ logged_user.first_name }} {{ logged_user.last_name }}</p>
+<p id="function">
+    {% if logged_user.person_type == 'student' %}
+    Étudiant en
+        {% if logged_user.year == 1 %}
+            {{ logged_user.year }}ère
+        {% else %}
+            {{ logged_user.year }}ème
+        {% endif %}
+        {{ logged_user.cursus.title }}
+    {% else %}
+        {{ logged_user.job.title|capfirst }}
+        dans la faculté {{ logged_user.faculty }}
+    {% endif %}
+</p>
+<p id="profileLinks">
+    <a href="showProfile?userToShow={{ logged_user.id }}" class="buttonLink">Voir le profil</a>
+    <a href="modifyProfile" class="buttonLink">Modifier le profil</a>
+</p>
+{% endblock %}
+
+{% block content %}
+<section id="messageList">
+    <form action="index" method="get" class="inlineForm">
+        <label for="newMessageInput">Publier un message: </label>
+        <input type="text" name="nexMessage" id="newMessageInput">
+        <input type="submit" value="Publier">
+    </form>
+    <ul>
+        {% for message in friendMessages %}
+        <li>
+            <p>
+                <a href="showProfile?userToShow={{ message.author.id }}">{{ message.author.first_name }} {{ message.author.last_name }}</a> dit :
+            </p>
+            <p>{{ message.content }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+<section id="friendList">
+    <p class="title">Mes amis</p>
+    <form action="index" method="get" class="inlineForm">
+        <input type="email" name="newFriend" id="newFriendInput" placeholder="Email">
+        <input type="submit" value="Ajouter">
+    </form>
+    <ul>
+        {% for friend in logged_user.friends.all %}
+            <li><a href="showProfile?userToShow={{ friend.id }}">{{ friend.first_name }} {{ friend.last_name }}</a></li>
+        {% endfor %}
+    </ul>
+</section>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#friendList form").submit(addFriend);
+    });
+    function addFriend() {
+        $fieldValue = $("#newFriendInput").val();
+        $.ajax({
+            url: '/ajax/addFriend',
+            data: ({email: $fieldValue}),
+            type: 'GET',
+            success: function($data, $textStatus, $XMLHttpRequest) {
+                alert($data);
+            }
+        });
+        return false;
+    }
+</script>
+{% endblock %}

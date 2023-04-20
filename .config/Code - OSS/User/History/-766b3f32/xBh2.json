@@ -1,0 +1,22 @@
+{
+  "name": "cyberto",
+  "version": "0.0.1",
+  "description": "A Cyber Counter CLI Tool",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "dependencies": {
+    "boxen": "^7.0.2",
+    "chalk": "^5.2.0",
+    "configstore": "^6.0.0",
+    "envinfo": "^7.8.1",
+    "inquirer": "^9.1.4",
+    "progress": "^2.0.3",
+    "prompts": "^2.4.2",
+    "signale": "^1.4.0",
+    "yargs": "^17.7.1"
+  }
+}

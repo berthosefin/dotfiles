@@ -1,0 +1,15 @@
+export default function Home() {
+  return (
+    <main>
+      <div>
+        <h2>Events in London</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illo
+          itaque quisquam fugiat, nobis animi temporibus minima distinctio nihil
+          officia, aut delectus amet cum placeat. Distinctio repellat debitis id
+          sapiente?
+        </p>
+      </div>
+    </main>
+  );
+}

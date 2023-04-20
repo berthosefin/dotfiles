@@ -1,0 +1,46 @@
+[
+  {
+    "collectionId": "e1uj1s6fskpw296",
+    "collectionName": "tech",
+    "created": "2023-02-13 18:50:13.046Z",
+    "detail": "quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto",
+    "id": "740ocb79d7grycp",
+    "logo": "ubuntu_4BXuDWEviM.png",
+    "name": "ubuntu",
+    "techGroupName": "operating-systems",
+    "updated": "2023-02-13 18:50:13.046Z"
+  },
+  {
+    "collectionId": "e1uj1s6fskpw296",
+    "collectionName": "tech",
+    "created": "2023-02-13 18:50:45.573Z",
+    "detail": "est rerum tempore vitae\\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\\nqui aperiam non debitis possimus qui neque nisi nulla",
+    "id": "l65eaxk5r1vfyjm",
+    "logo": "nixos_lfEHDgocFb.png",
+    "name": "nixos",
+    "techGroupName": "operating-systems",
+    "updated": "2023-02-13 18:50:45.573Z"
+  },
+  {
+    "collectionId": "e1uj1s6fskpw296",
+    "collectionName": "tech",
+    "created": "2023-02-13 18:51:13.864Z",
+    "detail": "quia et suscipit\\nsuscipit recusandae consequuntur expedita et cum\\nreprehenderit molestiae ut ut quas totam\\nnostrum rerum est autem sunt rem eveniet architecto",
+    "id": "qykuuriux3snioi",
+    "logo": "cRUKaMh5FhS_0quURnnazh.png",
+    "name": "c",
+    "techGroupName": "programming",
+    "updated": "2023-02-13 18:51:13.864Z"
+  },
+  {
+    "collectionId": "e1uj1s6fskpw296",
+    "collectionName": "tech",
+    "created": "2023-02-13 18:51:31.795Z",
+    "detail": "repudiandae veniam quaerat sunt sed\\nalias aut fugiat sit autem sed est\\nvoluptatem omnis possimus esse voluptatibus quis\\nest aut tenetur dolor neque",
+    "id": "dul3uugb6fcz5zn",
+    "logo": "php_yDPF5WOjr9.png",
+    "name": "php",
+    "techGroupName": "programming",
+    "updated": "2023-02-13 18:51:31.795Z"
+  }
+]

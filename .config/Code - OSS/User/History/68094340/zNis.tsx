@@ -1,0 +1,10 @@
+const fetchTodos = async () => {
+  const res = await fetch("http://127.0.0.1:3001/todos");
+  const todos = await res.json();
+};
+
+export default async function TodosList() {
+  const todos = await fetchTodos();
+
+  return <div>TodosList</div>;
+}

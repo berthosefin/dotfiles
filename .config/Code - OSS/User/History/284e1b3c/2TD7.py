@@ -1,0 +1,14 @@
+from seven_wonders import seven_wonders
+
+
+def print_wonders_with_shift(lst: list):
+    i = len(lst) - 1
+    [print(" " * l[i] + l) for l, i enumerate(lst)]
+
+    # i = len(lst) - 1
+    # for l in lst:
+    #     print(" " * i + l)
+    #     i -= 1
+
+
+print_wonders_with_shift(seven_wonders())

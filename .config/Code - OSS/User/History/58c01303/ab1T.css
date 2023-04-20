@@ -1,0 +1,12 @@
+.page-header {
+  margin-top: 30px;
+}
+
+.todo-complete {
+  text-decoration: line-through;
+}
+
+.todo-status-checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+}

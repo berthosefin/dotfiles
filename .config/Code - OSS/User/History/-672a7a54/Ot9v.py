@@ -1,0 +1,8 @@
+
+
+a = input("Entrez un premier nombre : ")
+b = input("Entrez un deuxième nombre : ")
+if a.isdigit() or b.isdigit():
+    print(f"Le resultat de l'addition de {a} avec {b} est égal à {a+b}")
+else:
+    print(f"Veuillez entrer deux nombres valides")

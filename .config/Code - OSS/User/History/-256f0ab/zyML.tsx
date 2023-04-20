@@ -1,0 +1,16 @@
+import "./globals.css";
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head />
+      <body className="max-w-7xl h-full my-16 mx-auto rounded bg-[#d8dee9] shadow-md overflow-hidden">
+        {children}
+      </body>
+    </html>
+  );
+}

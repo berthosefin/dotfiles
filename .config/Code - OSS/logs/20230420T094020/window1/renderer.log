@@ -1,0 +1,6 @@
+2023-04-20 09:40:22.381 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/thos/Lab/linux/dotfiles/.config/mpv/mpv.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2023-04-20 09:40:23.201 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, envShellEvent, testObserver'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2023-04-20 09:40:23.352 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2023-04-20 09:40:25.451 [error] [Extension Host] (node:28707) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+2023-04-20 09:40:27.607 [info] [perf] Render performance baseline is 272ms

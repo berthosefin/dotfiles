@@ -1,0 +1,12 @@
+2023-04-20 09:11:23.392 [info] Added views:workbench.panel.markers.view in workbench.panel.markers
+2023-04-20 09:11:23.393 [info] Added views:terminal in terminal
+2023-04-20 09:11:23.393 [info] Added views:workbench.panel.output in workbench.view.explorer
+2023-04-20 09:11:23.393 [info] Added views:workbench.scm in workbench.view.scm
+2023-04-20 09:11:23.393 [info] Added views:workbench.view.search in workbench.view.search
+2023-04-20 09:11:23.393 [info] Added views:workbench.explorer.fileView in workbench.view.explorer
+2023-04-20 09:11:23.393 [info] Added views:workbench.explorer.openEditorsView in workbench.view.explorer
+2023-04-20 09:11:23.756 [info] Added views:github.cweijan.mysql in workbench.view.extension.github-cweijan-mysql
+2023-04-20 09:11:23.757 [info] Added views:github.cweijan.nosql in workbench.view.extension.github-cweijan-nosql
+2023-04-20 09:11:23.758 [info] Added views:thunder-client-sidebar in workbench.view.extension.thunder-client
+2023-04-20 09:11:24.205 [info] Added views:workbench.debug.welcome in workbench.view.debug
+2023-04-20 09:11:24.337 [info] Added views:workbench.panel.repl.view in workbench.panel.repl

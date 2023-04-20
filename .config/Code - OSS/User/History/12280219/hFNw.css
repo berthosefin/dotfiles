@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "anurati";
+  src: url("../public/Anurati_Regular.otf");
+}

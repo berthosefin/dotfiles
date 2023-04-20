@@ -1,0 +1,9 @@
+[Scheme]
+Name=Tokyo Night
+ColorCursor=#A9B1D6
+ColorForeground=#A9B1D6
+ColorBackground=#1A1B26
+TabActivityColor=#4ABAAF
+ColorPalette=#1A1B26;#F7768E;#9ECE6A;#E0AF68;#7AA2F7;#9A7ECC;#4ABAAF;#ACB0D0;#4E5173;#E06C75;#98C379;#D19A66;#61AFEF;#C678DD;#56B6C2;#ABB2BF
+ColorBold=#A9B1D6
+ColorBoldUseDefault=FALSE

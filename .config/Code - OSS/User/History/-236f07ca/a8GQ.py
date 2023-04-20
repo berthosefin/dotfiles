@@ -1,0 +1,2 @@
+repeat = input()
+print(repeat)

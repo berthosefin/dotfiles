@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    25deg,
+    hsl(240deg 15% 13%) 0%,
+    hsl(233deg 22% 15%) 11%,
+    hsl(226deg 30% 17%) 23%,
+    hsl(221deg 40% 18%) 36%,
+    hsl(215deg 52% 19%) 48%,
+    hsl(221deg 62% 26%) 61%,
+    hsl(238deg 46% 36%) 74%,
+    hsl(264deg 54% 40%) 87%,
+    hsl(287deg 84% 36%) 100%
+  );
+}

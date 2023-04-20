@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="card card-sm">
+                <div class="card-body row no-gutters align-items-center">
+                    <div class="col">
+                        <input type="search" name="item-name" class="form-control form-control-borderless">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-success">Recherche</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ product.image.url }}" alt="{{ product.title }}" class="card-img-top" style="max-height: 170px;">
+                <div class="card-body">
+                    <div class="card-title">{{ product.title }}</div>
+                    <div class="card-text">{{ product.price }}</div>
+                    <button class="btn btn-warning">Voir</button>
+                    <div class="btn btn-success">Ajouter</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

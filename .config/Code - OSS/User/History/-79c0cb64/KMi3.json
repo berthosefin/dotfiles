@@ -1,0 +1,24 @@
+{
+  "name": "Thos F",
+  "avatar": "twitterimage",
+  "links": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "title": "Github",
+      "url": "https://github.com/"
+    }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "url": "https://twitter.com/"
+    },
+    {
+      "title": "Github",
+      "url": "https://github.com/"
+    }
+  ]
+}

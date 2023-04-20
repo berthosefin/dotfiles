@@ -1,0 +1,18 @@
+{% extends 'student/base.html' %}
+{% block content %}
+<div class="row">
+    <div class="col-sm-4">
+        <h4 class="text-center alert alert-info">Ajouter un nouveau étudiant</h4>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" class="btn btn-success" value="Ajouter">
+        </form>
+    </div>
+    <div class="col-sm-8">
+        <h4 class="text-center alert alert-info">Information des Etudiants</h4>
+        {% if student %}
+        {% endif %}
+    </div>
+</div>
+{% endblock content %}

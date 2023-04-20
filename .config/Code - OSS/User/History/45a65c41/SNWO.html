@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block bodyId %}loginPage{% endblock %}
+
+{% block content %}
+<form action="login" method="POST">
+    {% csrf_token %}
+    <p>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" size="30">
+    </p>
+    <p>
+        <label for="password">Mot de passe: </label>
+        <input type="password" name="password" id="password" size="30">
+    </p>
+    <p>
+        <input type="submit" value="Se connecter">
+        <a href="">Créer un compte</a>
+    </p>
+</form>
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="card card-sm">
+                <div class="card-body row no-gutters align-items-center">
+                    <div class="col">
+                        <input type="search" name="item-name" placeholder="Rechercher" class="form-control form-control-borderless">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-success">Rechercher</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        {% for product in products %}
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{{ product.image.url }}" alt="{{ product.title }}" class="card-img-top" style="max-height: 150px;">
+                <div class="card-body">
+                    <div class="card-title">{{ product.title }}</div>
+                    <div style="color: orange;" class="card-text">€ {{ product.price }}</div>
+                    <button class="btn btn-sm btn-warning">Voir</button>
+                    <div class="btn btn-sm btn-success">Ajouter</div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3 offset-md-4">
+            <ul class="pagination">
+                {% if products.has_previous %}
+                    <li class="page-item">
+                        <a href="?page=products.previous_page_number">Precedent</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

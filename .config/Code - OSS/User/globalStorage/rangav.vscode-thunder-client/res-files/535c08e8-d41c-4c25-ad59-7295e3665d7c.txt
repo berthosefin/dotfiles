@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "id": "dcdf861c-86ec-45d7-8f10-452b2b0b08ac",
+      "name": "Archlinux",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/archlinux.png",
+      "categoryId": "6a2d6d16-a3e5-413b-93d4-2a3780f1102c"
+    },
+    {
+      "id": "bb501d79-4f5c-489a-a936-31af0ed4901f",
+      "name": "Fedora",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/fedora.png",
+      "categoryId": "6a2d6d16-a3e5-413b-93d4-2a3780f1102c"
+    },
+    {
+      "id": "ce0605e4-ea2c-4713-b7c4-132df7a6aabb",
+      "name": "Git",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/git.png",
+      "categoryId": "db63f87a-acb1-4340-8dab-e4e3419e28e1"
+    },
+    {
+      "id": "2d2cc67b-daef-4737-9563-04c1f9211f77",
+      "name": "Manjaro",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/manjaro.png",
+      "categoryId": "6a2d6d16-a3e5-413b-93d4-2a3780f1102c"
+    },
+    {
+      "id": "578e6405-3f0e-40aa-80cc-0049928848eb",
+      "name": "PHP",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/php.png",
+      "categoryId": "55864abc-15b5-45a9-93a4-9b831a01ab4a"
+    },
+    {
+      "id": "e7f2238a-571d-4148-83de-61c3a90e0978",
+      "name": "Python",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/python.png",
+      "categoryId": "55864abc-15b5-45a9-93a4-9b831a01ab4a"
+    },
+    {
+      "id": "2ab2c871-5dc2-4348-bc8b-d391fcca681b",
+      "name": "Vim",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/vim.png",
+      "categoryId": "db63f87a-acb1-4340-8dab-e4e3419e28e1"
+    },
+    {
+      "id": "d7811d1e-8a30-4d2f-93d3-e5c77d22d543",
+      "name": "Windows",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "price": 0,
+      "picture": "/products/windows.png",
+      "categoryId": "6a2d6d16-a3e5-413b-93d4-2a3780f1102c"
+    }
+  ]
+}

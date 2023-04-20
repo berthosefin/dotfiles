@@ -1,0 +1,9 @@
+[Scheme]
+Name=HackTheBox
+ColorCursor=#a4b1cd
+ColorForeground=#a4b1cd
+ColorBackground=#1a2332
+TabActivityColor=#5cecc6
+ColorPalette=#1a2332;#ff3e3e;#9fef00;#ffaf00;#5cb2ff;#c16cfa;#5cecc6;#a4b1cd;#2C323C;#ff8484;#c5f467;#ffcc5c;#5cecc6;#c16cfa;#5cb2ff;#ffffff
+ColorBold=#a4b1cd
+ColorBoldUseDefault=FALSE

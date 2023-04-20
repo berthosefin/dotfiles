@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %}Accueil{% endblock %}
+{% block bodyId %}welcomePage{% endblock %}
+
+{% block headerContent %}
+<p id="name">{{ logged_user.first_name }} {{ logged_user.last_name }}</p>
+<p id="function">
+    {% if logged_user.person_type == 'student' %}
+    Étudiant en
+        {% if logged_user.year == 1 %}
+            {{ logged_user.year }}ère
+        {% else %}
+            {{ logged_user.year }}ème
+</p>
+{% endblock %}
+{% block content %}
+<p>{{ logged_user.first_name }} {{ logged_user.last_name }}, bienvenue sur Trombinoscoop !</p>
+{% endblock %}

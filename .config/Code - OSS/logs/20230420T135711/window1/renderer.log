@@ -1,0 +1,5 @@
+2023-04-20 13:57:18.406 [error] Extension 'ms-python.python CANNOT USE these API proposals 'contribEditorContentMenu, quickPickSortByLabel, envShellEvent, testObserver'. You MUST start in extension development mode or use the --enable-proposed-api command line flag
+2023-04-20 13:57:18.540 [error] [ms-python.python]: editor/content is a proposed menu identifier. It requires 'package.json#enabledApiProposals: ["contribEditorContentMenu"]' and is only available when running out of dev or with the following command line switch: --enable-proposed-api ms-python.python
+2023-04-20 13:57:20.987 [error] [Extension Host] (node:9928) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `electron --trace-deprecation ...` to show where the warning was created)
+2023-04-20 13:57:23.865 [info] [perf] Render performance baseline is 51ms

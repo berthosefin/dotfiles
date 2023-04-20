@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block bodyId %}welcomePage{% endblock %}
+
+{% block content %}
+<p>{{ logged_user.first_name }} {{ logged_user.last_name }}, bienvenue sur Trombinoscoop !</p>
+{% endblock %}

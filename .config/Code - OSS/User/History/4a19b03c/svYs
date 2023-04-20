@@ -1,0 +1,20 @@
+[color]
+background = ${xrdb:background:#222}
+foreground = ${xrdb:foreground:#222}
+black = ${xrdb:color0:#222}
+red = ${xrdb:color1:#222}
+green = ${xrdb:color2:#222}
+yellow = ${xrdb:color3:#222}
+blue = ${xrdb:color4:#222}
+magenta = ${xrdb:color5:#222}
+cyan = ${xrdb:color6:#222}
+white = ${xrdb:color7:#222}
+font = ${xrdb:foreground:#222}
+altblack = #ff55
+altred = ${xrdb:color9:#222}
+altgreen = ${xrdb:color10:#222}
+altyellow = ${xrdb:color11:#222}
+altblue = ${xrdb:color12:#222}
+altmagenta = ${xrdb:color13:#222}
+altcyan = ${xrdb:color14:#222}
+altwhite = ${xrdb:color15:#222}

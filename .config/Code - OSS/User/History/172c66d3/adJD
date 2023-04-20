@@ -1,0 +1,15 @@
+/* Color-Scheme */
+
+@import "/home/birkhoff/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+BG:    @background;
+BGA:   @foreground;
+FG:    @foreground;
+BDR:   @foreground;
+SEL:   @foreground;
+UGT:   #CB3F21ff;
+IMG:   @background;
+ON:    #1F6E42ff;
+OFF:   #CB3F21ff;
+}

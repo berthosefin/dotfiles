@@ -1,0 +1,66 @@
+["INFO" - 15:27:12] Extension Name: esbenp.prettier-vscode.
+["INFO" - 15:27:12] Extension Version: 9.10.4.
+["INFO" - 15:27:48] Formatting file:///home/thos/Lab/linux/dotfiles/README.md
+["INFO" - 15:27:48] File Info:
+{
+  "ignored": false,
+  "inferredParser": "markdown"
+}
+["INFO" - 15:27:48] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 15:27:48] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/thos/Lab/linux/dotfiles/README.md",
+  "parser": "markdown"
+}
+["INFO" - 15:27:48] Formatting completed in 289ms.
+["INFO" - 15:27:52] Formatting file:///home/thos/Lab/linux/dotfiles/README.md
+["INFO" - 15:27:52] File Info:
+{
+  "ignored": false,
+  "inferredParser": "markdown"
+}
+["INFO" - 15:27:52] No local configuration (i.e. .prettierrc or .editorconfig) detected, falling back to VS Code configuration
+["INFO" - 15:27:52] Prettier Options:
+{
+  "arrowParens": "always",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "htmlWhitespaceSensitivity": "css",
+  "insertPragma": false,
+  "singleAttributePerLine": false,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "jsxSingleQuote": false,
+  "printWidth": 80,
+  "proseWrap": "preserve",
+  "quoteProps": "as-needed",
+  "requirePragma": false,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "useTabs": false,
+  "vueIndentScriptAndStyle": false,
+  "filepath": "/home/thos/Lab/linux/dotfiles/README.md",
+  "parser": "markdown"
+}
+["INFO" - 15:27:52] Formatting completed in 173ms.

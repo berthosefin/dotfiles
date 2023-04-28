@@ -13,8 +13,8 @@ xidlehook \
   --timer 60 \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness .1' \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \
-  `# Undim & lock after 10 more seconds` \
-  --timer 10 \
+  `# Undim & lock after 600 more seconds` \
+  --timer 600 \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1; betterlockscreen -l blur' \
     '' \
   `# Finally, suspend an hour after it locks` \

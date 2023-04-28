@@ -112,7 +112,7 @@
     separator_color = frame
 
     # Sort messages by urgency.
-    sort = yes
+    sort = no
 
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
@@ -163,11 +163,11 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    format = "<span size='x-large' weight='bold'>%s</span>\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
-    alignment = left
+    alignment = center
 
     # Vertical alignment of message text and icon.
     # Possible values are "top", "center" and "bottom".
@@ -186,7 +186,7 @@
     ignore_newline = no
 
     # Stack together notifications with the same content
-    stack_duplicates = true
+    stack_duplicates = false
 
     # Hide the count of stacked notifications with the same content
     hide_duplicate_count = false
@@ -313,8 +313,8 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#EFF1F5"
-    foreground = "#4C4F69"
+    background = "#4C4F69"
+    foreground = "#EFF1F5"
     timeout = 10
     script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with low urgency, uncomment to enable

@@ -1,4 +1,0 @@
-
-
-repeat = input()
-print(repeat)

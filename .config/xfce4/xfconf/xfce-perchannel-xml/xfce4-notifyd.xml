@@ -39,5 +39,6 @@
     <property name="hide-clear-prompt" type="bool" value="false"/>
   </property>
   <property name="theme" type="string" value="Default"/>
-  <property name="initial-opacity" type="double" value="1.000000"/>
+  <property name="initial-opacity" type="double" value="1"/>
+  <property name="log-max-size-enabled" type="bool" value="true"/>
 </channel>

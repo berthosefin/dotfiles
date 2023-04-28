@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
 # Launch the bar
-STYLE=forest
+STYLE=docky
 
 bash "$HOME"/.config/polybar/"$STYLE"/launch.sh

@@ -1,1 +1,0 @@
-ffrom django.urls import path

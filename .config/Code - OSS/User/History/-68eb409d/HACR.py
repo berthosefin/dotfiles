@@ -1,1 +1,0 @@
-from message_notifications import message_notifications

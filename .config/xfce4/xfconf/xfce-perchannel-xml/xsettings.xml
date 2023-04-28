@@ -3,7 +3,7 @@
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
     <property name="ThemeName" type="string" value="Nordic-darker"/>
-    <property name="IconThemeName" type="string" value="Zafiro-Nord-Dark-Grey"/>
+    <property name="IconThemeName" type="string" value="Nordic-Darker"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
@@ -23,7 +23,6 @@
   <property name="Gtk" type="empty">
     <property name="CanChangeAccels" type="bool" value="false"/>
     <property name="ColorPalette" type="empty"/>
-    <property name="DialogsUseHeader" type="empty"/>
     <property name="FontName" type="string" value="Iosevka Custom 8"/>
     <property name="MonospaceFontName" type="string" value="Iosevka Custom 8"/>
     <property name="IconSizes" type="empty"/>
@@ -33,9 +32,10 @@
     <property name="MenuImages" type="empty"/>
     <property name="ButtonImages" type="empty"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="string" value="Nordic-cursors"/>
+    <property name="CursorThemeName" type="string" value="Fluent-cursors"/>
     <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="string" value=":minimize,maximize,close"/>
+    <property name="DialogsUseHeader" type="empty"/>
     <property name="TitlebarMiddleClick" type="empty"/>
     <property name="IMModule" type="string" value="gtk-im-context-simple:xim"/>
   </property>

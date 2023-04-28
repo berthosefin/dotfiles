@@ -9,6 +9,10 @@ VteTerminal, vte-terminal {
 
 /**************** xfce4-panel **********************/
 
+.xfce4-panel.panel {
+	border-radius: 0;
+}
+  
 .xfce4-panel button {
 	transition: 0.2s;
 	margin: 2px;
@@ -23,4 +27,3 @@ VteTerminal, vte-terminal {
 .tasklist { 
 	-XfceTasklist-max-button-length: 120; 
 }
-@import 'colors.css';

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel name="xfce4-taskmanager" version="1.0">
-  <property name="window-width" type="int" value="621"/>
-  <property name="window-height" type="int" value="510"/>
+  <property name="window-width" type="int" value="1366"/>
+  <property name="window-height" type="int" value="738"/>
   <property name="interface" type="empty">
     <property name="process-tree" type="bool" value="true"/>
     <property name="show-legend" type="bool" value="true"/>

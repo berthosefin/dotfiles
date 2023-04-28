@@ -34,7 +34,6 @@ Plug 'mattn/emmet-vim'						          " Emmet
 
 Plug 'arcticicestudio/nord-vim', { 'as': 'nord', 'on': 'NERDTreeToggle' }
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 
 call plug#end()
 

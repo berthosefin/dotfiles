@@ -1,4 +1,0 @@
-
-
-def navigate():
-    pass

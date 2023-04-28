@@ -1,13 +1,13 @@
-delay=2
+delay=1
 region=3
 show_mouse=0
-screenshot_dir=file:/home/thos/Bureau
+screenshot_dir=file:/home/thos/Téléchargements
 app=gimp-2.10
 last_user=
 action=1
 last_extension=png
 enable_imgur_upload=true
-show_border=1
+show_border=0
 show_in_folder=false
 custom_action_command=none
 

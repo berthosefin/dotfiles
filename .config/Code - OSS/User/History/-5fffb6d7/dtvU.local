@@ -1,2 +1,0 @@
-PORT = 27017
-MONGO_URI = "mongodb://localhost/client"

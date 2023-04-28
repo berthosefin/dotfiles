@@ -1,6 +1,6 @@
 [Configuration]
 LastActiveMode=THUNAR_RENAMER_MODE_NAME
-LastActiveRenamer=ThunarSbrRemoveRenamer
+LastActiveRenamer=ThunarSbrInsertRenamer
 
 [ThunarSbrReplaceRenamer]
 CaseSensitive=FALSE
@@ -14,15 +14,15 @@ Text=.\
 Mode=THUNAR_SBR_NUMBER_MODE_010203
 Start=01
 
-[ThunarSbrInsertRenamer]
-Offset=0
-Text=.
-Mode=THUNAR_SBR_INSERT_MODE_INSERT
-OffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
-
 [ThunarSbrRemoveRenamer]
 StartOffset=14
 EndOffset=0
 EndOffsetMode=THUNAR_SBR_OFFSET_MODE_RIGHT
 StartOffsetMode=THUNAR_SBR_OFFSET_MODE_RIGHT
+
+[ThunarSbrInsertRenamer]
+Offset=0
+Text=Rija Rasolondraibe -\ 
+Mode=THUNAR_SBR_INSERT_MODE_INSERT
+OffsetMode=THUNAR_SBR_OFFSET_MODE_LEFT
 

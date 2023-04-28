@@ -1,2 +1,0 @@
-ALTER TABLE Agenda ALTER COLUMN id TYPE text;
-ALTER TABLE Agenda ALTER RENAME COLUMN id TO [newColumnName];

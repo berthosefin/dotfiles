@@ -1,3 +1,0 @@
-
-
-texte = input("Entrer ")

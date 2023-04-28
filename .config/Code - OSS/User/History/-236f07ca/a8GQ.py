@@ -1,2 +1,0 @@
-repeat = input()
-print(repeat)

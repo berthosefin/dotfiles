@@ -1,5 +1,5 @@
 favorites=xfce4-web-browser.desktop,xfce4-mail-reader.desktop,xfce4-file-manager.desktop,xfce4-terminal-emulator.desktop
-recent=xfce4-mime-settings.desktop,xfce-wmtweaks-settings.desktop,xfce-ui-settings.desktop,kvantummanager.desktop,code-oss.desktop,xfce-wm-settings.desktop,org.gnome.Rhythmbox3.desktop,qwinff.desktop,anydesk.desktop
+recent=xfce-settings-manager.desktop,panel-preferences.desktop,xfce-ui-settings.desktop,xfce4-about.desktop,xfce4-mime-settings.desktop,xfce-wmtweaks-settings.desktop,kvantummanager.desktop,code-oss.desktop,xfce-wm-settings.desktop,org.gnome.Rhythmbox3.desktop
 button-icon=start-here
 button-single-row=false
 show-button-title=false
@@ -27,7 +27,7 @@ menu-width=621
 menu-height=529
 menu-opacity=100
 command-settings=xfce4-settings-manager
-show-command-settings=false
+show-command-settings=true
 command-lockscreen=xflock4
 show-command-lockscreen=false
 command-switchuser=dm-tool switch-to-greeter

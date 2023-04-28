@@ -6,7 +6,7 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="false"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=8;x=683;y=752"/>
+      <property name="position" type="string" value="p=6;x=683;y=16"/>
       <property name="length" type="double" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="16"/>
@@ -30,8 +30,8 @@
         <value type="double" value="0.12941176470588237"/>
         <value type="double" value="1"/>
       </property>
-      <property name="disable-struts" type="bool" value="false"/>
       <property name="nrows" type="uint" value="1"/>
+      <property name="enable-struts" type="bool" value="true"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -55,6 +55,8 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="connexion au réseau wi-fi « projet_jeune_leader » active : projet_jeune_leader (62 %)"/>
+        <value type="string" value="connexion au réseau wi-fi « wi-fin » active : wi-fin (63 %)"/>
         <value type="string" value="réseau désactivé"/>
         <value type="string" value="anydesk"/>
         <value type="string" value="connexion au réseau wi-fi « projet_jeune_leader » active : projet_jeune_leader (66 %)"/>
@@ -71,6 +73,7 @@
         <value type="string" value="ethernet network connection “wired connection 1” active"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="chrome_status_icon_1"/>
         <value type="string" value="remmina-icon"/>
         <value type="string" value="GoldenDict"/>
         <value type="string" value="Latte Dock_microphone"/>
@@ -87,7 +90,7 @@
     <property name="plugin-8" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
       <property name="show-notifications" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance12271;chromium.instance1242;chromium.instance2786;clementine;firefox.instance1101;firefox.instance1165;firefox.instance12004;firefox.instance1303;firefox.instance13833;firefox.instance15594;firefox.instance1721;firefox.instance1756;firefox.instance1882;firefox.instance2206;firefox.instance24982;firefox.instance37265;firefox.instance5425;firefox.instance6904;firefox.instance840;firefox.instance9781;io.bassi.Amberol;rhythmbox;strawberry;vlc"/>
+      <property name="mpris-players" type="string" value="chromium.instance12271;chromium.instance1242;chromium.instance2786;clementine;firefox.instance1101;firefox.instance1165;firefox.instance12004;firefox.instance1303;firefox.instance13833;firefox.instance15594;firefox.instance1721;firefox.instance1756;firefox.instance1882;firefox.instance2190;firefox.instance2206;firefox.instance24982;firefox.instance37265;firefox.instance5425;firefox.instance6904;firefox.instance840;firefox.instance9781;io.bassi.Amberol;rhythmbox;strawberry;vlc"/>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-12" type="string" value="clock">
@@ -101,8 +104,8 @@
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-15" type="string" value="weather">
-      <property name="msl" type="int" value="0"/>
-      <property name="timezone" type="string" value=""/>
+      <property name="msl" type="int" value="1167"/>
+      <property name="timezone" type="string" value="Indian/Antananarivo"/>
       <property name="offset" type="string" value="+03:00"/>
       <property name="cache-max-age" type="int" value="172800"/>
       <property name="power-saving" type="bool" value="true"/>
@@ -112,7 +115,7 @@
         <property name="windspeed" type="int" value="0"/>
         <property name="precipitation" type="int" value="0"/>
         <property name="altitude" type="int" value="0"/>
-        <property name="apparent-temperature" type="int" value="2"/>
+        <property name="apparent-temperature" type="int" value="0"/>
       </property>
       <property name="round" type="bool" value="true"/>
       <property name="single-row" type="bool" value="true"/>
@@ -128,6 +131,11 @@
         <property name="lines" type="int" value="1"/>
         <property name="color" type="string" value="rgba(0,0,0,0)"/>
         <property name="use-color" type="bool" value="false"/>
+      </property>
+      <property name="location" type="empty">
+        <property name="name" type="string" value="Fianarantsoa, District de Fianarantsoa"/>
+        <property name="latitude" type="string" value="-21.456444"/>
+        <property name="longitude" type="string" value="47.085149"/>
       </property>
     </property>
   </property>

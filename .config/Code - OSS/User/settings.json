@@ -11,7 +11,6 @@
   "editor.occurrencesHighlight": false,
   "editor.suggest.insertMode": "replace",
   "editor.acceptSuggestionOnCommitCharacter": false,
-  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
@@ -78,5 +77,6 @@
   "database-client.defaultSelectLimit": 30,
   "workbench.colorTheme": "Nord",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.formatOnSave": true
 }

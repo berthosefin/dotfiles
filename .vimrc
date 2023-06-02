@@ -77,7 +77,7 @@ let g:mapleader = ","
 " => Status Line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
-let g:lightline = { 'colorscheme': 'nord' }
+let g:lightline = { 'colorscheme': 'dracula' }
 
 " Always show statusline
 set laststatus=2

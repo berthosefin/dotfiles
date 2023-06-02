@@ -2,7 +2,7 @@
 # |__|\_____  \__  _  __ _____
 # |  |  _(__  <\ \/ \/ //     \
 # |  | /       \\     /|  Y Y  \
-# |__|/birkhoff/ \/\_/ |__|_|  /
+# |__|/___Thos_/ \/\_/ |__|_|  /
 #            \/              \/
 
 set $super Mod4
@@ -15,7 +15,7 @@ font pango:Iosevka Custom 8
 floating_modifier $super
 
 # Autostart
-# exec --no-startup-id ~/.bin/xidle &
+exec --no-startup-id ~/.bin/xidle &
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 exec --no-startup-id xsettingsd &
 exec --no-startup-id xfce4-notifyd &

@@ -7,7 +7,7 @@ mpd_port 		  	= "6600"
 mpd_crossfade_time 	= "2"
 
 ### Script ###
-execute_on_song_change = pkill dunst && notify-send "  $(mpc current)"
+execute_on_song_change = notify-send "  $(mpc current)"
 
 ### Behaviour ###
 message_delay_time 				 = 1

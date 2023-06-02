@@ -106,6 +106,7 @@ PATH=$HOME/.local/bin:$PATH
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias tb="taskbook"
+alias yt-dlp-mp3="yt-dlp -x --audio-format mp3"
 
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
@@ -133,3 +134,5 @@ oks() {
 	paplay $sound_error
     fi
 }
+
+source /usr/share/nvm/init-nvm.sh

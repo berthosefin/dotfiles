@@ -3,5 +3,5 @@
 while true;
 do
     feh --bg-fill "$(find $HOME/Images/Nord -type f -name '*.jpg' -o -name '*.png' | shuf -n 1)"
-    sleep 300s
+    sleep 600s
 done &

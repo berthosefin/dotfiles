@@ -80,6 +80,9 @@ bindsym $super+q kill
 bindsym $super+Shift+d exec dmenu_run -p 'RUN »»' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg" -fn "Iosevka Custom:8"
 bindsym $super+d exec --no-startup-id rofi -show drun
 
+# Window menu
+bindsym $super+t exec rofi -show window
+
 # Powermenu
 bindsym $super+e exec --no-startup-id ~/.bin/powermenu
 
@@ -337,7 +340,7 @@ for_window [class="mpv"] border pixel 2
 # for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal|Xfce4-appfinder"] floating enable
 for_window [class="Galculator|Fsearch|SimpleScreenRecorder"] floating enable
-for_window [class="Mousepad|Zathura|Evince|Viewnior|mpv|qwinff"] floating enable
+for_window [class="Mousepad|Zathura|Evince|Viewnior|mpv|qwinff|Easytag"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
 for_window [class="VirtualBox Manager|VirtualBox Machine|^code"] floating disable

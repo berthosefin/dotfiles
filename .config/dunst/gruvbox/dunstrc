@@ -313,24 +313,24 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#F8F8F2"
-    foreground = "#282A36"
+    background = "#ebdbb2"
+    foreground = "#282828"
     timeout = 10
     script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#BD93F9"
-    foreground = "#282A36"
+    background = "#458588"
+    foreground = "#282828"
     timeout = 10
     script = ~/.config/dunst/sound-normal.sh
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_critical]
-    background = "#FF5555"
-    foreground = "#282A36"
+    background = "#cc241d"
+    foreground = "#282828"
     frame_color = "#00000000"
     timeout = 0
     script = ~/.config/dunst/sound-critical.sh

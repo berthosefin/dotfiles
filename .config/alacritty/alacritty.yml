@@ -221,7 +221,8 @@ draw_bold_text_with_bright_colors: true
 # Colors
 import:
   # uncomment the flavour you want below:
-  #  - ~/.config/alacritty/dracula/dracula.yml
+  # - ~/.config/alacritty/dracula/dracula.yml
+  # - ~/.config/alacritty/gruvbox/gruvbox.yml
   - ~/.config/alacritty/nord/nord.yml
 
 # Visual Bell

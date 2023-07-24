@@ -313,7 +313,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#CAD3F5"
+    background = "#D8DEE9"
     foreground = "#2E3440"
     timeout = 10
     script = ~/.config/dunst/sound-normal.sh

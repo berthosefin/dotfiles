@@ -200,7 +200,7 @@ bindsym $super+u scratchpad show
 
 # Assign workspaces
 assign [class=firefox|Brave-browser] 2
-assign [class=^VirtualBox|^code|^ONLYOFFICE|Soffice] 3
+assign [class=^VirtualBox|^code|Soffice] 3
 assign [class=^Gimp|Inkscape|Darktable|Shotcut|Tenacity|Mixxx|Rhythmbox] 4
 
 # Reload the configuration file
@@ -335,19 +335,20 @@ for_window [class="mpv"] border pixel 2
 # for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal|Xfce4-appfinder"] floating enable
 for_window [class="Galculator|Fsearch"] floating enable
-for_window [class="Mousepad|Zathura|Evince|Viewnior|mpv|qwinff|Easytag"] floating enable
+for_window [class="Mousepad|Zathura|Evince"] floating enable
+for_window [class="Viewnior|mpv|qwinff|Easytag"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main"] floating enable
-for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
-for_window [class="VirtualBox Manager|VirtualBox Machine|^code"] floating disable
+for_window [class="Lxappearance|Pavucontrol|Blueman-manager|GParted"] floating enable
 
-for_window [instance='lock'] floating enable; focus floating
-
+for_window [title="^Opération"] floating enable
+for_window [title="^Confirm"] floating enable
 for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable
 for_window [title="Moving"] floating enable
-for_window [title="^Opération"] floating enable
 
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
+
+for_window [instance='lock'] floating enable; focus floating

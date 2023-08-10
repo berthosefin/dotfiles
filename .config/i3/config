@@ -70,8 +70,8 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioStop exec mpc stop
 
 # Brightness control
-bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +10%
-bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl s 5%-
 
 # Kill focused window
 bindsym $super+q kill
@@ -147,7 +147,6 @@ set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
-set $ws10 "10"
 
 # Setting variables for later use
 # Use xrandr and/or arandr to know the names of your monitors
@@ -166,7 +165,6 @@ workspace 6 output $Monitor2
 workspace 7 output $Monitor2
 workspace 8 output $Monitor2
 workspace 9 output $Monitor2
-workspace 10 output $Monitor2
 
 # Switch to workspace
 bindsym $super+ampersand workspace $ws1
@@ -178,7 +176,6 @@ bindsym $super+minus workspace $ws6
 bindsym $super+egrave workspace $ws7
 bindsym $super+underscore workspace $ws8
 bindsym $super+ccedilla workspace $ws9
-bindsym $super+agrave workspace $ws10
 
 # Navigate workspaces next/previous
 bindsym $alt+Ctrl+Right workspace next
@@ -194,7 +191,6 @@ bindsym $super+Shift+minus move container to workspace $ws6
 bindsym $super+Shift+egrave move container to workspace $ws7
 bindsym $super+Shift+underscore move container to workspace $ws8
 bindsym $super+Shift+ccedilla move container to workspace $ws9
-bindsym $super+Shift+agrave move container to workspace $ws10
 
 # Make the currently focused window a scratchpad
 bindsym $super+Shift+u move scratchpad
@@ -203,10 +199,9 @@ bindsym $super+Shift+u move scratchpad
 bindsym $super+u scratchpad show
 
 # Assign workspaces
-assign [class=firefox] 2
+assign [class=firefox|Brave-browser] 2
 assign [class=^VirtualBox|^code|^ONLYOFFICE|Soffice] 3
-assign [class=^Gimp|Inkscape|Darktable|Shotcut|Tenacity|Mixxx] 4
-assign [class=Pavucontrol|Blueman-manager|Lxappearance|GParted] 5
+assign [class=^Gimp|Inkscape|Darktable|Shotcut|Tenacity|Mixxx|Rhythmbox] 4
 
 # Reload the configuration file
 bindsym $super+Shift+c reload
@@ -332,14 +327,14 @@ client.background       $bg
 # Windows rules
 # for_window [class="^.*"] focus
 for_window [class="^.*"] title_format " [%class] - %title "
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 for_window [class="mpv"] border pixel 2
 
 
 # Floating mode
 # for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal|Xfce4-appfinder"] floating enable
-for_window [class="Galculator|Fsearch|SimpleScreenRecorder"] floating enable
+for_window [class="Galculator|Fsearch"] floating enable
 for_window [class="Mousepad|Zathura|Evince|Viewnior|mpv|qwinff|Easytag"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main"] floating enable
 for_window [class="Lxappearance|Pavucontrol|GParted|Blueman-manager"] floating enable
@@ -351,7 +346,6 @@ for_window [title="Copying"] floating enable
 for_window [title="Deleting"] floating enable
 for_window [title="Moving"] floating enable
 for_window [title="^Opération"] floating enable
-for_window [title="^Terminator Preferences$"] floating enable
 
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable

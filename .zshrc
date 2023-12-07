@@ -105,8 +105,9 @@ PATH=$HOME/.local/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias tb="taskbook"
-alias yt-dlp-mp3="yt-dlp -x --audio-format mp3"
+alias yt-720="yt-dlp -f 22"
+alias yt-mp3="yt-dlp -x --audio-format mp3"
+alias yt-playlists="yt-dlp -o \"%(playlist_index)s-%(title)s.%(ext)s\""
 
 # Import colorscheme from 'wal' asynchronously
 # &   # Run the process in the background.
@@ -136,3 +137,19 @@ oks() {
 }
 
 source /usr/share/nvm/init-nvm.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/thos/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/thos/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/thos/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/thos/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

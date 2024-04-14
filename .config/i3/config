@@ -89,7 +89,7 @@ bindsym $super+e exec --no-startup-id ~/.bin/powermenu
 # Rofi theme selector
 # bindsym control+$alt+r exec --no-startup-id rofi-theme-selector
 
-# Rice changer
+# Colorscheme switcher
 bindsym control+$alt+r exec --no-startup-id ~/.bin/scolorscheme
 
 # Change focus
@@ -342,14 +342,6 @@ for_window [class="Mousepad|Zathura|Evince"] floating enable
 for_window [class="Viewnior|mpv|qwinff|Easytag"] floating enable
 for_window [class="Nm-connection-editor|xdman-Main"] floating enable
 for_window [class="Lxappearance|Kvantum Manager|qt5ct|Pavucontrol|Blueman-manager|GParted"] floating enable
-
-for_window [title="^Opération"] floating enable
-for_window [title="^Confirm"] floating enable
-for_window [title="Copying"] floating enable
-for_window [title="Deleting"] floating enable
-for_window [title="Moving"] floating enable
-for_window [title="Compression"] floating enable
-for_window [title="Extraire"] floating enable
 
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable

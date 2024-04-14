@@ -6,6 +6,35 @@
 # Date : 2024-04-13
 # ----------------------------------------------
 
+# Définir une fonction pour changer les paramètres dans gtk-3.0/settings.ini
+change_gtk_settings() {
+    local theme_name="$1"
+    local icon_theme="$2"
+    local cursor_theme="$3"
+
+    sed -i "s/^gtk-theme-name=.*/gtk-theme-name=${theme_name}/" ~/.config/gtk-3.0/settings.ini
+    sed -i "s/^gtk-icon-theme-name=.*/gtk-icon-theme-name=${icon_theme}/" ~/.config/gtk-3.0/settings.ini
+    sed -i "s/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=${cursor_theme}/" ~/.config/gtk-3.0/settings.ini
+}
+
+# Définir une fonction pour changer la configuration de Vim (~/.vimrc)
+change_vim_settings() {
+    local colorscheme="$1"
+
+    sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': '${colorscheme}' }/" ~/.vimrc
+}
+
+# Définir une fonction pour changer l'image_dir dans ~/.bin/randomwall
+change_randomwall_image_dir() {
+    local image_dir="$1"
+
+    sed -i "s|^image_dir=.*|image_dir=\"${image_dir}\"|" ~/.bin/randomwall
+}
+
+# ----------------------------------------------
+# Menu de sélection du ColorScheme
+# ----------------------------------------------
+
 options="\
 catppuccin-frappe
 catppuccin-latte
@@ -23,63 +52,49 @@ if ! [ "${choice}" ] || [ "${choice}" = "quit" ]; then
     exit 1
 fi
 
-# wal themes vim wallpapers
+# Changer les paramètres en fonction du choix
 case "${choice}" in
     catppuccin-frappe)
         wal --theme "${choice}"
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Catppuccin-Frappe-Standard-Blue-Dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=Fluent-dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Catppuccin-Frappe-Dark-Cursors/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': 'catppuccin_frappe' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Catppuccin"
+        change_gtk_settings "Catppuccin-Frappe-Standard-Blue-Dark" "Fluent-dark" "Catppuccin-Frappe-Dark-Cursors"
+        change_vim_settings "catppuccin_frappe"
+        change_randomwall_image_dir "$HOME/Images/Catppuccin"
         ;;
     catppuccin-latte)
         wal --theme "${choice}" -l
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Catppuccin-Latte-Standard-Blue-Dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=Fluent/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Catppuccin-Latte-Dark-Cursors/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': 'catppuccin_latte' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Catppuccin/Latte"
+        change_gtk_settings "Catppuccin-Latte-Standard-Blue-Dark" "Fluent" "Catppuccin-Latte-Dark-Cursors"
+        change_vim_settings "catppuccin_latte"
+        change_randomwall_image_dir "$HOME/Images/Catppuccin/Latte"
         ;;
     catppuccin-macchiato)
         wal --theme "${choice}"
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Catppuccin-Macchiato-Standard-Blue-Dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=Fluent-dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Catppuccin-Macchiato-Dark-Cursors/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': 'catppuccin_macchiato' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Catppuccin"
+        change_gtk_settings "Catppuccin-Macchiato-Standard-Blue-Dark" "Fluent-dark" "Catppuccin-Macchiato-Dark-Cursors"
+        change_vim_settings "catppuccin_macchiato"
+        change_randomwall_image_dir "$HOME/Images/Catppuccin"
         ;;
     catppuccin-mocha)
         wal --theme "${choice}"
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Catppuccin-Mocha-Standard-Blue-Dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=Fluent-dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Catppuccin-Mocha-Dark-Cursors/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': 'catppuccin_mocha' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Catppuccin"
+        change_gtk_settings "Catppuccin-Mocha-Standard-Blue-Dark" "Fluent-dark" "Catppuccin-Mocha-Dark-Cursors"
+        change_vim_settings "catppuccin_mocha"
+        change_randomwall_image_dir "$HOME/Images/Catppuccin"
         ;;
     dracula)
         wal --theme "${choice}"
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Dracula/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=dracula-icons/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Dracula-cursors/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': '${choice}' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Dracula"
+        change_gtk_settings "Dracula" "dracula-icons" "Dracula-cursors"
+        change_vim_settings "${choice}"
+        change_randomwall_image_dir "$HOME/Images/Dracula"
         ;;
     gruvbox)
         wal --theme "${choice}"
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Gruvbox-Dark-BL-MOD/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=Gruvbox-plus-icon-MOD/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Gruvbox_Cursors_Dark/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': '${choice}' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Gruvbox"
+        change_gtk_settings "Gruvbox-Dark-BL-MOD" "Gruvbox-plus-icon-MOD" "Gruvbox_Cursors_Dark"
+        change_vim_settings "${choice}"
+        change_randomwall_image_dir "$HOME/Images/Gruvbox"
         ;;
     nord)
         wal --theme "${choice}"
-        sed -i 's/^gtk-theme-name=.*/gtk-theme-name=Nordic-darker/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-icon-theme-name=.*/gtk-icon-theme-name=Nordic-Darker/' ~/.config/gtk-3.0/settings.ini
-        sed -i 's/^gtk-cursor-theme-name=.*/gtk-cursor-theme-name=Nordic-cursors/' ~/.config/gtk-3.0/settings.ini
-        sed -i "s/^let g:lightline = .*/let g:lightline = { 'colorscheme': '${choice}' }/" ~/.vimrc
-        sh ~/.bin/randomwall "Nord"
+        change_gtk_settings "Nordic-darker" "Nordic-Darker" "Nordic-cursors"
+        change_vim_settings "${choice}"
+        change_randomwall_image_dir "$HOME/Images/Nord"
         ;;
     *)
         echo "Choix de thème non pris en charge : ${choice}" >&2
@@ -104,4 +119,10 @@ sed -i "s/\"theme-name\": .*/\"theme-name\": \"${choice}\"/" ~/.config/ulauncher
 # zathura
 sed -i "s|^include .*$|include colorschemes/${choice}|" ~/.config/zathura/zathurarc
 
+# Redémarrer randomwall avec le nouveau image_dir
+pkill randomwall
+sleep 1
+sh ~/.bin/randomwall &
+
+# Redémarrer i3wm
 i3-msg restart

@@ -62,7 +62,7 @@ case "${choice}" in
         ;;
     catppuccin-latte)
         wal --theme "${choice}" -l
-        change_gtk_settings "Catppuccin-Latte-Standard-Blue-Dark" "Fluent" "Catppuccin-Latte-Dark-Cursors"
+        change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Fluent" "Catppuccin-Latte-Dark-Cursors"
         change_vim_settings "catppuccin_latte"
         change_randomwall_image_dir "$HOME/Images/Catppuccin/Latte"
         ;;

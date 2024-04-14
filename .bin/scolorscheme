@@ -125,4 +125,4 @@ sleep 1
 nohup sh ~/.bin/randomwall >/dev/null 2>&1 &
 
 # Redémarrer i3wm
-i3-msg restart
+# i3-msg restart

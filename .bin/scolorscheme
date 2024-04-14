@@ -64,7 +64,7 @@ case "${choice}" in
         wal --theme "${choice}" -l
         change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Fluent" "Catppuccin-Latte-Dark-Cursors"
         change_vim_settings "catppuccin_latte"
-        change_randomwall_image_dir "$HOME/Images/Catppuccin/Latte"
+        change_randomwall_image_dir "$HOME/Images/Light"
         ;;
     catppuccin-macchiato)
         wal --theme "${choice}"
@@ -120,9 +120,9 @@ sed -i "s/\"theme-name\": .*/\"theme-name\": \"${choice}\"/" ~/.config/ulauncher
 sed -i "s|^include .*$|include colorschemes/${choice}|" ~/.config/zathura/zathurarc
 
 # Redémarrer randomwall avec le nouveau image_dir
-pkill randomwall
+pkill -f randomwall
 sleep 1
-sh ~/.bin/randomwall &
+nohup sh ~/.bin/randomwall >/dev/null 2>&1 &
 
 # Redémarrer i3wm
 i3-msg restart

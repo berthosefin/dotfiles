@@ -55,8 +55,10 @@ bindsym Control+Print exec xfce4-screenshooter
 bindsym $alt+l exec betterlockscreen -l blur
 
 # Others keyboard shortcuts
-bindsym $alt+g exec --no-startup-id galculator
-bindsym control+Shift+f exec --no-startup-id fsearch
+bindsym $alt+g exec galculator
+bindsym control+Shift+f exec fsearch
+bindsym control+t exec alacritty -e htop
+bindsym control+Shift+Escape exec xfce4-taskmanager
 
 # Change volume
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+
@@ -64,10 +66,10 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 5%-
 bindsym XF86AudioMute exec amixer set Master toggle
 
 # Music control
-bindsym XF86AudioNext exec mpc next
-bindsym XF86AudioPrev exec mpc prev
-bindsym XF86AudioPlay exec mpc toggle
-bindsym XF86AudioStop exec mpc stop
+# bindsym XF86AudioNext exec mpc next
+# bindsym XF86AudioPrev exec mpc prev
+# bindsym XF86AudioPlay exec mpc toggle
+# Tbindsym XF86AudioStop exec mpc stop
 
 # Brightness control
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl s +5%
@@ -78,19 +80,19 @@ bindsym $super+q kill
 
 # Start a program launcher
 bindsym $super+Shift+d exec dmenu_run -p 'RUN »»' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg" -fn "Iosevka Custom:8"
-bindsym $super+d exec --no-startup-id rofi -show drun
+bindsym $super+d exec rofi -show drun
 
 # Window menu
 bindsym $super+t exec rofi -show window
 
 # Powermenu
-bindsym $super+e exec --no-startup-id ~/.bin/powermenu
+bindsym $super+e exec ~/.bin/powermenu
 
 # Rofi theme selector
-# bindsym control+$alt+r exec --no-startup-id rofi-theme-selector
+# bindsym control+$alt+r exec rofi-theme-selector
 
 # Colorscheme switcher
-bindsym control+$alt+r exec --no-startup-id ~/.bin/scolorscheme
+bindsym control+$alt+r exec ~/.bin/scolorscheme
 
 # Change focus
 bindsym $super+h focus left
@@ -330,7 +332,7 @@ client.background       $bg
 # Windows rules
 # for_window [class="^.*"] focus
 for_window [class="^.*"] title_format " [%class] - %title "
-for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 1
 for_window [class="mpv"] border pixel 2
 
 

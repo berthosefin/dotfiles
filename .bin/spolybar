@@ -10,7 +10,7 @@ DIR="$HOME/.config/polybar"
 STYLE=$(sed -n '4s/STYLE=//p' "$DIR/launch.sh")
 
 case "$1" in
-	"default"|"blocks"|"docky"|"forest"|"grayblocks"|"material"|"minimal")
+	"default"|"default_b"|"blocks"|"docky"|"forest"|"grayblocks"|"material"|"minimal")
 		style="$1"
 		sed -i "s/$STYLE/$1/g" "$DIR/launch.sh"
 		sh "$DIR/launch.sh"
@@ -24,6 +24,7 @@ case "$1" in
 
 		Available Themes :
 		- default
+		- default_b
 		- blocks
 		- docky
 		- forest

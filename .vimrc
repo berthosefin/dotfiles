@@ -29,33 +29,21 @@ Plug 'PotatoesMaster/i3-vim-syntax'                   " i3 config highlighting
 Plug 'vim-python/python-syntax'                       " Python highlighting
 Plug 'ap/vim-css-color'                               " Color previews for CSS
 Plug 'junegunn/vim-emoji'                             " Vim needs emojis!
-Plug 'tpope/vim-commentary'						      " Commentary 
-Plug 'mattn/emmet-vim'						          " Emmet
+Plug 'tpope/vim-commentary'						     						" Commentary 
+Plug 'mattn/emmet-vim'						       						  " Emmet
 
 Plug 'arcticicestudio/nord-vim', { 'as': 'nord', 'on': 'NERDTreeToggle' }
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+Plug 'shinchu/lightline-gruvbox.vim', { 'as': 'gruvbox' }
 
 call plug#end()
-
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-" filetype plugin on
-
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General Settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set path+=**					" Searches current directory recursively.
-set wildmenu					" Display all matches when tab complete.
+set path+=**										" Searches current directory recursively.
+set wildmenu										" Display all matches when tab complete.
 set incsearch                   " Incremental search
 set hidden                      " Needed to keep multiple buffers open
 set nobackup                    " No auto backups
@@ -78,7 +66,7 @@ let g:mapleader = ","
 " => Status Line
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " The lightline.vim theme
-let g:lightline = { 'colorscheme': 'nord' }
+let g:lightline = { 'colorscheme': 'gruvbox' }
 
 " Always show statusline
 set laststatus=2

@@ -1,0 +1,259 @@
+# .__ ________
+# |__|\_____  \__  _  __ _____
+# |  |  _(__  <\ \/ \/ //     \
+# |  | /       \\     /|  Y Y  \
+# |__|/___Thos_/ \/\_/ |__|_|  /
+#            \/              \/
+
+set $super Mod4
+set $alt Mod1
+
+set $scripts ~/.config/i3/scripts
+
+# Font for window titles
+font pango:0xProto 8
+
+# Use Mouse+$super to drag floating windows to their wanted position
+floating_modifier $super
+
+# Autostart
+exec --no-startup-id numlockx on &
+exec --no-startup-id picom -b &
+exec --no-startup-id dunst &
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+exec --no-startup-id $scripts/system-monitor.sh &
+exec --no-startup-id $scripts/idle.sh &
+# exec --no-startup-id ~/.fehbg &
+exec --no-startup-id $scripts/randomwall.sh &
+exec --no-startup-id ~/.config/polybar/launch.sh &
+exec --no-startup-id redshift &
+exec --no-startup-id tlp start &
+exec --no-startup-id mpd &
+
+# Start a terminal
+bindsym $super+Return exec alacritty
+bindsym $super+Shift+Return exec xfce4-terminal
+
+# Start a web browser
+bindsym $super+Shift+w exec firefox
+
+# Start a file manager
+bindsym $super+Shift+f exec thunar
+
+# Screenshoot
+bindsym Print exec $scripts/screenshot.sh --now
+bindsym Control+Print exec xfce4-screenshooter
+
+# Lock screen
+bindsym control+$alt+l exec $scripts/lock.sh
+
+# Change volume
+bindsym XF86AudioRaiseVolume exec $scripts/volume.sh --inc
+bindsym XF86AudioLowerVolume exec $scripts/volume.sh --dec
+bindsym XF86AudioMute exec $scripts/volume.sh --toggle
+
+# Brightness control
+bindsym XF86MonBrightnessUp exec $scripts/brightness.sh --inc
+bindsym XF86MonBrightnessDown exec $scripts/brightness.sh --dec
+
+# Kill focused window
+bindsym $super+q kill
+
+# Start a program launcher
+bindsym $super+d exec rofi -show drun
+bindsym $super+Shift+d exec dmenu_run -p 'RUN »»' -nb "$bg" -nf "$ac" -sb "$ac" -sf "$bg" -fn "0xProto:8" -b
+
+# Powermenu
+bindsym $super+e exec $scripts/powermenu.sh
+
+# Polybar & olorscheme switcher
+bindsym control+$alt+p exec ~/.config/polybar/spolybar.sh
+bindsym control+$alt+c exec $scripts/scolorscheme.sh
+
+# Change focus
+bindsym $super+h focus left
+bindsym $super+j focus down
+bindsym $super+k focus up
+bindsym $super+l focus right
+
+# Alternatively, you can use the cursor keys:
+bindsym $super+Left focus left
+bindsym $super+Down focus down
+bindsym $super+Up focus up
+bindsym $super+Right focus right
+
+# Move focused window
+bindsym $super+Shift+h move left
+bindsym $super+Shift+j move down
+bindsym $super+Shift+k move up
+bindsym $super+Shift+l move right
+
+# Alternatively, you can use the cursor keys:
+bindsym $super+Shift+Left move left
+bindsym $super+Shift+Down move down
+bindsym $super+Shift+Up move up
+bindsym $super+Shift+Right move right
+
+# Split in horizontal orientation
+bindsym $super+b split h
+
+# Split in vertical orientation
+bindsym $super+v split v
+
+# Enter fullscreen mode for the focused container
+bindsym $super+f fullscreen toggle
+
+# Change container layout (stacked, tabbed)
+bindsym $super+z layout stacking
+bindsym $super+w layout tabbed
+bindsym $super+s layout toggle split
+
+# Toggle tiling/floating
+bindsym $super+space floating toggle
+
+# Change focus between tiling/floating windows
+bindsym $super+shift+space focus mode_toggle
+
+# Focus the parent container
+bindsym $super+a focus parent
+
+# Define names for default workspaces for which we configure key bindings later on
+# We use variables to avoid repeating the names in multiple places
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+
+# Setting variables for later use
+# Use xrandr and/or arandr to know the names of your monitors
+# Use this line to tell which monitor is on the right
+exec --no-startup-id xrandr --output HDMI-1 --right-of eDP-1 --auto
+
+set $Monitor1 eDP1
+set $Monitor2 HDMI1
+
+workspace 1 output $Monitor1
+workspace 2 output $Monitor1
+workspace 3 output $Monitor1
+workspace 4 output $Monitor1
+workspace 5 output $Monitor1
+workspace 6 output $Monitor2
+workspace 7 output $Monitor2
+workspace 8 output $Monitor2
+workspace 9 output $Monitor2
+
+# Switch to workspace
+bindsym $super+ampersand workspace $ws1
+bindsym $super+eacute workspace $ws2
+bindsym $super+quotedbl workspace $ws3
+bindsym $super+apostrophe workspace $ws4
+bindsym $super+parenleft workspace $ws5
+bindsym $super+minus workspace $ws6
+bindsym $super+egrave workspace $ws7
+bindsym $super+underscore workspace $ws8
+bindsym $super+ccedilla workspace $ws9
+
+# Move focused container to workspace
+bindsym $super+Shift+ampersand move container to workspace $ws1
+bindsym $super+Shift+eacute move container to workspace $ws2
+bindsym $super+Shift+quotedbl move container to workspace $ws3
+bindsym $super+Shift+apostrophe move container to workspace $ws4
+bindsym $super+Shift+parenleft move container to workspace $ws5
+bindsym $super+Shift+minus move container to workspace $ws6
+bindsym $super+Shift+egrave move container to workspace $ws7
+bindsym $super+Shift+underscore move container to workspace $ws8
+bindsym $super+Shift+ccedilla move container to workspace $ws9
+
+# Make the currently focused window a scratchpad
+bindsym $super+Shift+u move scratchpad
+
+# Show the first scratchpad window
+bindsym $super+u scratchpad show
+
+# Assign workspaces
+assign [class=firefox] 2
+assign [class=^VirtualBox|^code|^libreoffice] 3
+assign [class=^Gimp|Inkscape|Darktable|Kdenlive|Audacity|Mixxx|Rhythmbox] 4
+
+# Reload the configuration file
+bindsym $super+Shift+c reload
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $super+Shift+r restart
+# Exit i3 (logs you out of your X session)
+bindsym $super+Shift+e exec "i3-nagbar -t warning -m 'Really, exit?' -b 'Yes' 'i3-msg exit'"
+
+# Resize window (you can also use the mouse for that)
+bindsym $super+r mode "resize"
+
+mode "resize" {
+    # These bindings trigger as soon as you enter the resize mode
+
+    # Pressing left will shrink the window’s width
+    # Pressing right will grow the window’s width
+    # Pressing up will shrink the window’s height
+    # Pressing down will grow the window’s height
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
+
+    # Same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+
+    # Back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+# Set inner/outer gaps
+gaps inner 5
+gaps outer 0
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+# Color from xressources
+set_from_resource $bg background
+set_from_resource $fg foreground
+set_from_resource $ac color4
+set_from_resource $na color8
+set_from_resource $rr color1
+
+# Class                 border  backgr. text    indicator child_border
+client.focused          $ac     $bg     $ac     $na       $ac
+client.focused_inactive $na     $bg     $na     $na       $na
+client.unfocused        $na     $bg     $na     $na       $na
+client.urgent           $rr     $bg     $rr     $na       $rr
+client.placeholder      $na     $bg     $na     $na       $na
+client.background       $bg
+
+# Windows rules
+# for_window [class="^.*"] focus
+for_window [class="^.*"] title_format " [%class] - %title "
+for_window [class="^.*"] border pixel 1
+for_window [class="mpv"] border pixel 2
+
+# Floating mode
+# for_window [class="^.*"] floating enable border pixel 1
+for_window [class="Xfce4-terminal"] floating enable
+for_window [class="Zathura"] floating enable
+for_window [class="Viewnior|mpv|xdman-Main"] floating enable
+
+for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="^Preferences$"] floating enable
+for_window [window_role="setup"] floating enable
+
+for_window [instance='lock'] floating enable; focus floating

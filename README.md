@@ -2,44 +2,29 @@
 
 My personal backup of my dotfiles.
 
-## Previews
+## Some screenshots
 
-![xfce](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/xfce.png)
-![i3wm](https://raw.githubusercontent.com/berthosefin/dotfiles/main/Previews/i3wm.png)
+![preview](https://raw.githubusercontent.com/berthosefin/dotfiles/main/previews/Oc8yPyKWNR.gif)
 
 ## Details
 
-- **Display Server** X11
-- **Display Manager** LightDM
-- **Greeter** LightDM Webkit2 Greeter
-- **Desktop Environment** Xfce
-- **WM** Xfwm4, i3-gaps
-- **Launcher** Rofi, Ulauncher
-- **Panel** Xfce4-panel, Polybar
-- **Compositor** Picom-jonaburg-git
-- **GTK+ Theme Switcher** Lxappearance
-- **GTK Theme** Nordic-Darker
-- **Icons** Nord-Darker
-- **GTK Fonts** Roboto, Iosevka Custom
-- **File Manager** Thunar, Ranger
-- **Web Browser** Firefox, Brave
-- **Task Manager** Htop
-- **Power Manager** Tlp
-- **Image Viewer** Viewnior, Feh
-- **Sound Mixer** PulseAudio
-- **Terminal** Alacritty, Xfce4-terminal
-- **CLI Shell** Zsh
-- **Archiver** File-roller
-- **Notification Daemon** Dunst
-- **Graphic Editor** Gimp
-- **CLI Text Editor** Vim
-- **GUI Text Editor** Code - OSS
-- **CLI Music Player** Ncmpcpp
-- **GUI Music Player** Rhythmbox, Mixxx, Clementine
-- **Media Player** Mpv, Vlc
-- **Policy Kit Frontend** Polkit-gnome
-- **Screenshooter** Scrot, Xfce4-screenshooter
-- **Wallpaper Handler** Feh, Pywal
+- **WM** i3-wm
+- **Launcher** rofi
+- **Panel** polybar
+- **Compositor** picom
+- **GTK Fonts** 0xProto, Iosevka Custom, etc.
+- **File Manager** thunar
+- **Web Browser** firefox
+- **Task Manager** htop
+- **Power Manager** tlp
+- **Image Viewer** viewnior, feh
+- **Terminal** alacritty, xfce4-terminal
+- **CLI Shell** zsh
+- **Notification Daemon** dunst
+- **Text Editor** vim, neovim
+- **Music Player** rhythmbox, mixxx
+- **Media Player** mpv, vlc
+- **Wallpaper Handler** feh, pywal
 
 ## Keybinds & Mousebinds
 
@@ -48,7 +33,6 @@ My personal backup of my dotfiles.
 - **Super + Shift + w** launch firefox
 - **Super + Shift + f** launch thunar
 - **Super + d** launch rofi
-- **Ctrl + Space** launch ulauncher
 - **Ctrl + Print** xfce4-screenshooter
 - **Print** scrot
 - **Super + h,j,k,l** change focus
@@ -57,35 +41,55 @@ My personal backup of my dotfiles.
 - **Super + Shift + Arrows** move focused window
 - **Super + 1-9** switch to workspace 1-9
 - **Super + Shift + 1-9** move focused container to workspace 1-9
-- **Alt + Tab** workspace next
-- **Alt + Shift + Tab** workspace prev
 - **Super + q** kill focused window
 - **Super + f** fullscreen toggle
 - **Super + s** layout toggle split
 - **Super + z** layout stacking
 - **Super + w** layout tabbed
-- **Alt + h** split in horizontal orientation
+- **Alt + b** split in horizontal orientation
 - **Alt + v** split in vertical orientation
 - **Super + Space** floating toggle
 - **Super + Shift + Space** focus mode_toggle
 - **Super + r** mode resize
-- **Super + g** mode gaps
-- **Alt + l** lock screen
 - **Super + e** launch powermenu
-- **Super + Shift + e** exit i3
 - **Super + Shift + r** restart i3
 - **Super + Shift + c** reload i3 configuration
-- ..More keybinds just read the _~/.config/i3/config_ file
+- **Ctrl + Alt + p** switch polybar style
+- **Ctrl + Alt + c** switch colorscheme
+- ...More keybinds just read the _~/.config/i3/config_ file
 
 ## Notes
 
 - If you want to use this configuration, inspect the code before use.
-- Install git
-- Clone this repo `git clone --depth=1 https://github.com/berthosefin/dotfiles ~/.dotfiles`
-- Deploy the dotfiles `cp -rv ~/.dotfiles/* ~`
-- Change the default CLI Shell `chsh $(whoami) -s /bin/zsh`
-- If you find "thos" in the configuration file, replace it with your own username.
-- Edit some system configuration, example in ~/.dotfiles/.system
-- Reboot
-- Fix some errors
-- Start working
+- Make a backup of your current configuration.
+- Install dependencies :
+  - git
+  - stow
+  - i3-wm
+  - i3lock-color
+  - feh
+  - polybar
+  - rofi
+  - alacritty
+  - dunst
+  - picom-git
+  - brightnessctl
+  - xidlehook
+  - scrot
+  - papirus-icon-theme
+- Clone this repo :
+
+```sh
+git clone --depth=1 https://github.com/berthosefin/dotfiles ~/dotfiles
+```
+
+- Deploy the dotfiles :
+
+```sh
+cd ~/dotfiles && stow home -t ~
+```
+
+- If you find `thos` in the configuration file, replace it with your own username.
+- Reboot.
+- Fix some errors.
+- Start working.

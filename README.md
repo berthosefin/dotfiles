@@ -1,8 +1,8 @@
 # Dotfiles
 
-My personal backup of my dotfiles.
+My personal backup of my dotfiles, featuring i3-wm, rofi, polybar, and more.
 
-## Some screenshots
+## Screenshots
 
 ![preview](https://raw.githubusercontent.com/berthosefin/dotfiles/main/previews/Oc8yPyKWNR.gif)
 
@@ -56,40 +56,42 @@ My personal backup of my dotfiles.
 - **Super + Shift + c** reload i3 configuration
 - **Ctrl + Alt + p** switch polybar style
 - **Ctrl + Alt + c** switch colorscheme
-- ...More keybinds just read the _~/.config/i3/config_ file
 
-## Notes
+_More keybinds are available in the `~/.config/i3/config` file_
 
-- If you want to use this configuration, inspect the code before use.
-- Make a backup of your current configuration.
-- Install dependencies :
-  - git
-  - stow
-  - i3-wm
-  - i3lock-color
-  - feh
-  - polybar
-  - rofi
-  - alacritty
-  - dunst
-  - picom-git
-  - brightnessctl
-  - xidlehook
-  - scrot
-  - papirus-icon-theme
-- Clone this repo :
+## Installation
+
+### Prerequisites
+
+Ensure the following dependencies are installed:  
+`git`, `stow`, `i3-wm`, `i3lock-color`, `feh`, `polybar`, `rofi`, `alacritty`, `dunst`, `picom-git`, `brightnessctl`, `xidlehook`, `scrot`, `papirus-icon-theme`.
+
+#### Quick Install:
+
+```sh
+yay -S git stow i3-wm i3lock-color feh polybar rofi alacritty dunst picom-git brightnessctl xidlehook scrot papirus-icon-theme
+```
+
+### Clone the Repository
 
 ```sh
 git clone --depth=1 https://github.com/berthosefin/dotfiles ~/dotfiles
 ```
 
-- Deploy the dotfiles :
+### Deploy Dotfiles
 
 ```sh
 cd ~/dotfiles && stow home -t ~
 ```
 
-- If you find `thos` in the configuration file, replace it with your own username.
-- Reboot.
-- Fix some errors.
-- Start working.
+### Post-Setup
+
+- Replace occurrences of `thos` with your username in the configuration files.
+- Reboot your system to apply changes.
+- Fix any potential errors that arise after reboot.
+- You're all set! Start working with your new setup.
+
+### Notes
+
+- **Inspect before use:** Ensure you review the configuration before applying it.
+- **Backup:** Always create a backup of your current configuration before applying new dotfiles.

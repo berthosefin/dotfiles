@@ -131,11 +131,8 @@ set $ws9 "9"
 
 # Setting variables for later use
 # Use xrandr and/or arandr to know the names of your monitors
-# Use this line to tell which monitor is on the right
-exec --no-startup-id xrandr --output HDMI-1 --right-of eDP-1 --auto
-
-set $Monitor1 eDP1
-set $Monitor2 HDMI1
+set $Monitor1 eDP-1
+set $Monitor2 HDMI-1
 
 workspace 1 output $Monitor1
 workspace 2 output $Monitor1
@@ -256,4 +253,3 @@ for_window [window_role="pop-up"] floating enable
 for_window [window_role="^Preferences$"] floating enable
 for_window [window_role="setup"] floating enable
 
-for_window [instance='lock'] floating enable; focus floating

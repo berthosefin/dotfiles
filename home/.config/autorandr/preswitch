@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Kill picom
+pkill -x picom

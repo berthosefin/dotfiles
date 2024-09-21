@@ -1,23 +1,25 @@
 #!/usr/bin/env bash
 
-# Exportation de la variable DISPLAY primaire
-export PRIMARY_DISPLAY="$(xrandr | awk '/ primary/{print $1}')"
+# Fonction pour obtenir toutes les sorties d'affichage actives
+get_active_displays() {
+    xrandr | grep " connected" | awk '{print $1}'
+}
 
-# Exécution de xidlehook
+# Exécution de xidlehook avec gestion des écrans multiples
 xidlehook \
   `# Ne pas verrouiller si une application est en plein écran` \
   --not-when-fullscreen \
   `# Ne pas verrouiller s'il y a du son en cours` \
   --not-when-audio \
-  `# Diminuer la luminosité de l'écran après 150 secondes, restaurer si l'utilisateur devient actif` \
+  `# Diminuer la luminosité de tous les écrans après 150 secondes, restaurer si l'utilisateur devient actif` \
   --timer 150 \
-  'xrandr --output "$PRIMARY_DISPLAY" --brightness .1' \
-  'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \
+  'for display in $(get_active_displays); do xrandr --output "$display" --brightness .1; done' \
+  'for display in $(get_active_displays); do xrandr --output "$display" --brightness 1; done' \
   `# Verrouiller l'écran et restaurer la luminosité après 300 secondes supplémentaires` \
   --timer 300 \
-  'xrandr --output "$PRIMARY_DISPLAY" --brightness 1; sh ~/.config/i3/scripts/lock.sh' \
+  'for display in $(get_active_displays); do xrandr --output "$display" --brightness 1; done; sh ~/.config/i3/scripts/lock.sh' \
   '' \
-  `# Éteindre l'écran après 330 secondes de plus` \
+  `# Éteindre les écrans après 330 secondes de plus` \
   --timer 330 \
   'xset dpms force off' \
   'xset dpms force on' \

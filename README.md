@@ -64,12 +64,12 @@ _More keybinds are available in the `~/.config/i3/config` file_
 ### Prerequisites
 
 Ensure the following dependencies are installed:  
-`git`, `stow`, `i3-wm`, `i3lock-color`, `feh`, `polybar`, `rofi`, `alacritty`, `dunst`, `picom-git`, `brightnessctl`, `xidlehook`, `scrot`, `papirus-icon-theme`.
+`git`, `stow`, `i3-wm`, `i3lock-color`, `feh`, `polybar`, `rofi`, `alacritty`, `dunst`, `picom-git`, `brightnessctl`, `xidlehook`, `scrot`, `capitaine-cursors`, `papirus-icon-theme`, `papirus-folders-git`, [gruvbox-papirus-folders](https://github.com/xelser/gruvbox-papirus-folders), [catppuccin-papirus-folders](https://github.com/catppuccin/papirus-folders), [dracula-papirus-folders](https://github.com/dracula/papirus-folders), [papirus-nord](https://github.com/Adapta-Projects/Papirus-Nord).
 
 #### Quick Install:
 
 ```sh
-yay -S git stow i3-wm i3lock-color feh polybar rofi alacritty dunst picom-git brightnessctl xidlehook scrot papirus-icon-theme
+yay -S git stow i3-wm i3lock-color feh polybar rofi alacritty dunst picom-git brightnessctl xidlehook scrot papirus-icon-theme papirus-folders-git capitaine-cursors
 ```
 
 ### Clone the Repository

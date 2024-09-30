@@ -82,44 +82,51 @@ case "${choice}" in
 $catppuccin_frappe)
   wal --theme catppuccin-frappe
   bat --theme="Catppuccin Frappe"
-  change_gtk_settings "Catppuccin-Frappe-Standard-Blue-Dark" "Papirus-Dark" "Catppuccin-Frappe-Dark-Cursors"
+  change_gtk_settings "Catppuccin-Frappe-Standard-Blue-Dark" "Papirus-Dark" "capitaine-cursors"
   change_randomwall_image_dir "$HOME/Images/Catppuccin"
+  papirus-folders -C cat-frappe-blue
   ;;
 $catppuccin_latte)
   wal --theme catppuccin-latte -l
   bat --theme="Catppuccin Latte"
-  change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Papirus-Light" "Catppuccin-Latte-Dark-Cursors"
+  change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Papirus-Light" "capitaine-cursors-light"
   change_randomwall_image_dir "$HOME/Images/Catppuccin"
+  papirus-folders -C cat-latte-blue
   ;;
 $catppuccin_macchiato)
   wal --theme catppuccin-macchiato
   bat --theme="Catppuccin Macchiato"
-  change_gtk_settings "Catppuccin-Macchiato-Standard-Blue-Dark" "Papirus-Dark" "Catppuccin-Macchiato-Dark-Cursors"
+  change_gtk_settings "Catppuccin-Macchiato-Standard-Blue-Dark" "Papirus-Dark" "capitaine-cursors"
   change_randomwall_image_dir "$HOME/Images/Catppuccin"
+  papirus-folders -C cat-macchiato-blue
   ;;
 $catppuccin_mocha)
   wal --theme catppuccin-mocha
   bat --theme="Catppuccin Mocha"
-  change_gtk_settings "Catppuccin-Mocha-Standard-Blue-Dark" "Papirus-Dark" "Catppuccin-Mocha-Dark-Cursors"
+  change_gtk_settings "Catppuccin-Mocha-Standard-Blue-Dark" "Papirus-Dark" "capitaine-cursors"
   change_randomwall_image_dir "$HOME/Images/Catppuccin"
+  papirus-folders -C cat-mocha-blue
   ;;
 $dracula)
   wal --theme dracula
   bat --theme="Dracula"
-  change_gtk_settings "Dracula" "dracula-icons" "Dracula-cursors"
+  change_gtk_settings "Dracula" "Papirus-Dark" "capitaine-cursors"
   change_randomwall_image_dir "$HOME/Images/Dracula"
+  papirus-folders -C dracula-default
   ;;
 $gruvbox)
   wal --theme gruvbox
   bat --theme="gruvbox-dark"
-  change_gtk_settings "Gruvbox-Dark-BL-MOD" "Gruvbox-plus-icon-MOD" "Gruvbox_Cursors_Dark"
+  change_gtk_settings "Gruvbox-Dark-BL-MOD" "Papirus-Dark" "capitaine-cursors"
   change_randomwall_image_dir "$HOME/Images/Gruvbox"
+  papirus-folders -C gruvbox-material-yellow
   ;;
 $nord)
   wal --theme nord
   bat --theme="Nord"
-  change_gtk_settings "Nordic-darker" "Nordic-Darker" "Nordic-cursors"
+  change_gtk_settings "Nordic-darker" "Papirus-Dark" "capitaine-cursors"
   change_randomwall_image_dir "$HOME/Images/Nord"
+  papirus-folders -C polarnight4
   ;;
 esac
 

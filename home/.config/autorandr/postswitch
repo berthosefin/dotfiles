@@ -1,9 +1,14 @@
 #!/bin/bash
 
-# Start picom
-picom -b &
+# Check if the current desktop session is i3-wm
+if [ "$DESKTOP_SESSION" = "i3" ] || [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
+    # Start picom
+    picom -b &
 
-# Restart polybar
-bash "$HOME/.config/polybar/launch.sh"
+    # Restart polybar
+    bash "$HOME/.config/polybar/launch.sh"
 
-notify-send "Picom & Polybar" "Picom and Polybar has been restarted."
+    notify-send "Picom & Polybar" "Picom and Polybar has been restarted."
+else
+    echo "Not in i3-wm session. Skipping polybar and picom."
+fi

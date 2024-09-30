@@ -1,4 +1,9 @@
 #!/bin/bash
 
-# Kill picom
-pkill -x picom
+# Check if the current desktop session is i3-wm
+if [ "$DESKTOP_SESSION" = "i3" ] || [ "$XDG_CURRENT_DESKTOP" = "i3" ]; then
+    # Kill picom
+    pkill -x picom
+else
+    echo "Not in i3-wm session. Skipping picom."
+fi

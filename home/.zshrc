@@ -157,3 +157,5 @@ export FZF_DEFAULT_OPTS=" \
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
+export PATH="/home/thos/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/thos/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"

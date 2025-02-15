@@ -173,7 +173,8 @@ bindsym $super+Shift+u move scratchpad
 bindsym $super+u scratchpad show
 
 # Assign workspaces
-assign [class=firefox] 2
+assign [class=KeePassXC] 9
+assign [class=firefox|obsidian] 2
 assign [class=^VirtualBox|^code|^libreoffice] 3
 assign [class=^Gimp|Inkscape|Darktable|Kdenlive|Audacity|Mixxx|Rhythmbox] 4
 

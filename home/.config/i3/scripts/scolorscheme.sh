@@ -3,14 +3,18 @@
 # ----------------------------------------------
 # Description : ColorScheme Switcher
 # Author : Berthose Fin (Thos)
-# Date : 2024-09-12
+# Date : 2024-09-12 (update: 2025-03-23)
 # ----------------------------------------------
+
+# Default themes
+default_icon_theme="Papirus-Dark"
+default_cursor_theme="capitaine-cursors"
 
 # Function to change GTK settings
 change_gtk_settings() {
   local theme_name="$1"
-  local icon_theme="$2"
-  local cursor_theme="$3"
+  local icon_theme="${2:-$default_icon_theme}"
+  local cursor_theme="${3:-$default_cursor_theme}"
 
   sed -i "s/^gtk-theme-name=.*/gtk-theme-name=${theme_name}/" ~/.config/gtk-3.0/settings.ini
   sed -i "s/^gtk-icon-theme-name=.*/gtk-icon-theme-name=${icon_theme}/" ~/.config/gtk-3.0/settings.ini
@@ -42,15 +46,15 @@ change_mousepad_colors() {
 
 # Function to change xfce4-terminal colors
 change_xfce4_terminal_colors() {
+	sleep 0.5
   # Source the pywal color file
   . "${HOME}/.cache/wal/colors.sh"
 
-  # Apply the colors to xfce4-terminal
-  xfconf-query -c xfce4-terminal -p /color-cursor -s "${foreground}"
-  xfconf-query -c xfce4-terminal -p /color-foreground -s "${foreground}"
-  xfconf-query -c xfce4-terminal -p /color-background -s "${background}"
-  xfconf-query -c xfce4-terminal -p /tab-activity-color -s "${color6}"
-  xfconf-query -c xfce4-terminal -p /color-palette -s "${color0};${color1};${color2};${color3};${color4};${color5};${color6};${color7};${color8};${color9};${color10};${color11};${color12};${color13};${color14};${color15}"
+  xfconf-query -c xfce4-terminal -p /color-cursor -s "${foreground}" &
+  xfconf-query -c xfce4-terminal -p /color-foreground -s "${foreground}" &
+  xfconf-query -c xfce4-terminal -p /color-background -s "${background}" &
+  xfconf-query -c xfce4-terminal -p /tab-activity-color -s "${color6}" &
+  xfconf-query -c xfce4-terminal -p /color-palette -s "${color0};${color1};${color2};${color3};${color4};${color5};${color6};${color7};${color8};${color9};${color10};${color11};${color12};${color13};${color14};${color15}" &
 }
 
 # ----------------------------------------------
@@ -80,60 +84,55 @@ fi
 # Change parameters based on choice
 case "${choice}" in
 $catppuccin_frappe)
-  wal --theme catppuccin-frappe
-  bat --theme="Catppuccin Frappe"
-  change_gtk_settings "Catppuccin-Frappe-Standard-Blue-Dark" "Papirus-Dark" "capitaine-cursors"
-  change_randomwall_image_dir "$HOME/Images/Catppuccin"
-  papirus-folders -C cat-frappe-blue
+  wal --theme catppuccin-frappe &&
+  change_gtk_settings "Catppuccin-Frappe-Standard-Blue-Dark" &
+  change_randomwall_image_dir "$HOME/Images/Catppuccin" &
+  papirus-folders -C cat-frappe-blue &
   ;;
 $catppuccin_latte)
-  wal --theme catppuccin-latte -l
-  bat --theme="Catppuccin Latte"
-  change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Papirus-Light" "capitaine-cursors-light"
-  change_randomwall_image_dir "$HOME/Images/Catppuccin"
-  papirus-folders -C cat-latte-blue
+  wal --theme catppuccin-latte -l &&
+  change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Papirus-Light" "capitaine-cursors-light" &
+  change_randomwall_image_dir "$HOME/Images/Catppuccin-Latte" &
+  papirus-folders -C cat-latte-blue &
   ;;
 $catppuccin_macchiato)
-  wal --theme catppuccin-macchiato
-  bat --theme="Catppuccin Macchiato"
-  change_gtk_settings "Catppuccin-Macchiato-Standard-Blue-Dark" "Papirus-Dark" "capitaine-cursors"
-  change_randomwall_image_dir "$HOME/Images/Catppuccin"
-  papirus-folders -C cat-macchiato-blue
+  wal --theme catppuccin-macchiato &&
+  change_gtk_settings "Catppuccin-Macchiato-Standard-Blue-Dark" &
+  change_randomwall_image_dir "$HOME/Images/Catppuccin" &
+  papirus-folders -C cat-macchiato-blue &
   ;;
 $catppuccin_mocha)
-  wal --theme catppuccin-mocha
-  bat --theme="Catppuccin Mocha"
-  change_gtk_settings "Catppuccin-Mocha-Standard-Blue-Dark" "Papirus-Dark" "capitaine-cursors"
-  change_randomwall_image_dir "$HOME/Images/Catppuccin"
-  papirus-folders -C cat-mocha-blue
+  wal --theme catppuccin-mocha &&
+  change_gtk_settings "Catppuccin-Mocha-Standard-Blue-Dark" &
+  change_randomwall_image_dir "$HOME/Images/Catppuccin" &
+  papirus-folders -C cat-mocha-blue &
   ;;
 $dracula)
-  wal --theme dracula
-  bat --theme="Dracula"
-  change_gtk_settings "Dracula" "Papirus-Dark" "capitaine-cursors"
-  change_randomwall_image_dir "$HOME/Images/Dracula"
-  papirus-folders -C dracula-default
+  wal --theme dracula &&
+  change_gtk_settings "Dracula" &
+  change_randomwall_image_dir "$HOME/Images/Dracula" &
+  papirus-folders -C dracula-default &
   ;;
 $gruvbox)
-  wal --theme gruvbox
-  bat --theme="gruvbox-dark"
-  change_gtk_settings "Gruvbox-Dark-BL-MOD" "Papirus-Dark" "capitaine-cursors"
-  change_randomwall_image_dir "$HOME/Images/Gruvbox"
-  papirus-folders -C gruvbox-material-yellow
+  wal --theme gruvbox &&
+  change_gtk_settings "Gruvbox-Dark-BL-MOD" &
+  change_randomwall_image_dir "$HOME/Images/Gruvbox" &
+  papirus-folders -C gruvbox-material-yellow &
   ;;
 $nord)
-  wal --theme nord
-  bat --theme="Nord"
-  change_gtk_settings "Nordic-darker" "Papirus-Dark" "capitaine-cursors"
-  change_randomwall_image_dir "$HOME/Images/Nord"
-  papirus-folders -C polarnight4
+  wal --theme nord &&
+  change_gtk_settings "Nordic-darker" &
+  change_randomwall_image_dir "$HOME/Images/Nord" &
+  papirus-folders -C polarnight4 &
   ;;
 esac
 
-# Others
-change_dunst_colors
-change_mousepad_colors
-change_xfce4_terminal_colors
+# Apply other settings (dunst, mousepad, xfce4-terminal)
+change_dunst_colors &
+change_mousepad_colors &
+change_xfce4_terminal_colors &
+
+wait
 
 # Notify user
 notify-send -u normal "ColorScheme Changed" "The color scheme has been changed to ${choice}."

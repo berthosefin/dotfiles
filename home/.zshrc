@@ -63,6 +63,7 @@ plugins=(
     archlinux
     docker
     docker-compose
+    fzf-tab
     gh
     git
     npm

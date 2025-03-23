@@ -173,9 +173,8 @@ bindsym $super+Shift+u move scratchpad
 bindsym $super+u scratchpad show
 
 # Assign workspaces
-assign [class=KeePassXC] 9
 assign [class=firefox|obsidian] 2
-assign [class=^VirtualBox|^code|^libreoffice] 3
+assign [class=^VirtualBox|^code] 3
 assign [class=^Gimp|Inkscape|Darktable|Kdenlive|Audacity|Mixxx|Rhythmbox] 4
 
 # Reload the configuration file
@@ -247,7 +246,8 @@ for_window [class="mpv"] border pixel 2
 # for_window [class="^.*"] floating enable border pixel 1
 for_window [class="Xfce4-terminal"] floating enable
 for_window [class="Zathura"] floating enable
-for_window [class="Viewnior|mpv|xdman-Main"] floating enable
+for_window [class="Viewnior|mpv"] floating enable
+for_window [class="xdman-Main"] floating enable
 
 for_window [window_role="^gimp-toolbox-color-dialog$"] floating enable
 for_window [window_role="pop-up"] floating enable

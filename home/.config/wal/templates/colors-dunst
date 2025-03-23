@@ -27,13 +27,13 @@
     width = 300
 
     # The maximum height of a single notification, excluding the frame.
-    height = 100
+    height = (0, 100)
 
     # Position the notification in the top right corner
     origin = top-right
 
     # Offset from the origin
-    offset = 16x48
+    offset = (16,48)
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0

@@ -88,42 +88,49 @@ $catppuccin_frappe)
   change_gtk_settings "Catppuccin-Frappe-Standard-Blue-Dark" &
   change_randomwall_image_dir "$HOME/Images/Catppuccin" &
   papirus-folders -C cat-frappe-blue &
+  kvantummanager --set Catppuccin-Frappe-Blue &
   ;;
 $catppuccin_latte)
   wal --theme catppuccin-latte -l &&
   change_gtk_settings "Catppuccin-Latte-Standard-Blue-Light" "Papirus-Light" "capitaine-cursors-light" &
   change_randomwall_image_dir "$HOME/Images/Catppuccin-Latte" &
   papirus-folders -C cat-latte-blue &
+  kvantummanger --set Catppuccin-Latte-Blue &
   ;;
 $catppuccin_macchiato)
   wal --theme catppuccin-macchiato &&
   change_gtk_settings "Catppuccin-Macchiato-Standard-Blue-Dark" &
   change_randomwall_image_dir "$HOME/Images/Catppuccin" &
   papirus-folders -C cat-macchiato-blue &
+  kvantummanger --set Catppuccin-Macchiato-Blue &
   ;;
 $catppuccin_mocha)
   wal --theme catppuccin-mocha &&
   change_gtk_settings "Catppuccin-Mocha-Standard-Blue-Dark" &
   change_randomwall_image_dir "$HOME/Images/Catppuccin" &
   papirus-folders -C cat-mocha-blue &
+  kvantummanger --set Catppuccin-Mocha-Blue &
   ;;
 $dracula)
   wal --theme dracula &&
   change_gtk_settings "Dracula" &
   change_randomwall_image_dir "$HOME/Images/Dracula" &
   papirus-folders -C dracula-default &
+  kvantummanger --set Dracula &
   ;;
 $gruvbox)
   wal --theme gruvbox &&
   change_gtk_settings "Gruvbox-Dark-BL-MOD" &
   change_randomwall_image_dir "$HOME/Images/Gruvbox" &
   papirus-folders -C gruvbox-material-yellow &
+  kvantummanger --set gruvbox-kvantum &
   ;;
 $nord)
   wal --theme nord &&
   change_gtk_settings "Nordic-darker" &
   change_randomwall_image_dir "$HOME/Images/Nord" &
   papirus-folders -C polarnight4 &
+  kvantummanger --set Nordic-Darker &
   ;;
 esac
 
